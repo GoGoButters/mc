@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/fancymenu/customization/zhivoy_mir_title.txt"
+hash = "ad928499d6f4c89cd87bf886940af12f07b6a99eac493dddf3ca20782e4fdc46"
+
+[[files]]
 file = "mods/architectury-api.pw.toml"
 hash = "657a01a86bbf8617e4726c77df08f708e43a3db12db74b837eebd8eb1d93faae"
 metafile = true
@@ -36,6 +40,11 @@ hash = "aad33740ad909e25fb947cf20a6e7547ff000678061478caa8cc1fa8946d2a68"
 metafile = true
 
 [[files]]
+file = "mods/fancymenu.pw.toml"
+hash = "88afe523b3bc1fed6bd53b6608f0450e9891c8fe25e786a9893243064f8c7e7f"
+metafile = true
+
+[[files]]
 file = "mods/ftb-library-forge.pw.toml"
 hash = "df64ca595f6f0f79e3a4a844fd0a887b44f5e007f5deb9ac011b5cf67b3a2127"
 metafile = true
@@ -48,6 +57,11 @@ metafile = true
 [[files]]
 file = "mods/kambrik.pw.toml"
 hash = "8a5e76693f22343bb2306011ad8018337971256a6f3b25cb03680b1d7d7470c1"
+metafile = true
+
+[[files]]
+file = "mods/konkrete.pw.toml"
+hash = "5707b722541648df013644f3b4d50083c77965d536f219df9fac5026f6103777"
 metafile = true
 
 [[files]]
@@ -73,6 +87,11 @@ metafile = true
 [[files]]
 file = "mods/mca-conversations.pw.toml"
 hash = "02ba8e044a69d1113eadc58eca92f959ef77bed50cdccd558d9d2b79d54589cb"
+metafile = true
+
+[[files]]
+file = "mods/melody.pw.toml"
+hash = "9dff522b00f5269538d0351536f34b22384996de30be454ef1369f1b1e5c1aeb"
 metafile = true
 
 [[files]]
@@ -144,3 +163,8 @@ metafile = true
 file = "mods/villager-recruits.pw.toml"
 hash = "7232dbb03d90defb2405f87bb1f5bb9e637f2ed98b819c7970adccc023a94cf8"
 metafile = true
+
+[[files]]
+file = "servers.dat"
+hash = "9c18d942033e09869c666454a88b879ca4d2dc682d7122444f8e375bbf8b0aca"
+preserve = true
