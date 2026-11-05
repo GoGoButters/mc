@@ -110,6 +110,11 @@ hash = "50f0fe22bec82ed6336a259931394271a1ebb71bb77e682ee233d96134305ccd"
 metafile = true
 
 [[files]]
+file = "mods/cosmetic-armor-reworked.pw.toml"
+hash = "b65ee01fec17228645121952de6dec75053b0b4c59a8c8036d6fa7829819f3f9"
+metafile = true
+
+[[files]]
 file = "mods/crabbers-delight.pw.toml"
 hash = "6561e381b08dab5643dfc7bff8f2b60df1f2e2e4078c83fa0ead4978266ec37a"
 metafile = true
@@ -122,11 +127,6 @@ metafile = true
 [[files]]
 file = "mods/create-dragons-plus.pw.toml"
 hash = "dcbb37e828a2f915e64a2ef839a742761a553a2e3b923b000ffba95db7503ac3"
-metafile = true
-
-[[files]]
-file = "mods/create-structures.pw.toml"
-hash = "6f51e1bed0f711d9ef87823e7f60b33fdb350b65a8dc09d6eb6fb06237be1734"
 metafile = true
 
 [[files]]
