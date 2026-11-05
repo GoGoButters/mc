@@ -6,12 +6,13 @@
 
 ## Установка клиента
 
-**Проще всего — установщик (Windows):** [`dist/ZhivoyMir-Setup.exe`](dist/ZhivoyMir-Setup.exe) — спрашивает ник, сам создаёт сборку в Prism/MultiMC (или ставит моды в вашу папку игры) и включает автообновление.
-Портативно: [`dist/ZhivoyMir-Portable.zip`](dist/ZhivoyMir-Portable.zip). Подробно — [`docs/CLIENT.md`](docs/CLIENT.md).
+**Проще всего — установщик (Windows):** [`dist/ZhivoyMir-Setup.exe`](dist/ZhivoyMir-Setup.exe).
+В режиме «Всё в одном» он ставит в одну портативную папку лаунчер PolyMC 8.1, Java 21 (Eclipse Temurin) и готовую сборку с автообновлением модов, а на рабочий стол — ярлык «Живой мир», который сразу запускает игру.
+Если у вас уже есть Prism Launcher или PolyMC — установщик может просто добавить сборку в него. Подробно — [`docs/CLIENT.md`](docs/CLIENT.md).
 
 Вручную:
 
-1. Minecraft **1.21.1** + **NeoForge 21.1.265** в вашем лаунчере.
+1. Minecraft **1.21.1** + **NeoForge 21.1.265** в вашем лаунчере (в PolyMC компонент NeoForge — `net.neoforged.neoforge`).
 2. Положите [`packwiz-installer-bootstrap.jar`](https://github.com/packwiz/packwiz-installer-bootstrap/releases/latest/download/packwiz-installer-bootstrap.jar) в папку игры (`.minecraft` сборки).
 3. Команда перед запуском (pre-launch command):
 
