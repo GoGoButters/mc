@@ -1,0 +1,131 @@
+hash-format = "sha256"
+
+[[files]]
+file = "mods/architectury-api.pw.toml"
+hash = "657a01a86bbf8617e4726c77df08f708e43a3db12db74b837eebd8eb1d93faae"
+metafile = true
+
+[[files]]
+file = "mods/better-advanced-tooltips.pw.toml"
+hash = "03084ff4f74cedc1b8ac6c85a98842f75956fb4fa811d285d8ca7caa8d54da5d"
+metafile = true
+
+[[files]]
+file = "mods/blockui.pw.toml"
+hash = "643c88ee26ec68650091c395c5c4fbd33d534a9c493e3cc05da3c793cc7ab9db"
+metafile = true
+
+[[files]]
+file = "mods/bountiful.pw.toml"
+hash = "ba3b9990bc44bedb8eacbe11b2beffb7457cc6ddd854e78fcaf8d73d8f2578db"
+metafile = true
+
+[[files]]
+file = "mods/capitals-a-monarchy-mod-for-mca-reborn.pw.toml"
+hash = "cd64f85abb8a0fd8eb1632721887d3cf4931c325082088f38a563dc66cd722f2"
+metafile = true
+
+[[files]]
+file = "mods/create.pw.toml"
+hash = "dcaf5f2e28db0b9a127d0167456832341045ddc9aec058c3d9fcf53f618d2404"
+metafile = true
+
+[[files]]
+file = "mods/domum-ornamentum.pw.toml"
+hash = "aad33740ad909e25fb947cf20a6e7547ff000678061478caa8cc1fa8946d2a68"
+metafile = true
+
+[[files]]
+file = "mods/ftb-library-forge.pw.toml"
+hash = "df64ca595f6f0f79e3a4a844fd0a887b44f5e007f5deb9ac011b5cf67b3a2127"
+metafile = true
+
+[[files]]
+file = "mods/ftb-teams-forge.pw.toml"
+hash = "d1665d3000a0857df2d4ea5d3b3a6c5e2b0a60b0c83f8c0f30f05b5305b1878f"
+metafile = true
+
+[[files]]
+file = "mods/kubejs.pw.toml"
+hash = "be9f3f981dd69822b4a3e5ab6fd677ec69a4e01dcf66c62e239b6ef65f31f0fd"
+metafile = true
+
+[[files]]
+file = "mods/living-colonists-for-minecolonies.pw.toml"
+hash = "3d9821d8191220d766a5c489c85ba3ab631185afa759b9b284d7a216d8b1f672"
+metafile = true
+
+[[files]]
+file = "mods/mc-trade-post.pw.toml"
+hash = "2d7f38b4595fa2530e3814af555e573159383a42557e8df93a34e8bbd0642c2d"
+metafile = true
+
+[[files]]
+file = "mods/mca-conversations.pw.toml"
+hash = "02ba8e044a69d1113eadc58eca92f959ef77bed50cdccd558d9d2b79d54589cb"
+metafile = true
+
+[[files]]
+file = "mods/minecolonies-compatibility.pw.toml"
+hash = "6824a461b3530c5cefb06173cb1dbdf10f77c53064745ed920d09771eba9bc5d"
+metafile = true
+
+[[files]]
+file = "mods/minecolonies-tweaks.pw.toml"
+hash = "01582a544b77bbd18a3a483a208cb8a4f8eb68b284d4dda8f2e04f74339e72fb"
+metafile = true
+
+[[files]]
+file = "mods/minecolonies-war-n-taxes.pw.toml"
+hash = "ac0fc68f09958429c602f46215b94c3d8fc72dcc5e10cac113a48f5b4395ef0e"
+metafile = true
+
+[[files]]
+file = "mods/minecolonies.pw.toml"
+hash = "29d15659b1961089d3d470669060f422e3f235746f9e9853c63cbbe681c33ff1"
+metafile = true
+
+[[files]]
+file = "mods/minecraft-comes-alive-reborn.pw.toml"
+hash = "21fd5aa24c3dcd3da912d6f0fd37df905c108bf613a18bafe9bb97ee2576b42c"
+metafile = true
+
+[[files]]
+file = "mods/multi-piston.pw.toml"
+hash = "bc9449306cb2c32f16347779291d68e5fba67f85d7aca04b4b9cc1c033ec4083"
+metafile = true
+
+[[files]]
+file = "mods/numismatics.pw.toml"
+hash = "840eb517a83c586b9f543ab9781d4c8529b6fedf2d679f411577c7a583e50fe5"
+metafile = true
+
+[[files]]
+file = "mods/pathfinding-edition-for-minecolonies.pw.toml"
+hash = "18cb458bd29a0e05fae21ac0598955cf39ccfeccad0e55018112cde45d800e73"
+metafile = true
+
+[[files]]
+file = "mods/rhino.pw.toml"
+hash = "e55ca32b338a0e0540f4fec5170675d860566255ae0f45692a00cb4ebf2eb535"
+metafile = true
+
+[[files]]
+file = "mods/simple-voice-chat.pw.toml"
+hash = "6f9502735fcac7a35468358e2aa0fd9333b12df885db3325c472d298ce315a72"
+metafile = true
+
+[[files]]
+file = "mods/structurize.pw.toml"
+hash = "f2c72153515f80c7b408d0f2a6dde2ecf6a0bd3b5aafe2f6d832ae69774a93a0"
+metafile = true
+
+[[files]]
+file = "mods/towntalk.pw.toml"
+hash = "a7074e8e499d34f5ce633dbd33f818e376dd1941ec5b1d97a33acd019df69b5a"
+metafile = true
+
+[[files]]
+file = "mods/villager-recruits.pw.toml"
+hash = "7232dbb03d90defb2405f87bb1f5bb9e637f2ed98b819c7970adccc023a94cf8"
+metafile = true

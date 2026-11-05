@@ -1,0 +1,13 @@
+name = "Living Colonists for MineColonies"
+filename = "livingcolonists-0.7.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "4d12eb357f25c807d40378b6bfc47a312ea32e9b"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9408179
+project-id = 1774951
