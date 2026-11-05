@@ -1,0 +1,13 @@
+name = "Nedologin"
+filename = "nedologin-3.0.0-rc3-1.21.1-fabric-neoforge.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/fnP1u8PK/versions/VPxEDVP2/nedologin-3.0.0-rc3-1.21.1-fabric-neoforge.jar"
+hash-format = "sha512"
+hash = "a88237398f1c3a159e8365839480725fe13d724acdff9b59014b7a7a78bfdf830862125c56bdca4415d37d5ccfc5ad3f4e6f707f86db819fe13de76737b5ceb7"
+
+[update]
+[update.modrinth]
+mod-id = "fnP1u8PK"
+version = "VPxEDVP2"
