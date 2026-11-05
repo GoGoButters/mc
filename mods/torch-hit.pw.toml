@@ -1,0 +1,13 @@
+name = "Torch hit!"
+filename = "torch-hit-neoforge-1.21-7.1.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "d6768ed34821ab7c14e53754e8b7be487f9c9d99"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7208564
+project-id = 629434

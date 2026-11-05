@@ -1,0 +1,13 @@
+name = "Backpacked: World of Color"
+filename = "backpacked-world-of-color-3.0.3.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/A7BK3BVe/versions/GRuoSNmc/backpacked-world-of-color-3.0.3.jar"
+hash-format = "sha512"
+hash = "d910bafa8017e63c29eba3f298df9050be7f309ebf3d9a4114e458933d63d13a43ec42a52cbca356d8a0e570947fefa2245b7eabfcfaf7b50bb5adee26bd6437"
+
+[update]
+[update.modrinth]
+mod-id = "A7BK3BVe"
+version = "GRuoSNmc"

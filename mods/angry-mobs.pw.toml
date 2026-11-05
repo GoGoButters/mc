@@ -1,0 +1,13 @@
+name = "Angry Mobs"
+filename = "AngryMobs-1.21.1-7.1.2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/W9PF5nLR/versions/YVMXuYKJ/AngryMobs-1.21.1-7.1.2.jar"
+hash-format = "sha512"
+hash = "c9419bb7c156f960dab3704e1182b07090d3cde29d22634206032b37d4123ff00243751ec76f319fdb12cb8df01a38cbaf45507b3deaaf1e85f9197b2c733625"
+
+[update]
+[update.modrinth]
+mod-id = "W9PF5nLR"
+version = "YVMXuYKJ"
