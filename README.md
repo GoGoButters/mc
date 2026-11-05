@@ -17,7 +17,7 @@
 3. Команда перед запуском (pre-launch command):
 
    ```
-   "$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://gogobutters.github.io/mc/pack.toml
+   "$INST_JAVA" -jar packwiz-installer-bootstrap.jar --multimc-folder nommc https://gogobutters.github.io/mc/pack.toml
    ```
 
 4. Память: 6–8 ГБ.

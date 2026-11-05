@@ -45,9 +45,11 @@
 2. Положите [`packwiz-installer-bootstrap.jar`](https://github.com/packwiz/packwiz-installer-bootstrap/releases/latest/download/packwiz-installer-bootstrap.jar) в папку игры (`.minecraft` сборки).
 3. Пропишите команду перед запуском (Pre-launch command):
    ```
-   "$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://gogobutters.github.io/mc/pack.toml
+   "$INST_JAVA" -jar packwiz-installer-bootstrap.jar --multimc-folder nommc https://gogobutters.github.io/mc/pack.toml
    ```
    В Prism/PolyMC: `Изменить → Настройки → Свои команды → Команда перед запуском`.
+   `--multimc-folder nommc` не даёт packwiz переписывать компоненты сборки: иначе в PolyMC он добавляет
+   несовместимый компонент `net.neoforged`, и игра запускается без NeoForge.
 4. Java 21, память 6–8 ГБ.
 
 ## Аккаунт и ник
@@ -78,6 +80,7 @@ Simple Voice Chat: клавиша **V** в игре. Нужен UDP-порт 244
 |---|---|
 | Установщик: «Не удалось скачать» / «контрольная сумма» | Проверьте интернет и запустите установщик ещё раз |
 | «Не удалось обновить» при запуске | Проверьте интернет; в лаунчере откройте лог сборки — там видна ошибка packwiz |
+| Сервер пишет «install NeoForge», во вкладке «Версия» красная строка `net.neoforged` | Сборка поставлена старым установщиком: запустите новый поверх (миры сохранятся) |
 | Игра падает на загрузке | Убедитесь, что версия 1.21.1 и **NeoForge 21.1.265**, а не Forge/Fabric, и Java 21 |
 | Не видно сервера | Пропишите адрес вручную: `globe.r2d2.dedyn.io` |
 | «Не в белом списке» | Попросите админа добавить ник командой выше |
