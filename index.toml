@@ -862,6 +862,106 @@ file = "kubejs/assets/mca/lang/ru_ru.json"
 hash = "a79d84138ed1cdbb6e5a9817fb0f3730cce75c97cfa29ea8103c43a731a33d1a"
 
 [[files]]
+file = "kubejs/assets/mca/sounds/villager/female/greet/greet1.ogg"
+hash = "7723e23b4103bf561c0db72522a3eb3788b2b60d9fcf0a26e277c6a6830b9337"
+
+[[files]]
+file = "kubejs/assets/mca/sounds/villager/female/greet/greet2.ogg"
+hash = "4754f5ce096d55f9e8789286d452ec4eb6e11b3405961acf30103ad729de6eb4"
+
+[[files]]
+file = "kubejs/assets/mca/sounds/villager/female/greet/greet3.ogg"
+hash = "e105014d23978e131f5d2a2d774cf49f208e96665e6e42924005e22fea9f8147"
+
+[[files]]
+file = "kubejs/assets/mca/sounds/villager/female/greet/greet4.ogg"
+hash = "fb562323c0dea18d048bd4c1a786b04c8815dcdd2d41e298975c089fcdc3ac07"
+
+[[files]]
+file = "kubejs/assets/mca/sounds/villager/female/no/no1.ogg"
+hash = "2816d89d4c792ee5fb02a9cd9f47f9d02e479e0d36eb9382dad8a763e190c709"
+
+[[files]]
+file = "kubejs/assets/mca/sounds/villager/female/no/no2.ogg"
+hash = "9626c387d135a329261e9c6a62948ec1d21257a4128ba71840983626ab942702"
+
+[[files]]
+file = "kubejs/assets/mca/sounds/villager/female/no/no3.ogg"
+hash = "4b2c637367b2160f2141ac43bfbd04954f78a6216d809abbfb1a8207e2366144"
+
+[[files]]
+file = "kubejs/assets/mca/sounds/villager/female/no/no4.ogg"
+hash = "05d795e9ef5fe6e69926c317a2f5f2ecbaf1b87f3f212cac3b5445fad53ef295"
+
+[[files]]
+file = "kubejs/assets/mca/sounds/villager/female/no/no5.ogg"
+hash = "93d829331826da71fd43d8606a3e5405505a7439cf39cd4ed60dfe0123c1c0a1"
+
+[[files]]
+file = "kubejs/assets/mca/sounds/villager/female/yes/yes1.ogg"
+hash = "9188ea58242453b63c66c67fb07acfae50d6d1e269a71eebcf991c8dbbb5de5a"
+
+[[files]]
+file = "kubejs/assets/mca/sounds/villager/female/yes/yes2.ogg"
+hash = "2671698cc2dc42ede052e46218ce4744419c26bd758a8eef2510074aaf05b3bb"
+
+[[files]]
+file = "kubejs/assets/mca/sounds/villager/female/yes/yes3.ogg"
+hash = "d561e31f9b5fde33a74627f9864da7702bb5b16910434a8c9bdfd0e3950f6cb0"
+
+[[files]]
+file = "kubejs/assets/mca/sounds/villager/male/greet/greet1.ogg"
+hash = "66e7132e3aa65fd661458a2c1a2c5a7eac0f2d4bbfaa3a5168258eb5ef11c109"
+
+[[files]]
+file = "kubejs/assets/mca/sounds/villager/male/greet/greet2.ogg"
+hash = "2673672013dfcce77d7e94ea29509a6ed3a87ebff28de946de29e0d10de5707d"
+
+[[files]]
+file = "kubejs/assets/mca/sounds/villager/male/greet/greet3.ogg"
+hash = "48f03d2daa4ed8a3750951a7766053446d2766c51acc5b3caa3d962393e590fe"
+
+[[files]]
+file = "kubejs/assets/mca/sounds/villager/male/greet/greet4.ogg"
+hash = "83f72d7b0051bb3acc49ddce767c390c7a92e24d2ab2ece1f3092e84ae86cd2d"
+
+[[files]]
+file = "kubejs/assets/mca/sounds/villager/male/no/no1.ogg"
+hash = "cdfb631b44cbf30299f0efa56621a24bdd26b990b9036039b0805a8d8017b260"
+
+[[files]]
+file = "kubejs/assets/mca/sounds/villager/male/no/no2.ogg"
+hash = "8e71d41df4dee07c0d9d72699dbdaa6d76bd71aba11e9b7dae9d81e167731424"
+
+[[files]]
+file = "kubejs/assets/mca/sounds/villager/male/no/no3.ogg"
+hash = "e58c366af4bb5a679fe6b0fbc382722ad7671720ce5b77b05ab085c628f65c17"
+
+[[files]]
+file = "kubejs/assets/mca/sounds/villager/male/no/no4.ogg"
+hash = "6bded22357e1a8d37402e25cd169392431c56864a26f584c466e4664ad1fa97f"
+
+[[files]]
+file = "kubejs/assets/mca/sounds/villager/male/no/no5.ogg"
+hash = "e3545713916f9cc4837b22d9d8fa692a7b8e9ee21a0e793a8b5dc81d78f25c38"
+
+[[files]]
+file = "kubejs/assets/mca/sounds/villager/male/yes/yes1.ogg"
+hash = "e5ee0bdfce78aaab5decab5e4ea5226b05925fbb3ef5a118fdfd743a2d482d83"
+
+[[files]]
+file = "kubejs/assets/mca/sounds/villager/male/yes/yes2.ogg"
+hash = "70ca51eb5b22d306242253f64655e9bb33b667c26189417699480d1833f7a440"
+
+[[files]]
+file = "kubejs/assets/mca/sounds/villager/male/yes/yes3.ogg"
+hash = "c38afa39f9f74a3646ca019246020de134cbe16df53acb719c1e7563c5d8bcac"
+
+[[files]]
+file = "kubejs/assets/mca/sounds/villager/male/yes/yes4.ogg"
+hash = "851e341cf867a509f521709509d2a95d8470359e15dcc55452d3106785a4dd45"
+
+[[files]]
 file = "kubejs/assets/mca_dialogue/lang/ru_ru.json"
 hash = "904f2bf8551599c85ef0c7b44d7a8f800218c6233cf0e5d6c1581f6148d284a3"
 
