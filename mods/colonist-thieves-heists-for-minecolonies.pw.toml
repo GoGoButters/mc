@@ -1,0 +1,13 @@
+name = "Colonist Thieves - Heists for MineColonies"
+filename = "colonist_thieves-0.1.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "790581cbff16be54d23561b9f6b868677fa3d09f"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8872508
+project-id = 1694221

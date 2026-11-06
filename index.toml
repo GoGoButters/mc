@@ -161,6 +161,16 @@ hash = "40802547d9f1f916dfeefea8e0c52499edfc6940daca5b7f60e5c365a4ead296"
 metafile = true
 
 [[files]]
+file = "mods/colonist-thieves-heists-for-minecolonies.pw.toml"
+hash = "b4efa79b80f17845b7b4f0f8a9b11622095de21c42c23b5232b817725977b643"
+metafile = true
+
+[[files]]
+file = "mods/colony-lifts-a-create-minecolonies-addon.pw.toml"
+hash = "6fd262eef3482c1aefd3846a3eb18d83c50d84c52f922a7b64d9c1c086bdf8df"
+metafile = true
+
+[[files]]
 file = "mods/colonylink.pw.toml"
 hash = "90823a3cfc8aa552447e9cef8452f14ab90f6ec427faec6c7fa371f03b14b018"
 metafile = true
@@ -243,6 +253,11 @@ metafile = true
 [[files]]
 file = "mods/curios.pw.toml"
 hash = "36debf7653e95a855b4fedacc19027cf2e01960fc0b6d55ef2ffbffbcb455690"
+metafile = true
+
+[[files]]
+file = "mods/customnpcs-unofficial.pw.toml"
+hash = "ea6b6845387f8d990e607eaa98d027734f7d1a8823434ef901f81a5736d60aa9"
 metafile = true
 
 [[files]]
@@ -533,6 +548,11 @@ metafile = true
 [[files]]
 file = "mods/nedologin.pw.toml"
 hash = "37eb3dbdb8594101c3bc92a0538403f4dc1278f7d87f97e4615d95b16eec8e08"
+metafile = true
+
+[[files]]
+file = "mods/networkjs-reloaded.pw.toml"
+hash = "d77ced99eb516f6c0fc5a6167686e8b8295c69111e8125afe8ab5d7320741f40"
 metafile = true
 
 [[files]]
