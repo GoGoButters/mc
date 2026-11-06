@@ -10,6 +10,10 @@ file = "config/fancymenu/customization/zhivoy_mir_title.txt"
 hash = "ad928499d6f4c89cd87bf886940af12f07b6a99eac493dddf3ca20782e4fdc46"
 
 [[files]]
+file = "config/mca.json"
+hash = "8d21ab2f9675ef26f62a2bba6b4478699bf3184ab5315502be8056889c0dfe89"
+
+[[files]]
 file = "kubejs/assets/ad_astra/lang/ru_ru.json"
 hash = "2c682392f9fe630c5e0a682268c76a42e086dd615dbb5963e16bfd83b4b32849"
 
