@@ -121,6 +121,11 @@ hash = "228e4c4c393de7981c4a3f80bb4de289f467b1f0a59fc4abd5163eeacb95cf3a"
 metafile = true
 
 [[files]]
+file = "mods/c2me-neoforge.pw.toml"
+hash = "3c7de73ca8cb2e2eddda71d98cc07d29af70d5f8832fb572e2c1b8d2a4ebc720"
+metafile = true
+
+[[files]]
 file = "mods/capitals-a-monarchy-mod-for-mca-reborn.pw.toml"
 hash = "cd64f85abb8a0fd8eb1632721887d3cf4931c325082088f38a563dc66cd722f2"
 metafile = true
