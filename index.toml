@@ -551,11 +551,6 @@ hash = "37eb3dbdb8594101c3bc92a0538403f4dc1278f7d87f97e4615d95b16eec8e08"
 metafile = true
 
 [[files]]
-file = "mods/networkjs-reloaded.pw.toml"
-hash = "d77ced99eb516f6c0fc5a6167686e8b8295c69111e8125afe8ab5d7320741f40"
-metafile = true
-
-[[files]]
 file = "mods/nightlights.pw.toml"
 hash = "9b56c2c17c00dd51fffcbc5e5a59d2c325ed656e768365ae1a36f7692ffcd01e"
 metafile = true
