@@ -1,6 +1,7 @@
 # Живой мир — AI Colony Pack
 
 Сборка Minecraft **1.21.1 / NeoForge 21.1.265**, центр — MineColonies, ИИ-жители (Living Colonists, MCA Reborn), войны и торговля колоний.
+Техника и космос: Create, Mekanism, AE2, Railcraft, BuildCraft, Ad Astra (колонии можно строить и на других планетах); боёвка — Better Combat, Spartan Weaponry, боссы Cataclysm. Без огнестрела.
 
 Формат — [packwiz](https://packwiz.infra.link/). Моды не хранятся в репозитории: здесь только ссылки на Modrinth/CurseForge.
 
@@ -20,7 +21,7 @@
    "$INST_JAVA" -jar packwiz-installer-bootstrap.jar --multimc-folder nommc https://gogobutters.github.io/mc/pack.toml
    ```
 
-4. Память: 6–8 ГБ.
+4. Память: 8 ГБ (если в компьютере всего 8 ГБ ОЗУ — 5–6 ГБ).
 
 При каждом запуске моды сверяются со сборкой и обновляются автоматически.
 
