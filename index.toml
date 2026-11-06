@@ -95,6 +95,11 @@ hash = "689a6043e4e9f2e78e8d292c00d7031298f2167eaccf003d4bd6efd245d9b91f"
 metafile = true
 
 [[files]]
+file = "mods/buildcraft-community-edition.pw.toml"
+hash = "228e4c4c393de7981c4a3f80bb4de289f467b1f0a59fc4abd5163eeacb95cf3a"
+metafile = true
+
+[[files]]
 file = "mods/capitals-a-monarchy-mod-for-mca-reborn.pw.toml"
 hash = "cd64f85abb8a0fd8eb1632721887d3cf4931c325082088f38a563dc66cd722f2"
 metafile = true
@@ -512,6 +517,16 @@ metafile = true
 [[files]]
 file = "mods/puzzles-lib.pw.toml"
 hash = "d465abcc806c0d4fdeefb6a5e774cca4fff0ffd27d7c75954ab4688f4c9eaf05"
+metafile = true
+
+[[files]]
+file = "mods/railcraft-engines.pw.toml"
+hash = "e0e27e5e1cb80ccbb28eca7475bbbe932a02062a8c3f5d93408a2eb16c1671f0"
+metafile = true
+
+[[files]]
+file = "mods/railcraft-reborn.pw.toml"
+hash = "0424a836a80749e4e59ba5c42d70cc0e146047dc961de2db6c8a041a468c40d6"
 metafile = true
 
 [[files]]
