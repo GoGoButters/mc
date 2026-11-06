@@ -1,0 +1,13 @@
+name = "ColonyLink"
+filename = "colonylink-1.7.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "fe2e4473a7a9c8001b6397fd4330122e8dccc2eb"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9254663
+project-id = 1532712
