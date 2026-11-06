@@ -10,6 +10,11 @@ file = "config/fancymenu/customization/zhivoy_mir_title.txt"
 hash = "ad928499d6f4c89cd87bf886940af12f07b6a99eac493dddf3ca20782e4fdc46"
 
 [[files]]
+file = "mods/ad-astra.pw.toml"
+hash = "5386763a89493ea2c4ab581e66ace9317641e4c6c5f094769b13e83b1f6be7aa"
+metafile = true
+
+[[files]]
 file = "mods/advancedperipherals.pw.toml"
 hash = "73576662287c48ef64866be14445a6e8b52829a1da6e65800d0917f813206220"
 metafile = true
@@ -142,6 +147,11 @@ metafile = true
 [[files]]
 file = "mods/comforts.pw.toml"
 hash = "36f2f6e74b7dbeccb504572d47006582207544fa234a095093b97adfc7ecd5ac"
+metafile = true
+
+[[files]]
+file = "mods/common-storage-lib.pw.toml"
+hash = "973d189eb0bb8a514bebc50e78bdbcc5f9e7b3d4869b3a9718ca63ca3afff215"
 metafile = true
 
 [[files]]
