@@ -1,0 +1,13 @@
+name = "TarotCards: Remastered"
+filename = "tarotcards-2.3.5-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/haEej4hJ/versions/wOCHlHK0/tarotcards-2.3.5-neoforge-1.21.1.jar"
+hash-format = "sha512"
+hash = "8c0e4643dc597ed9da82249209253f68d0de463a8571e0df75a0885c6e27aad50a68365dbfef257416f420d5046b0f5f5868139204284b68e45b60a6c748e259"
+
+[update]
+[update.modrinth]
+mod-id = "haEej4hJ"
+version = "wOCHlHK0"
