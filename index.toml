@@ -256,11 +256,6 @@ hash = "36debf7653e95a855b4fedacc19027cf2e01960fc0b6d55ef2ffbffbcb455690"
 metafile = true
 
 [[files]]
-file = "mods/customnpcs-unofficial.pw.toml"
-hash = "ea6b6845387f8d990e607eaa98d027734f7d1a8823434ef901f81a5736d60aa9"
-metafile = true
-
-[[files]]
 file = "mods/distanthorizons.pw.toml"
 hash = "0c20fea3407ed0db85b4b171f1820a24987f2659946fadd30bae044205041b09"
 metafile = true
