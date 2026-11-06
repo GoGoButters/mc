@@ -1,6 +1,11 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/DistantHorizons.toml"
+hash = "e39b59d05d172f7f63c50d75d11e9704070809348cf1b200f51c32ab71153551"
+preserve = true
+
+[[files]]
 file = "config/fancymenu/customization/zhivoy_mir_title.txt"
 hash = "ad928499d6f4c89cd87bf886940af12f07b6a99eac493dddf3ca20782e4fdc46"
 
@@ -92,11 +97,6 @@ metafile = true
 [[files]]
 file = "mods/chimes.pw.toml"
 hash = "c8b720dda31f66111e495493a4ead4a2027c67724388a519b1e45b66d46df129"
-metafile = true
-
-[[files]]
-file = "mods/chunky.pw.toml"
-hash = "1d5cc2b6dcfd1fc3adba4566b1c29b57ff1175316678c1f22e63cbc3e28a5ba0"
 metafile = true
 
 [[files]]
