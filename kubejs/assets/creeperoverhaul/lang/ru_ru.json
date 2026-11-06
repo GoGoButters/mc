@@ -1,0 +1,7 @@
+{
+  "entity.creeperoverhaul.birch_creeper": "Берёзовый крипер",
+  "gui.creeperoverhaul.cosmetics": "Кастомизация",
+  "gui.creeperoverhaul.cosmetics.login": "Войти в Creeper Overhaul",
+  "gui.creeperoverhaul.cosmetics.preview_in_game": "Вы должны быть в игре, чтобы просматривать кастомизацию.",
+  "item.creeperoverhaul.birch_creeper_spawn_egg": "Яйцо призыва берёзового крипера"
+}

@@ -1,0 +1,12 @@
+{
+  "block.railcraftengines.commercial_steam_engine": "Коммерческий паровой двигатель",
+  "block.railcraftengines.hobbyist_steam_engine": "Любительский паровой двигатель",
+  "block.railcraftengines.industrial_steam_engine": "Промышленный паровой двигатель",
+  "itemGroup.railcraftengines": "Railcraft Engines",
+  "tooltip.railcraftengines.hobbyist_fuel": "Использует воду и твёрдое печное топливо",
+  "tooltip.railcraftengines.internal_steam": "Генерирует пар внутри себя",
+  "tooltip.railcraftengines.mod_name": "Railcraft Engines",
+  "tooltip.railcraftengines.output": "Производит до %s FE/тик",
+  "tooltip.railcraftengines.redstone": "Требуется сигнал редстоуна",
+  "tooltip.railcraftengines.steam_consumption": "Использует %s мБ пара за тик при полной мощности"
+}

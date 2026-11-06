@@ -1,0 +1,5 @@
+{
+  "backpacked.gui.after_equipped_message": "%s Нажмите %s, чтобы открыть, или %s, чтобы управлять",
+  "backpacked.gui.backpacked_equipped": "Рюкзак надет!",
+  "backpacked.gui.no_more_backpack_slots": "Больше нет свободных слотов"
+}

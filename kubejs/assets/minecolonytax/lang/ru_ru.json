@@ -1,0 +1,16 @@
+{
+  "command.minecolonytax.inactivity_status": "Колония %s: последняя активность %d ч назад. Порог неактивности: %d ч. Статус: %s",
+  "command.minecolonytax.taxgui.server_message": "Откройте интерфейс управления налогами, нажав клавишу «T» или введя /taxgui у себя на клиенте.",
+  "gui.minecolonytax.claim_all": "Забрать все",
+  "gui.minecolonytax.no_colonies": "Колонии не найдены. Вы должны быть владельцем или офицером хотя бы одной колонии.",
+  "gui.minecolonytax.refresh": "Обновить",
+  "gui.minecolonytax.tax_management.title": "Управление налогами колонии",
+  "key.category.minecolonytax": "Дополнение налогов MineColony",
+  "key.minecolonytax.open_tax_gui": "Открыть интерфейс управления налогами",
+  "message.minecolonytax.colony_inactive": "Колония %s неактивна (последняя активность: %d ч назад). Сбор налогов приостановлен, пока не вернётся владелец/офицер.",
+  "message.minecolonytax.colony_reactivated": "Колония %s вновь активирована! Сбор налогов возобновлён.",
+  "message.minecolonytax.tax_report_guard_boost": "Бонус сторожевых башен: %d башен дают +%d%% бонус к налогам (+%d монет)",
+  "message.minecolonytax.tax_report_happiness": "Счастье жителей: %s/10.0 (Влияние налога: %s монет)",
+  "raid.protection.guard_towers": "Целевая колония защищена от набегов! Для набега в ней должно быть не меньше %d сторожевых башен. (Найдено сторожевых башен: %d)",
+  "raid.protection.guards": "Целевая колония защищена от набегов! Для набега в ней должно быть не меньше %d стражников. (Найдено стражников: %d)"
+}

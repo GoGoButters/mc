@@ -1,0 +1,10 @@
+{
+  "config.jade.plugin_jadeaddons.computercraft.computer_id": "ID компьютера",
+  "jade.modName.jadeaddons.computercraft": "CC: Tweaked",
+  "jade.modName.jadeaddons.create": "Create",
+  "jade.modName.jadeaddons.deepresonance": "Deep Resonance",
+  "jade.modName.jadeaddons.lootr": "Lootr",
+  "jade.modName.jadeaddons.mcjtylib": "McJtyLib",
+  "jade.modName.jadeaddons.tconstruct": "Tinkers' Construct",
+  "jadeaddons.computercraft.computer_id": "ID компьютера: %s"
+}

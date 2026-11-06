@@ -1,0 +1,7 @@
+{
+  "text.autoconfig.betterstrongholds-fabric-1_21.option.betterStrongholds.general.enableStructureRuin": "Разрешить разрушение структур",
+  "text.autoconfig.betterstrongholds-fabric-1_21.option.betterStrongholds.general.enableStructureRuin.@Tooltip[0]": "Позволяет крепостям слегка разрушаться небольшими червеобразными пещерами.",
+  "text.autoconfig.betterstrongholds-fabric-1_21.option.betterStrongholds.general.enableStructureRuin.@Tooltip[1]": "Обратите внимание: крупные пещеры на них не влияют.",
+  "text.autoconfig.betterstrongholds-fabric-1_21.option.betterStrongholds.general.filledPortalFrameChance": "Шанс заполненной рамы портала",
+  "text.autoconfig.betterstrongholds-fabric-1_21.option.betterStrongholds.general.filledPortalFrameChance.@Tooltip": "Шанс того, что каждый блок рамы портала Края появится уже с оком Эндера."
+}

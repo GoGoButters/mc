@@ -1,0 +1,14 @@
+{
+  "text.autoconfig.yungsmenutweaks-fabric-1_21.option.yungsMenuTweaks.backgroundTexture": "Пользовательская текстура фона",
+  "text.autoconfig.yungsmenutweaks-fabric-1_21.option.yungsMenuTweaks.backgroundTexture.@Tooltip[0]": "Текстура, используемая в качестве пользовательского фона вместо обычного размытого.",
+  "text.autoconfig.yungsmenutweaks-fabric-1_21.option.yungsMenuTweaks.backgroundTexture.@Tooltip[1]": "Работает только если включён параметр «Включить пользовательскую текстуру фона».",
+  "text.autoconfig.yungsmenutweaks-fabric-1_21.option.yungsMenuTweaks.enableBackgroundTexture": "Включить пользовательскую текстуру фона",
+  "text.autoconfig.yungsmenutweaks-fabric-1_21.option.yungsMenuTweaks.enableBackgroundTexture.@Tooltip[0]": "Если включено, в меню, где возможно, будет использоваться пользовательская текстура фона.",
+  "text.autoconfig.yungsmenutweaks-fabric-1_21.option.yungsMenuTweaks.enableBackgroundTexture.@Tooltip[1]": "Используемая текстура задаётся параметром «Пользовательская текстура фона» ниже.",
+  "text.autoconfig.yungsmenutweaks-fabric-1_21.option.yungsMenuTweaks.enableMouseScrollOnSliders": "Колесо мыши влияет на ползунки",
+  "text.autoconfig.yungsmenutweaks-fabric-1_21.option.yungsMenuTweaks.enableMouseScrollOnSliders.@Tooltip[0]": "Позволяет изменять параметры с помощью ползунка, прокручивая колесо мыши",
+  "text.autoconfig.yungsmenutweaks-fabric-1_21.option.yungsMenuTweaks.enableMouseScrollOnSliders.@Tooltip[1]": "при наведении на ползунок.",
+  "text.autoconfig.yungsmenutweaks-fabric-1_21.option.yungsMenuTweaks.enableRightClickCycleButton": "ПКМ переключает кнопки в обратную сторону",
+  "text.autoconfig.yungsmenutweaks-fabric-1_21.option.yungsMenuTweaks.enableRightClickCycleButton.@Tooltip": "Позволяет правым кликом переключать некоторые кнопки в обратном порядке.",
+  "text.autoconfig.yungsmenutweaks-fabric-1_21.title": "Настройки меню YUNG"
+}

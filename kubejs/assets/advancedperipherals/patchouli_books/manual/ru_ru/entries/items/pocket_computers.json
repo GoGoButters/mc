@@ -1,0 +1,15 @@
+{
+  "name": "Дополнения для карманных компьютеров",
+  "icon": "computercraft:pocket_computer_advanced",
+  "category": "advancedperipherals:items",
+  "pages": [
+    {
+      "type": "text",
+      "text": "Мы предоставляем улучшения для карманных компьютеров для следующих периферийных устройств:$(li)$(9)$(l:peripherals/environment_detector)детектор окружающей среды$(/l)$()$(li)$(9)$(l:peripherals/player_detector)детектор игроков$(/l)$()$(li)$(9)$(l:peripherals/chat_box)чат-бокс$(/l)$()$(p)Полную документацию смотрите на $(9)$(l:https://docs.advanced-peripherals.de/items/pocket_computer/)официальной вики-странице$(/l)$()!"
+    },
+    {
+      "type": "text",
+      "text": "Просто скомбинируйте их с карманным компьютером, чтобы добавить периферийное устройство к нему. Учтите, что вы не сможете использовать связанные события."
+    }
+  ]
+}

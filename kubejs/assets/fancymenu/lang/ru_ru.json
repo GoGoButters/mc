@@ -1,0 +1,7 @@
+{
+  "fancymenu.actions.screens.finish.no_action_selected": "§xСначала нужно выбрать действие!",
+  "fancymenu.elements.browser.rinku_failed.line_1": "Не удалось инициализировать браузер!",
+  "fancymenu.elements.browser.rinku_failed.line_2": "Подробности см. в логе игры.",
+  "fancymenu.elements.browser.rinku_initializing.line_1": "Браузер запускается...",
+  "fancymenu.elements.browser.rinku_initializing.line_2": "Ожидание завершения инициализации Rinku."
+}
