@@ -1,0 +1,44 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev' version '2.0.148'
+}
+
+version = mod_version
+group = mod_group_id
+base { archivesName = mod_id }
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+repositories {
+    maven { url 'https://maven.maxhenkel.de/repository/public' }
+}
+
+neoForge {
+    enable {
+        version = project.neo_version
+        disableRecompilation = true  // без декомпиляции Minecraft: ей не хватает 4 ГБ памяти сборочной машины
+    }
+    mods {
+        "${mod_id}" { sourceSet(sourceSets.main) }
+    }
+}
+
+dependencies {
+    compileOnly "de.maxhenkel.voicechat:voicechat-api:${voicechat_api_version}"
+    // Моды, с которыми работаем: только для компиляции, в игре — необязательные зависимости
+    compileOnly files('libs/livingcolonists-0.7.0.jar', 'libs/mca-neoforge-7.7.36-beta.3+1.21.1.jar',
+            'libs/minecolonies-1.1.1411-1.21.1-snapshot.jar', 'libs/structurize-1.0.837-1.21.1-snapshot.jar')
+}
+
+var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
+    var replaceProperties = [minecraft_version_range: minecraft_version_range, neo_version: neo_version,
+                             loader_version_range: loader_version_range, mod_id: mod_id, mod_name: mod_name,
+                             mod_license: mod_license, mod_version: mod_version]
+    inputs.properties replaceProperties
+    expand replaceProperties
+    from "src/main/templates"
+    into "build/generated/sources/modMetadata"
+}
+sourceSets.main.resources.srcDir generateModMetadata
+neoForge.ideSyncTask generateModMetadata
+
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }

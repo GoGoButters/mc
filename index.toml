@@ -2312,6 +2312,11 @@ hash = "3d9821d8191220d766a5c489c85ba3ab631185afa759b9b284d7a216d8b1f672"
 metafile = true
 
 [[files]]
+file = "mods/livingvoice.pw.toml"
+hash = "eee1afcd14bcbff4dd3860a45941e0d7eaa783342d149deeb4f9eaf217f8ee70"
+metafile = true
+
+[[files]]
 file = "mods/lmd.pw.toml"
 hash = "3a7ce6901bb81cff9fe73366613defe50708cb401dc03daa27e7abe918089d7b"
 metafile = true
