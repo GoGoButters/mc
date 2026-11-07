@@ -967,87 +967,87 @@ hash = "904f2bf8551599c85ef0c7b44d7a8f800218c6233cf0e5d6c1581f6148d284a3"
 
 [[files]]
 file = "kubejs/assets/mca_dialogue_anxious/lang/ru_ru.json"
-hash = "6fa7bcdd212bca5be0ba0c3335c8050dc38ee3281e7611fc4dd6ff6450a96c4c"
+hash = "159bee6df01a2110bf915639ca9593b5a770be75a9bfe60ca86c73d1994c49ba"
 
 [[files]]
 file = "kubejs/assets/mca_dialogue_athletic/lang/ru_ru.json"
-hash = "93441d2f653d41ecfd72e6b8453a8152db07d6682ede17ee1ec2fcecddb6fef0"
+hash = "3e4748b9e55c73a67108ffa4d026cc036eef37fb9a2d25bb89eda977f1b6862e"
 
 [[files]]
 file = "kubejs/assets/mca_dialogue_confident/lang/ru_ru.json"
-hash = "3502e25747ad957b022600e38615e95b2afd94afcb43c80e8fca3ec199086d2f"
+hash = "03ce8adf893d7329d6e81e5a99f81a88a651ff23bb7a74ff42997e540b7eeae0"
 
 [[files]]
 file = "kubejs/assets/mca_dialogue_crabby/lang/ru_ru.json"
-hash = "b0683f20d55ae8de6d2eadcb3229fd336d7e5219bfbf687f8d43d9f78a2d7a15"
+hash = "143c952f1687f2994b7feb5fa0032edb9d95a382b54a748294d524971f14f12d"
 
 [[files]]
 file = "kubejs/assets/mca_dialogue_extroverted/lang/ru_ru.json"
-hash = "1e50528a933511939ad5e6237200de708efdcd714c45f97f0e17bbe5691df5a4"
+hash = "652e3b63bbbb4e2f0ca2ffee4a00b664a973edd05f9041b60c0276540b38d1c7"
 
 [[files]]
 file = "kubejs/assets/mca_dialogue_flirty/lang/ru_ru.json"
-hash = "99ebb16834692f98038f439663922d3061ac2d64edf8676840026b6f20e8548f"
+hash = "bce6756d43ebc6fb329abf884c2a9362c46c3397967f899fa002ed5953f52e91"
 
 [[files]]
 file = "kubejs/assets/mca_dialogue_friendly/lang/ru_ru.json"
-hash = "b1c5017305b1170cebe7ea4f51c36c5464e2c556ff0589ba550eb154a9f6d065"
+hash = "a11e01db0d8a3c63542ddbf6fc3d3768d9ed01dafafee63bfbc921873e388ab8"
 
 [[files]]
 file = "kubejs/assets/mca_dialogue_gloomy/lang/ru_ru.json"
-hash = "ebf0a4b19bfbf69736826defbbd1eacb85ca3e508c974c4e675aa14e8a7f0712"
+hash = "e60eb282bc9cc225ec6b7fd411b5536bb00eddd01752828f648d332ccad0212d"
 
 [[files]]
 file = "kubejs/assets/mca_dialogue_greedy/lang/ru_ru.json"
-hash = "091a36c69d8542e2cd5e7f02c4cc1c1ea52f6a58474d1e2155c7b9508ceb34aa"
+hash = "331dc6489063cf1dbe3010fc4e7182f3efa41fe1f5b58310ea3a93556c9bdddc"
 
 [[files]]
 file = "kubejs/assets/mca_dialogue_grumpy/lang/ru_ru.json"
-hash = "a40b376ab9ef360c659a5edd3beed0d20ad7df60d2c9506c28ef675a01309002"
+hash = "06345dd1ed3975808ff9349c8d01875512eaae987b3fed7ec450818a2dd40b07"
 
 [[files]]
 file = "kubejs/assets/mca_dialogue_introverted/lang/ru_ru.json"
-hash = "86607295910678b11095678998c3db8a1e6005d256a2c95fdc57b6e1a0850bda"
+hash = "442c26fac74b3042573416af80c3a6f6fb3cf798842b3fb15503a8f95da54689"
 
 [[files]]
 file = "kubejs/assets/mca_dialogue_lazy/lang/ru_ru.json"
-hash = "7a7d56eee8dde4df00860262ed4da84b1a89beb5396bb5a706e51d5d8a9c169a"
+hash = "ac90c1c6c25a9397256b0042e110ce6cafa7a3be63ea0bf92b7d97806cdc5e9d"
 
 [[files]]
 file = "kubejs/assets/mca_dialogue_odd/lang/ru_ru.json"
-hash = "42fae7e9f35167eb566e85c85d90336e3de78e7bb7a8d6a6723418d7e487c470"
+hash = "b456cf864d37de2bea81033332623f64774b06b33e63a11d7be99722e71737ec"
 
 [[files]]
 file = "kubejs/assets/mca_dialogue_peaceful/lang/ru_ru.json"
-hash = "8f49242f2398e3b9a49ef11918e5acd6900b7ab29087143066e2eb8422d4be30"
+hash = "62f5b4e51cf4c75d958071181a1954d760af185d96bf3b2e571969f9e24e6ac3"
 
 [[files]]
 file = "kubejs/assets/mca_dialogue_peppy/lang/ru_ru.json"
-hash = "91415db467ccbf0f8b623bd5f3fc8e8cef0f2c214e5e9f0b6caefe25bf082480"
+hash = "8d5c2a7c6ed18c5e341d526312bcd47c195df208e331ce6df51d5764ee230e44"
 
 [[files]]
 file = "kubejs/assets/mca_dialogue_playful/lang/ru_ru.json"
-hash = "a2a1539a1cae3f9f2e3036b432bc1ebafc520800349693676ea13077d1251a32"
+hash = "8ec0700e0b3af93a0a318113957b9ccfd87d59bc5dd8f07ca31fbf93b38c91b7"
 
 [[files]]
 file = "kubejs/assets/mca_dialogue_relaxed/lang/ru_ru.json"
-hash = "f97b191f89fd8421b5ddb29ab681cd37651c3033d8c7e75fe20caca2a5845dbd"
+hash = "2817e82fe59e1b1de492c0177efa4ded3abe529888380cd44e6bc7f95388c775"
 
 [[files]]
 file = "kubejs/assets/mca_dialogue_sensitive/lang/ru_ru.json"
-hash = "723ee179086befc76963ca19793828da07f7040aea26af92935531db8bfd4387"
+hash = "f7217793a24147a99fdef2f694365b02ba48308387a76ae0b16b691ce3244fa4"
 
 [[files]]
 file = "kubejs/assets/mca_dialogue_shy/lang/ru_ru.json"
-hash = "69dc4094c10459bdb53a0b81b775b803abcf2425b1a03cac9fe28b3209216d0a"
+hash = "070cb9f1be78764e756b7e913c2678a1b4afafb8994a0ddabd2a9e9c4219cb6c"
 
 [[files]]
 file = "kubejs/assets/mca_dialogue_upbeat/lang/ru_ru.json"
-hash = "5bf2e655088949fd2b0f1dc08186b1c22c57ebb64c21bf4ce5b476970698a2e7"
+hash = "44bb7ecbde8505ae5d3d51bd9238adb04be9dc809a748ef2d362f5d27024e70a"
 
 [[files]]
 file = "kubejs/assets/mca_dialogue_witty/lang/ru_ru.json"
-hash = "77293ab01b204016590c843e450848008b8d51db2fe3beaeed6e5073d110e240"
+hash = "b7cecfcd08035ec03529634043205cf050a6c603ce1b100156a6c013db5d8917"
 
 [[files]]
 file = "kubejs/assets/mcacapitals/lang/ru_ru.json"
@@ -1307,7 +1307,7 @@ hash = "253a8d3c5773fbaf04f9e8085f41c98a9d936b2fd95542cef69c5a71a22f8c72"
 
 [[files]]
 file = "kubejs/assets/mcaconversations/lang/ru_ru.json"
-hash = "558de451318568172cf2164711bab746ddaa4dd6803d90f84412d0a856231b3e"
+hash = "ed4ccb29e0b02345a1a760834d2a1a1826c87549fd1edefbeddcb85c99e6af15"
 
 [[files]]
 file = "kubejs/assets/mctradepost/lang/ru_ru.json"
