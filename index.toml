@@ -1342,6 +1342,134 @@ file = "kubejs/assets/minecolonies/colony/stories/supplies.json"
 hash = "b9e31e150fec10514947f933d0dfc6d3d4633a6b11c66fd7846d76c472e82fd6"
 
 [[files]]
+file = "kubejs/assets/minecolonies/sounds/mob/citizen/female1/hi.ogg"
+hash = "3525b72683d1f548b5442db3907e45e100da008b3530c873374e81ed22ddd434"
+
+[[files]]
+file = "kubejs/assets/minecolonies/sounds/mob/citizen/female1/okay.ogg"
+hash = "5fe9a302c173bbf89990107e5c53a63131fbfa0a2a039b6e2cd1ac5d0f3f5eea"
+
+[[files]]
+file = "kubejs/assets/minecolonies/sounds/mob/citizen/female1/rightaway.ogg"
+hash = "69b2c0903cee37ea3f295c4bea0ec06b7d69e73591179d0947e28eda0439af32"
+
+[[files]]
+file = "kubejs/assets/minecolonies/sounds/mob/citizen/female1/whatisit.ogg"
+hash = "633c8805487b6c1b311844d953bf4417e3e8fd058eecb9d059f38f5aa5904029"
+
+[[files]]
+file = "kubejs/assets/minecolonies/sounds/mob/citizen/female2/canihelpyou0.ogg"
+hash = "a168eb4feec41be1725944709234a384e5ff33086e9ea9447e60a181ecf365eb"
+
+[[files]]
+file = "kubejs/assets/minecolonies/sounds/mob/citizen/female2/ifyousayso0.ogg"
+hash = "a2039725e2a056e7fe64fca7027d601033dff34a9708e98439a596c2d6a90040"
+
+[[files]]
+file = "kubejs/assets/minecolonies/sounds/mob/citizen/female2/illtakecareofit1.ogg"
+hash = "5e01e48e7862f03f4b2b3056ea43d0a9328b1cf975b0bd7beb47db681d09ad6e"
+
+[[files]]
+file = "kubejs/assets/minecolonies/sounds/mob/citizen/female2/yes0.ogg"
+hash = "bd474170645df8164363688c9147c763eadec837c8178b8fe0f556ca752a0df9"
+
+[[files]]
+file = "kubejs/assets/minecolonies/sounds/mob/citizen/female3/greattoseeyou.ogg"
+hash = "34d00bcc23bba34a4589bda86f7b766ca6b0ed062215b734b764263538ad5538"
+
+[[files]]
+file = "kubejs/assets/minecolonies/sounds/mob/citizen/female3/needsomething.ogg"
+hash = "a5d74380ea747b39878fde8ceaf776a191009ecd98929a411b7d374a5ae42db8"
+
+[[files]]
+file = "kubejs/assets/minecolonies/sounds/mob/citizen/female3/rightaway.ogg"
+hash = "ffa313b0975b902482efbff8866e54e81fc99a194cc213a8f99edf86c86da4f0"
+
+[[files]]
+file = "kubejs/assets/minecolonies/sounds/mob/citizen/female3/whatsittodaythen.ogg"
+hash = "736ba0c112ee0404e8c17ae177591df31ff47ea24b1824b87f7f6b81ba25e0e2"
+
+[[files]]
+file = "kubejs/assets/minecolonies/sounds/mob/citizen/female4/canihelpyou.ogg"
+hash = "98a2e4f704d173e4af7b8f3a9812e8c4dc6913c15c29cac6bf26b703f2806d1f"
+
+[[files]]
+file = "kubejs/assets/minecolonies/sounds/mob/citizen/female4/okay2.ogg"
+hash = "d113504c52a42a40fd2f1e6333d2848151c003485e58d67e8d1b666733385695"
+
+[[files]]
+file = "kubejs/assets/minecolonies/sounds/mob/citizen/female4/whatcanidoforyou.ogg"
+hash = "c63a85bb894f23f1a838ee24f2b38899501784210a04e7842ece50be60cc09e8"
+
+[[files]]
+file = "kubejs/assets/minecolonies/sounds/mob/citizen/female4/yes.ogg"
+hash = "e1a3486ea3bb5cee8e124a56d92c8bff8de861e188a9729b530992dcc7db8aad"
+
+[[files]]
+file = "kubejs/assets/minecolonies/sounds/mob/citizen/male1/hi.ogg"
+hash = "5015393449015a3c56ece4b5cc544d7820f90f54bece5a8bf624ada46c1af41f"
+
+[[files]]
+file = "kubejs/assets/minecolonies/sounds/mob/citizen/male1/okay.ogg"
+hash = "dd382e8d6d7dc3c5b8376de315a7f3fabb557d2653d6d97de4532ad4cd3cb127"
+
+[[files]]
+file = "kubejs/assets/minecolonies/sounds/mob/citizen/male1/tisafineday.ogg"
+hash = "b1a52f826363fd1584570f04e08e98b869201d6682497a628b086b4783a4bbbc"
+
+[[files]]
+file = "kubejs/assets/minecolonies/sounds/mob/citizen/male1/whatsittodaythen.ogg"
+hash = "db3726eebfb26e16b78a9b83de88b83a2126dd5d1dcd2f3df3b914888f5af922"
+
+[[files]]
+file = "kubejs/assets/minecolonies/sounds/mob/citizen/male2/gooddaytoyou.ogg"
+hash = "ccc4d10827a497343b3ecb18ec1b04feb6fb828b840528f8db7d2d76239db456"
+
+[[files]]
+file = "kubejs/assets/minecolonies/sounds/mob/citizen/male2/ifyousayso.ogg"
+hash = "1f4eb3e62e000891bf4a7a9336a57fbdaf4fb797d1127b781aa9980888085870"
+
+[[files]]
+file = "kubejs/assets/minecolonies/sounds/mob/citizen/male2/illtakecareofit.ogg"
+hash = "67eb3197d6a0ca7fd27eeaab139107e6e826f312e733bba9b119cdf81b92f412"
+
+[[files]]
+file = "kubejs/assets/minecolonies/sounds/mob/citizen/male2/whatisit.ogg"
+hash = "47349206231074029e7e3c45f8f0570b4e326794abdedf5e59fa83fa4d4d91b5"
+
+[[files]]
+file = "kubejs/assets/minecolonies/sounds/mob/citizen/male3/ifyousayso.ogg"
+hash = "f52fe8d40767cf047a91306074ca6d47e9185b9d675d85cf4d0a399160b1f453"
+
+[[files]]
+file = "kubejs/assets/minecolonies/sounds/mob/citizen/male3/isthereaproblem01.ogg"
+hash = "dbe9bbec6775a4e0ebacf741e24d1fb3153fc178db5d2a57a3ef24453db4e038"
+
+[[files]]
+file = "kubejs/assets/minecolonies/sounds/mob/citizen/male3/okay02.ogg"
+hash = "0a5928cc608e9f382a77c27793ae0db133257d90e66a23b716702b13e602735e"
+
+[[files]]
+file = "kubejs/assets/minecolonies/sounds/mob/citizen/male3/rightaway02.ogg"
+hash = "fd6bceaeaa0a2d95df594ae93be8315d3bc550461a478f84e080736bf82d5825"
+
+[[files]]
+file = "kubejs/assets/minecolonies/sounds/mob/citizen/male4/canihelpyou.ogg"
+hash = "95c69b6ebef36cc79a1a66ee4a0203d548bd34287f2ae922131f222eb6238401"
+
+[[files]]
+file = "kubejs/assets/minecolonies/sounds/mob/citizen/male4/goodtoseeya.ogg"
+hash = "c68372c93236f972e3f60499613d4398a018fe83fc11c20371bafbd175774be1"
+
+[[files]]
+file = "kubejs/assets/minecolonies/sounds/mob/citizen/male4/hi.ogg"
+hash = "2cf5339247bdf8be78eaafd4c449a72dd7e7ea3474562e1fb7d5a9092248675f"
+
+[[files]]
+file = "kubejs/assets/minecolonies/sounds/mob/citizen/male4/yeah.ogg"
+hash = "80e2272999c49ad42901a4e0044eb16634ba866d00e1e860213e461c8cff1fe5"
+
+[[files]]
 file = "kubejs/assets/minecolonies_compatibility/lang/ru_ru.json"
 hash = "db3962ab584dfc9457299e33f6c43d1ce45ead88db439bad0504bac12fd38149"
 
@@ -2321,7 +2449,7 @@ metafile = true
 
 [[files]]
 file = "mods/livingvoice.pw.toml"
-hash = "cb9181250d8a55bb7c886c43919d2bb3622b9c5242d61924606bbb03d5a99f49"
+hash = "51da72e76d18dac87199338f8435893cbca65a3632937af777f6e48d29871a2e"
 metafile = true
 
 [[files]]
