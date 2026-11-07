@@ -2665,6 +2665,11 @@ hash = "a0d823abe0f59e943433820b7564d69cc453aa64b0ca472d242bd92dcb7cb215"
 metafile = true
 
 [[files]]
+file = "mods/zmbridge.pw.toml"
+hash = "8972986a37b769210c48f801e2704278b28e5c103904a77fe47546f0c65c7a35"
+metafile = true
+
+[[files]]
 file = "options.txt"
 hash = "077bebe5394bcfe29d87997dc62be8cb4183c7a08de159acb423fb39cf4fb75f"
 preserve = true

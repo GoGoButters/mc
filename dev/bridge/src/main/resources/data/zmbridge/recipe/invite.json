@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    { "item": "minecraft:paper" },
+    { "item": "minecraft:emerald" },
+    { "item": "minecraft:feather" }
+  ],
+  "result": {
+    "id": "minecraft:paper",
+    "count": 1,
+    "components": {
+      "minecraft:custom_data": { "zmbridge_invite": true },
+      "minecraft:item_name": "{\"text\":\"Приглашение в колонию\",\"color\":\"gold\"}",
+      "minecraft:lore": [
+        "{\"text\":\"ПКМ по жителю деревни, который вам доверяет:\",\"color\":\"gray\",\"italic\":false}",
+        "{\"text\":\"он переедет в вашу колонию.\",\"color\":\"gray\",\"italic\":false}"
+      ],
+      "minecraft:enchantment_glint_override": true,
+      "minecraft:max_stack_size": 16
+    }
+  }
+}

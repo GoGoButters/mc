@@ -1,0 +1,8 @@
+name = "Settlement Bridge"
+filename = "zmbridge-0.1.0.jar"
+side = "server"
+
+[download]
+url = "https://gogobutters.github.io/mc/dist/server-mods/zmbridge-0.1.0.jar"
+hash-format = "sha512"
+hash = "7b24cd7f533bdd81087bf199a3b0fb3c906695397952ec4c30c257913865d8b4d40eeea9096da01b99da473739fab2089ee90d0cf463609c7c0e9393bf9dfdfc"

@@ -1,0 +1,8 @@
+{
+  "required": false,
+  "minVersion": "0.8",
+  "package": "ru.zhivoymir.bridge.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": ["ThiefSettleMixin"],
+  "injectors": { "defaultRequire": 0 }
+}
