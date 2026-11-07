@@ -739,7 +739,7 @@ hash = "fe1631c56842a0561c34f80bb0a8c1c8651b02a766f65bd587469f56403b3752"
 
 [[files]]
 file = "kubejs/assets/colonypathingedition/lang/ru_ru.json"
-hash = "53d72111ea4c40f91b3d5651974cfa20c329e3bd5538f735b808fd6b22fac24a"
+hash = "2330f52bf2d28bcf7b835ee964d1cdb1dd858866f54771c811597e1d61129594"
 
 [[files]]
 file = "kubejs/assets/combat_roll/lang/ru_ru.json"
@@ -1332,6 +1332,14 @@ hash = "e838f9eeab4f510339d8f34e897d40764f61fff2eb31747dc9de4bf44ecd331f"
 [[files]]
 file = "kubejs/assets/mezz_config/lang/ru_ru.json"
 hash = "0f2ae95e476af394053440e5434f4d10201dce3586a5566adf23acc6252a5e9f"
+
+[[files]]
+file = "kubejs/assets/minecolonies/colony/stories/abandonedcolonies.json"
+hash = "f7671e43f9c1a99df6dda851b44f62e9e66b376ff7055f4d4d14da6c07cd886c"
+
+[[files]]
+file = "kubejs/assets/minecolonies/colony/stories/supplies.json"
+hash = "b9e31e150fec10514947f933d0dfc6d3d4633a6b11c66fd7846d76c472e82fd6"
 
 [[files]]
 file = "kubejs/assets/minecolonies_compatibility/lang/ru_ru.json"
