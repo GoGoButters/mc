@@ -27,6 +27,7 @@ public final class LivingVoice {
     public static final ModConfigSpec.IntValue SILENCE_MS;
     public static final ModConfigSpec.BooleanValue COLONIST_VOICES;
     public static final ModConfigSpec.DoubleValue VOICE_DISTANCE;
+    public static final ModConfigSpec.ConfigValue<String> DUMP_DIR;
 
     static {
         ModConfigSpec.Builder b = new ModConfigSpec.Builder();
@@ -44,6 +45,8 @@ public final class LivingVoice {
                 .define("colonistVoices", true);
         VOICE_DISTANCE = b.comment("How far (blocks) colonist voices are heard.")
                 .defineInRange("voiceDistance", 24.0, 4.0, 64.0);
+        DUMP_DIR = b.comment("Debug: save every player phrase as WAV (48 kHz, as received) plus recognized text into this folder. Empty = off.")
+                .define("debugDumpDir", "");
         SPEC = b.build();
     }
 

@@ -42,6 +42,8 @@ public final class VoicePlugin implements VoicechatPlugin {
         short[] pcm = new short[RATE * 4];
         int len;
         long last;
+        int packets;
+        long maxGap;
         volatile Entity looked;
         volatile boolean anyone;
         volatile boolean targetKnown;
@@ -113,9 +115,12 @@ public final class VoicePlugin implements VoicechatPlugin {
             }
             if (p.len + frame.length > MAX_SAMPLES) return;
             if (p.len + frame.length > p.pcm.length) p.pcm = Arrays.copyOf(p.pcm, Math.min(MAX_SAMPLES, p.pcm.length * 2));
+            long now = System.currentTimeMillis();
+            if (p.len > 0) p.maxGap = Math.max(p.maxGap, now - p.last);
             System.arraycopy(frame, 0, p.pcm, p.len, frame.length);
             p.len += frame.length;
-            p.last = System.currentTimeMillis();
+            p.packets++;
+            p.last = now;
         }
     }
 
@@ -128,17 +133,22 @@ public final class VoicePlugin implements VoicechatPlugin {
             int len;
             Entity looked;
             boolean anyone;
+            String stats;
             synchronized (p) {
                 if (p.len == 0 || now - p.last < silence || !p.targetKnown) continue;
                 pcm = p.pcm;
                 len = p.len;
                 looked = p.looked;
                 anyone = p.anyone;
+                stats = p.packets + " packets, max gap " + p.maxGap + " ms";
                 p.pcm = new short[RATE * 4];
                 p.len = 0;
+                p.packets = 0;
+                p.maxGap = 0;
                 p.decoder.resetState();
             }
             ServerPlayer player = p.player;
+            String dump = Dump.save(player.getGameProfile().getName(), pcm, len, RATE, stats);
             if (len < MIN_SAMPLES) continue;
             if (!anyone) {
                 player.server.execute(() -> nobody(player));
@@ -146,6 +156,7 @@ public final class VoicePlugin implements VoicechatPlugin {
             }
             long t0 = System.currentTimeMillis();
             Http.recognize(Http.down48to16(pcm, len)).whenComplete((text, err) -> player.server.execute(() -> {
+                Dump.text(dump, err != null ? "ERROR " + err : text);
                 if (err != null) {
                     LivingVoice.LOG.warn("[livingvoice] STT failed: {}", err.toString());
                     player.displayClientMessage(Component.literal("Не удалось распознать речь: сервис недоступен").withStyle(ChatFormatting.RED), true);
@@ -156,8 +167,8 @@ public final class VoicePlugin implements VoicechatPlugin {
                     return;
                 }
                 Entity target = Targets.resolve(player, looked, text);
-                LivingVoice.LOG.info("[livingvoice] {} -> {} ({} s audio, STT {} ms): {}", player.getGameProfile().getName(),
-                        target == null ? "nobody" : target.getName().getString(), String.format("%.1f", len / (double) RATE),
+                LivingVoice.LOG.info("[livingvoice] {} -> {} ({} s audio, {}, STT {} ms): {}", player.getGameProfile().getName(),
+                        target == null ? "nobody" : target.getName().getString(), String.format("%.1f", len / (double) RATE), stats,
                         System.currentTimeMillis() - t0, text);
                 if (target == null) {
                     nobody(player);

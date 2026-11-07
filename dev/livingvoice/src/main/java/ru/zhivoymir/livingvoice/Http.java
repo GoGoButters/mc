@@ -78,10 +78,34 @@ public final class Http {
         });
     }
 
-    /** 48 кГц -> 16 кГц: среднее по тройкам отсчётов (грубый ФНЧ перед прореживанием). */
+    /** ФНЧ 7 кГц для 48 кГц: окно Блэкмана, 63 отсчёта (подавляет наложение выше 8 кГц при прореживании). */
+    private static final double[] LOWPASS = new double[63];
+
+    static {
+        int n = LOWPASS.length, m = n / 2;
+        double fc = 7000.0 / 48000, sum = 0;
+        for (int i = 0; i < n; i++) {
+            int k = i - m;
+            double sinc = k == 0 ? 2 * fc : Math.sin(2 * Math.PI * fc * k) / (Math.PI * k);
+            double w = 0.42 - 0.5 * Math.cos(2 * Math.PI * i / (n - 1)) + 0.08 * Math.cos(4 * Math.PI * i / (n - 1));
+            sum += LOWPASS[i] = sinc * w;
+        }
+        for (int i = 0; i < n; i++) LOWPASS[i] /= sum;
+    }
+
+    /** 48 кГц -> 16 кГц: ФНЧ и каждый третий отсчёт. */
     public static short[] down48to16(short[] in, int len) {
         short[] out = new short[len / 3];
-        for (int i = 0; i < out.length; i++) out[i] = (short) ((in[3 * i] + in[3 * i + 1] + in[3 * i + 2]) / 3);
+        int m = LOWPASS.length / 2;
+        for (int o = 0; o < out.length; o++) {
+            int c = 3 * o;
+            double acc = 0;
+            for (int i = 0; i < LOWPASS.length; i++) {
+                int j = c + i - m;
+                if (j >= 0 && j < len) acc += LOWPASS[i] * in[j];
+            }
+            out[o] = (short) Math.max(Short.MIN_VALUE, Math.min(Short.MAX_VALUE, Math.round(acc)));
+        }
         return out;
     }
 
