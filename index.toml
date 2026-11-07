@@ -2723,11 +2723,6 @@ hash = "4dbc8f0c60584c9d82db94f3cde7350f87d3847683f4ecf6f45ba744f17adc31"
 metafile = true
 
 [[files]]
-file = "mods/towntalk.pw.toml"
-hash = "a7074e8e499d34f5ce633dbd33f818e376dd1941ec5b1d97a33acd019df69b5a"
-metafile = true
-
-[[files]]
 file = "mods/villager-recruits.pw.toml"
 hash = "7232dbb03d90defb2405f87bb1f5bb9e637f2ed98b819c7970adccc023a94cf8"
 metafile = true
