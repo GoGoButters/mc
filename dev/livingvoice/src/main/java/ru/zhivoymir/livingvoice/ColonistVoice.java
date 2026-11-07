@@ -21,6 +21,9 @@ public final class ColonistVoice {
     private static volatile CompletableFuture<List<String[]>> voices;
     /** Очередь реплик каждого колониста, чтобы он не говорил двумя голосами сразу. */
     private static final Map<String, CompletableFuture<Void>> QUEUES = new ConcurrentHashMap<>();
+    private static final Map<String, Integer> PENDING = new ConcurrentHashMap<>();
+    /** Больше реплик в очереди колониста не копим: болтливый колонист не должен отставать на минуты. */
+    private static final int MAX_PENDING = 3;
 
     private ColonistVoice() {
     }
@@ -28,6 +31,7 @@ public final class ColonistVoice {
     static void reset() {
         voices = null;
         QUEUES.clear();
+        PENDING.clear();
     }
 
     /** Вызывается из ChatSpeechOutputMixin в серверном потоке; near — игрок рядом (для измерения колонии). */
@@ -47,7 +51,11 @@ public final class ColonistVoice {
         channel.setDistance(LivingVoice.VOICE_DISTANCE.get().floatValue());
         String key = speaker.colonyId() + ":" + speaker.citizenId();
         boolean female = citizen.isFemale();
-        QUEUES.compute(key, (k, tail) -> (tail == null ? CompletableFuture.<Void>completedFuture(null) : tail)
+        if (PENDING.merge(key, 1, Integer::sum) > MAX_PENDING) {
+            PENDING.merge(key, -1, Integer::sum);
+            return;
+        }
+        CompletableFuture<Void> next = QUEUES.compute(key, (k, tail) -> (tail == null ? CompletableFuture.<Void>completedFuture(null) : tail)
                 .thenCompose(v -> voiceFor(key, female))
                 .thenCompose(voice -> Http.speak(text, voice))
                 .thenCompose(pcm -> play(api, channel, Http.resample(pcm, 22050, 48000)))
@@ -55,12 +63,20 @@ public final class ColonistVoice {
                     LivingVoice.LOG.warn("[livingvoice] colonist voice failed: {}", err.toString());
                     return null;
                 }));
+        next.whenComplete((v, err) -> {
+            PENDING.computeIfPresent(key, (k, n) -> n > 1 ? n - 1 : null);
+            QUEUES.remove(key, next);
+        });
     }
 
     /** Постоянный голос колониста: по его номеру из голосов нужного пола. */
+    private static synchronized CompletableFuture<List<String[]>> voiceList() {
+        if (voices == null || voices.isCompletedExceptionally()) voices = Http.voices();
+        return voices;
+    }
+
     private static CompletableFuture<String> voiceFor(String key, boolean female) {
-        CompletableFuture<List<String[]>> v = voices;
-        if (v == null || v.isCompletedExceptionally()) voices = v = Http.voices();
+        CompletableFuture<List<String[]>> v = voiceList();
         return v.thenApply(all -> {
             List<String> same = new ArrayList<>();
             for (String[] x : all) if (x[1].equals(female ? "female" : "male")) same.add(x[0]);

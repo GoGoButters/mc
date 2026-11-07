@@ -75,7 +75,7 @@ final class McaBridge {
         long t0 = System.currentTimeMillis();
         CompletableFuture.runAsync(() -> ChatAI.answer(player, villager, text).ifPresent(a -> {
             LivingVoice.LOG.info("[livingvoice] {} answered in {} ms: {}", villager.getName().getString(), System.currentTimeMillis() - t0, a);
-            villager.conversationManager.addMessage(player, Component.literal(a));
+            player.server.execute(() -> villager.conversationManager.addMessage(player, Component.literal(a)));
         })).exceptionally(err -> {
             LivingVoice.LOG.warn("[livingvoice] MCA answer failed", err);
             return null;

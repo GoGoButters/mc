@@ -2313,7 +2313,7 @@ metafile = true
 
 [[files]]
 file = "mods/livingvoice.pw.toml"
-hash = "eee1afcd14bcbff4dd3860a45941e0d7eaa783342d149deeb4f9eaf217f8ee70"
+hash = "b666ccd10fbedc7670abed9874ce9dc46c72acf2ef0cabc85e594196246aaac1"
 metafile = true
 
 [[files]]

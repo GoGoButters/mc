@@ -1,8 +1,8 @@
 name = "Living Voice"
-filename = "livingvoice-1.0.0.jar"
+filename = "livingvoice-1.0.1.jar"
 side = "server"
 
 [download]
-url = "https://gogobutters.github.io/mc/dist/server-mods/livingvoice-1.0.0.jar"
+url = "https://gogobutters.github.io/mc/dist/server-mods/livingvoice-1.0.1.jar"
 hash-format = "sha512"
-hash = "3ba68bb18c0494160aa235fd6905930dfcd5d150709a7f005e5da01fb3e49c30dc7e6740b9b6e4a2792a454f4184da1add486d2e7ea68a61436fecfe665c412c"
+hash = "301b49a7bdeb01e0032b7d7ec890ea91caae600a4a4384411adbb76f00dd1f4fa7e7a9b785cbe4bf96ba79e0fe5c6ae1c0ae90281459ce4bee71aa00f14229a1"

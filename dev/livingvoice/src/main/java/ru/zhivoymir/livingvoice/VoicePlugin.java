@@ -89,11 +89,12 @@ public final class VoicePlugin implements VoicechatPlugin {
 
     private void onMicrophone(MicrophonePacketEvent e) {
         VoicechatConnection con = e.getSenderConnection();
-        if (con == null || api == null || LivingVoice.STT_URL.get().isEmpty()) return;
+        VoicechatServerApi a = api;
+        if (con == null || a == null || LivingVoice.STT_URL.get().isEmpty()) return;
         if (!(con.getPlayer().getPlayer() instanceof ServerPlayer player)) return;
         byte[] opus = e.getPacket().getOpusEncodedData();
         if (opus.length == 0) return;
-        Phrase p = PHRASES.computeIfAbsent(player.getUUID(), id -> new Phrase(player, api.createDecoder()));
+        Phrase p = PHRASES.computeIfAbsent(player.getUUID(), id -> new Phrase(player, a.createDecoder()));
         synchronized (p) {
             if (p.len == 0) {  // начало фразы: кому игрок говорит — тот, на кого смотрит сейчас
                 p.targetKnown = false;
@@ -103,7 +104,13 @@ public final class VoicePlugin implements VoicechatPlugin {
                     p.targetKnown = true;
                 });
             }
-            short[] frame = p.decoder.decode(opus);
+            short[] frame;
+            try {
+                frame = p.decoder.decode(opus);
+            } catch (Exception ex) {  // битый пакет не должен ломать голосовой чат
+                LivingVoice.LOG.debug("[livingvoice] opus decode failed: {}", ex.toString());
+                return;
+            }
             if (p.len + frame.length > MAX_SAMPLES) return;
             if (p.len + frame.length > p.pcm.length) p.pcm = Arrays.copyOf(p.pcm, Math.min(MAX_SAMPLES, p.pcm.length * 2));
             System.arraycopy(frame, 0, p.pcm, p.len, frame.length);
@@ -119,18 +126,21 @@ public final class VoicePlugin implements VoicechatPlugin {
         for (Phrase p : PHRASES.values()) {
             short[] pcm;
             int len;
+            Entity looked;
+            boolean anyone;
             synchronized (p) {
                 if (p.len == 0 || now - p.last < silence || !p.targetKnown) continue;
                 pcm = p.pcm;
                 len = p.len;
+                looked = p.looked;
+                anyone = p.anyone;
                 p.pcm = new short[RATE * 4];
                 p.len = 0;
                 p.decoder.resetState();
             }
-            Entity looked = p.looked;
             ServerPlayer player = p.player;
             if (len < MIN_SAMPLES) continue;
-            if (!p.anyone) {
+            if (!anyone) {
                 player.server.execute(() -> nobody(player));
                 continue;
             }
