@@ -11074,6 +11074,46 @@ file = "kubejs/assets/yungsapi/lang/ru_ru.json"
 hash = "699131728660e5287ceddc972ddff6d1aa5f5304119ad657532b114c8de69cf8"
 
 [[files]]
+file = "kubejs/assets/zhivoymir/guideme_guides/start.json"
+hash = "f36587cf1753595900753745abba0e9a60b5a6f9f6a9475fc492a1b1f5d74d78"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/colony-and-village.md"
+hash = "166122339909cac59312b004430e143cbd248d207c09854dd825d2f77de185f2"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/colony.md"
+hash = "e2ed90f307ded75233fd48e761f32364ebefce3a47d20a54c882618a6f855086"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/commands.md"
+hash = "1666434121ab68c8ba6119df367257785689e25fe63807d9f9a5dd663bb5ae76"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/first-steps.md"
+hash = "772f47189e4958f0f7789256ed966719a1cd5676bb099a8fd3313a31e8747700"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/god.md"
+hash = "a4a2d5e306f6f579e838840968a79c311c9e4e5e6d0a23662457e7a9d31111b1"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/index.md"
+hash = "7a020a8bcffd3cc8bbc7ca1415d30ac3961953d3fad5ed1913940f772dffe466"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/neighbors.md"
+hash = "df0cda631f287f7c2bc5b59f1eba58a28c4c7bda94f7ec177b10922c91dedfda"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/village.md"
+hash = "77f8d5b98e22e9ef35ac4187792b2974eb5ddd4d4c9ee7a00282ad19767f9b11"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/lang/ru_ru.json"
+hash = "034b8f9758f40dee1280b76810952e383a5322c74ff3e16357b9597b2bd046c4"
+
+[[files]]
 file = "kubejs/data/ad_astra/tags/entity_type/can_survive_extreme_cold.json"
 hash = "94684e022dd1be4e6827a99794e226aba9c15763dc08ffd1bdb72bdc804f9fb4"
 
@@ -11088,6 +11128,10 @@ hash = "94684e022dd1be4e6827a99794e226aba9c15763dc08ffd1bdb72bdc804f9fb4"
 [[files]]
 file = "kubejs/data/ad_astra/tags/entity_type/lives_without_oxygen.json"
 hash = "94684e022dd1be4e6827a99794e226aba9c15763dc08ffd1bdb72bdc804f9fb4"
+
+[[files]]
+file = "kubejs/server_scripts/guide.js"
+hash = "b59a342c00cd2f0d1d40692d013e490ad68762be74b6463e7bf7853daea3c464"
 
 [[files]]
 file = "mods/ad-astra.pw.toml"
