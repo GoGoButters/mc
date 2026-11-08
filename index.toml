@@ -11838,7 +11838,7 @@ metafile = true
 
 [[files]]
 file = "mods/zmclient.pw.toml"
-hash = "b2b9fb0c24c49345b5825cc03979b927a6d79874114fdea4c2e2b86ff5bee2e2"
+hash = "ac07f213c041c2571c9aabf25577118f22252422aa234ce52a6283d4e6a5b95b"
 metafile = true
 
 [[files]]
