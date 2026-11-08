@@ -11930,7 +11930,7 @@ metafile = true
 
 [[files]]
 file = "mods/zmclient.pw.toml"
-hash = "786e9a7d36140545258ea1fdcfcab803d958a627b5b809cbc1ea6320ba36a584"
+hash = "be799765382680f04741c8449f2053a43c41e89451a5eee8fbcbd57e9a293fc9"
 metafile = true
 
 [[files]]
@@ -11940,7 +11940,7 @@ metafile = true
 
 [[files]]
 file = "options.txt"
-hash = "b7713fe4bc21dbc464bae5dfb99d1b8bb3c60980994e8c9c63f93c610022cd7e"
+hash = "c1cd771f48853d1442e6d92834c27bfe55b99460a97fdb76cac8ed5df711464a"
 preserve = true
 
 [[files]]
