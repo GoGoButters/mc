@@ -1161,7 +1161,7 @@
   "sensitive.dialogue.conversations.work.young.dismiss/1": "...Для меня — важно, %1$s. Это почти всё, что у меня есть.",
   "sensitive.dialogue.conversations.work.young.dismiss/2": "Верно. Да. Мелочь. Знаю, как это выглядит со стороны.",
   "sensitive.dialogue.conversations.work.young.dismiss/3": "...Больше не стану тебе об этом рассказывать.",
-  "sensitive.dialogue.conversations/1": "Конечно, можем поговорить. Похоже, у тебя тоже что-то на душе — давай поделимся. О чём ты думаешь?",
-  "sensitive.dialogue.conversations/2": "Да, давай. Присядь. Я заметил, ты привык держать всё в себе. Я тоже.",
-  "sensitive.dialogue.conversations/3": "Всегда. Что бы это ни было, я выслушаю тебя бережно. Продолжай."
+  "sensitive.dialogue.conversations/1": "Я здесь. Говори, что на душе.",
+  "sensitive.dialogue.conversations/2": "Не спеши. Мне важно всё услышать.",
+  "sensitive.dialogue.conversations/3": "Расскажи всё, я выслушаю бережно."
 }
