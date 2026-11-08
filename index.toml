@@ -6,6 +6,10 @@ hash = "e39b59d05d172f7f63c50d75d11e9704070809348cf1b200f51c32ab71153551"
 preserve = true
 
 [[files]]
+file = "config/fallingtree.json"
+hash = "d95b4b1bc275a03703b3ff02c6a0dca1b44a76e8228b5429b363c7e19a47f854"
+
+[[files]]
 file = "config/fancymenu/customization/zhivoy_mir_title.txt"
 hash = "ad928499d6f4c89cd87bf886940af12f07b6a99eac493dddf3ca20782e4fdc46"
 
@@ -804,6 +808,10 @@ hash = "56514802cec1d9c0e71db31e67a4df0e906c79ade9d8c1f39939f95c08123620"
 [[files]]
 file = "kubejs/assets/entityculling/lang/ru_ru.json"
 hash = "3225a33b1b343787a09e21fe80dff7724992c6115454dafc68da9942ecd1f2a2"
+
+[[files]]
+file = "kubejs/assets/fallingtree/lang/ru_ru.json"
+hash = "62d56821cd8fa925ab3efadefd5fcde55c93170127af5fdff14f77003c664dcf"
 
 [[files]]
 file = "kubejs/assets/fancymenu/lang/ru_ru.json"
