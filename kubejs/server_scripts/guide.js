@@ -5,7 +5,7 @@ console.info('[zhivoymir] guide.js loaded');
 const GUIDE_ITEM = Item.of('guideme:guide[guideme:guide_id="zhivoymir:start"]');
 const GUIDE_FLAG = 'zm_guide_given';
 
-// Выдать книгу разово при первом входе в мир.
+// Выдать книгу и стартовый лагерь MineColonies разово при первом входе в мир.
 PlayerEvents.loggedIn(event => {
     const player = event.player;
     const data = player.persistentData;
@@ -13,10 +13,11 @@ PlayerEvents.loggedIn(event => {
     data.putBoolean(GUIDE_FLAG, true); // отметить заранее, чтобы не задвоить при сбое
 
     player.give(GUIDE_ITEM.copy());
+    player.give(Item.of('minecolonies:supplycampdeployer'));
     player.tell([
-        { text: 'Получена книга «', color: 'dark_green' },
+        { text: 'Получены книга «', color: 'dark_green' },
         { text: 'Живой мир: Летопись странника', color: 'gold' },
-        { text: '». Открой её (ПКМ) и начни свой путь. Если потерял — введи /guide.', color: 'dark_green' },
+        { text: '» и стартовый лагерь колонии. Открой книгу (ПКМ) и начни свой путь. Если потерял книгу — введи /guide.', color: 'dark_green' },
     ]);
     console.info('[zhivoymir] выдана книга новичка игроку ' + player.username);
 });

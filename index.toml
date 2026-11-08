@@ -6,6 +6,10 @@ hash = "e39b59d05d172f7f63c50d75d11e9704070809348cf1b200f51c32ab71153551"
 preserve = true
 
 [[files]]
+file = "config/bountiful/bountiful.json"
+hash = "f4cfb8881b612b44d4414a94cd365e82f6f0e5638d870115fe4ae7fb446b761c"
+
+[[files]]
 file = "config/fallingtree.json"
 hash = "d95b4b1bc275a03703b3ff02c6a0dca1b44a76e8228b5429b363c7e19a47f854"
 
@@ -16,6 +20,14 @@ hash = "ad928499d6f4c89cd87bf886940af12f07b6a99eac493dddf3ca20782e4fdc46"
 [[files]]
 file = "config/mca.json"
 hash = "8d21ab2f9675ef26f62a2bba6b4478699bf3184ab5315502be8056889c0dfe89"
+
+[[files]]
+file = "config/recruits-server.toml"
+hash = "a012e75b41f176158a9ab73729c9e26e5149b51d37f51c747d1ba4505e1dc371"
+
+[[files]]
+file = "config/warntax/minecolonytax.toml"
+hash = "8a50be670be2eca51fa94323973c1f3209ce6c3b6959468d6dad5afb2f686d65"
 
 [[files]]
 file = "kubejs/assets/ad_astra/lang/ru_ru.json"
@@ -864,6 +876,10 @@ hash = "2ba98e4b3e6cea39773f4c4757b8135aec8600d362bea0573cffb488e1fda175"
 [[files]]
 file = "kubejs/assets/lionfishapi/lang/ru_ru.json"
 hash = "8e0ee0d12e22485ba0875864c5f35a4fec681cbd6d834bf68f6d8f07d114bbe8"
+
+[[files]]
+file = "kubejs/assets/livingcolonists/lang/ru_ru.json"
+hash = "a9e06edc0e5a7ffc1604ba31f66b2cc3c70fc229548c99365ecd41862734b9ca"
 
 [[files]]
 file = "kubejs/assets/mca/lang/ru_ru.json"
@@ -10802,10 +10818,6 @@ file = "kubejs/assets/numismatics/lang/ru_ru.json"
 hash = "09f89d6cb582c704ef263f6c9e6debad3ca82ea0af4b724bc2dd17ac8721b30b"
 
 [[files]]
-file = "kubejs/assets/paperdoll/lang/ru_ru.json"
-hash = "e2d028e65b171b470a589a56247f9714406c31d4e45583f4649f2617f105ec26"
-
-[[files]]
 file = "kubejs/assets/ponder/lang/ru_ru.json"
 hash = "288944ffb6195f26f1532526332b61655321c237cad150c62c74e138dfc85cae"
 
@@ -11079,35 +11091,63 @@ hash = "f36587cf1753595900753745abba0e9a60b5a6f9f6a9475fc492a1b1f5d74d78"
 
 [[files]]
 file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/colony-and-village.md"
-hash = "166122339909cac59312b004430e143cbd248d207c09854dd825d2f77de185f2"
+hash = "5bb0b6caf46eb26639e36f73a2a72c7c800d1bb98084cf0e2529c2c64d74961c"
 
 [[files]]
 file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/colony.md"
-hash = "e2ed90f307ded75233fd48e761f32364ebefce3a47d20a54c882618a6f855086"
+hash = "fc539dc441c63b4787e442f995f309f17a34b601ac9b4fad19f328626128128f"
 
 [[files]]
 file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/commands.md"
-hash = "1666434121ab68c8ba6119df367257785689e25fe63807d9f9a5dd663bb5ae76"
+hash = "6845ec9f2c46a1ef80ae269edb6bdd1d28068fc00f7aeb936b094f3f852e7b0a"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/economy.md"
+hash = "08679af873e0b2429fb01f41fe38ec3e9d72cbb5012f01ba741733b1c8816554"
 
 [[files]]
 file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/first-steps.md"
-hash = "772f47189e4958f0f7789256ed966719a1cd5676bb099a8fd3313a31e8747700"
+hash = "1d87701b4e242f42fbfc63fbe0ee67ef1b3177b6c36ffcb4a32d7be0239a3828"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/foreign-villages.md"
+hash = "3f09265f3a6078e52a7fa10aa5413f4bd4be3a74696044e6c91ed9ff7d14ce47"
 
 [[files]]
 file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/god.md"
-hash = "a4a2d5e306f6f579e838840968a79c311c9e4e5e6d0a23662457e7a9d31111b1"
+hash = "80cb7a9daa0fe744a0b4fe54b006f836cfd2079487808c554f5d8ca889267b18"
 
 [[files]]
 file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/index.md"
-hash = "7a020a8bcffd3cc8bbc7ca1415d30ac3961953d3fad5ed1913940f772dffe466"
+hash = "0f5c878f28750b726ad582a574d18ee01299e4aee63edc94c308ccabea72cf1a"
 
 [[files]]
 file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/neighbors.md"
-hash = "df0cda631f287f7c2bc5b59f1eba58a28c4c7bda94f7ec177b10922c91dedfda"
+hash = "46d9492b0ebad1548d75080d126f5e08cfd878f2335c635aa23fbc83e954422b"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/peace.md"
+hash = "9c1044cbed1abb0343e6bb7050da1b14c64123c0d900553b7d7b18fd66ca4e40"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/recruits.md"
+hash = "e2cc86f2e2515a0399eac9b07eec363de21ebd836bd8c3a3f37d8bca7134d90e"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/trade.md"
+hash = "5e1c4e79b55715021355b82a89b97de079198873a3458019006e2ff9778b5bfc"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/treasury.md"
+hash = "ef0d0e0b87a7e7596681b4c473975e6fe1761c9e358746acbf1bac2c4a8b8b94"
 
 [[files]]
 file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/village.md"
-hash = "77f8d5b98e22e9ef35ac4187792b2974eb5ddd4d4c9ee7a00282ad19767f9b11"
+hash = "d94e2f816d84303e51d3f677e136ed32bc1c043385676f8c3e01a7105ec76a9c"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/war.md"
+hash = "d868c0034ee8956e6f5100785dce493c07f799b7dc826abf5108bed1f83b90f6"
 
 [[files]]
 file = "kubejs/assets/zhivoymir/lang/ru_ru.json"
@@ -11131,7 +11171,7 @@ hash = "94684e022dd1be4e6827a99794e226aba9c15763dc08ffd1bdb72bdc804f9fb4"
 
 [[files]]
 file = "kubejs/server_scripts/guide.js"
-hash = "b59a342c00cd2f0d1d40692d013e490ad68762be74b6463e7bf7853daea3c464"
+hash = "b1d65fdb8df470ec5ce60bc12c2eb38c3b80e4564fc185febb9fe87a21110d4f"
 
 [[files]]
 file = "mods/ad-astra.pw.toml"
@@ -11676,11 +11716,6 @@ metafile = true
 [[files]]
 file = "mods/numismatics.pw.toml"
 hash = "840eb517a83c586b9f543ab9781d4c8529b6fedf2d679f411577c7a583e50fe5"
-metafile = true
-
-[[files]]
-file = "mods/paperdoll.pw.toml"
-hash = "36311df8fa99de88ced7ba5d9f77da00ee0e2b6d7f8bd7e3c45f25cebb57c2e6"
 metafile = true
 
 [[files]]

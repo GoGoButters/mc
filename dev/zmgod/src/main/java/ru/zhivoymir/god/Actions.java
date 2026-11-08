@@ -271,7 +271,12 @@ final class Actions {
                 long sinceCurse = now - data.mark("curse|" + id);
                 if (data.faith(id) > INVASION_FAITH || sinceCurse < CURSE_TO_INVASION_MIN || sinceCurse > CURSE_TO_INVASION_MAX)
                     return "отклонено: нашествие на " + targetName + " — нужна вера ≤ " + INVASION_FAITH + " и недавнее проклятие";
-                if (target.serverLevel().getDifficulty() == Difficulty.PEACEFUL) return "отклонено: нашествие — мирная сложность";
+                if (target.serverLevel().getDifficulty() == Difficulty.PEACEFUL) {
+                    // На мирной чудовища исчезают сразу — вместо нашествия тяжкая кара.
+                    desc = "кара вместо нашествия (мирная сложность) → " + targetName;
+                    r = () -> wrath(target);
+                    break;
+                }
                 int count = clamp(num(a, "count", 3), 2, 5);
                 desc = "нашествие " + str(a, "mob") + " ×" + count + " на " + targetName;
                 r = () -> invasion(target, mob, count);
@@ -335,6 +340,19 @@ final class Actions {
             level.addFreshEntity(mob);
         }
         p.displayClientMessage(Component.literal("Земля дрогнула под ногами…").withStyle(ChatFormatting.DARK_RED, ChatFormatting.ITALIC), true);
+    }
+
+    /** Кара на мирной сложности: проклятия второй степени на 8 минут, тьма и молния-знамение. */
+    private static void wrath(ServerPlayer p) {
+        int ticks = 8 * (int) MIN;
+        p.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, ticks, 1));
+        p.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, ticks, 1));
+        p.addEffect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN, ticks, 1));
+        p.addEffect(new MobEffectInstance(MobEffects.HUNGER, ticks, 1));
+        p.addEffect(new MobEffectInstance(MobEffects.DARKNESS, (int) MIN, 0));
+        omen(p, "lightning");
+        sparkle(p, false);
+        p.displayClientMessage(Component.literal("Небеса отвернулись от тебя…").withStyle(ChatFormatting.DARK_RED, ChatFormatting.ITALIC), true);
     }
 
     /** Точка на поверхности в кольце [min, max] блоков от игрока. */
