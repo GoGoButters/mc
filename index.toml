@@ -862,6 +862,10 @@ file = "kubejs/assets/mca/lang/ru_ru.json"
 hash = "e2334c86e9594e0a82e448b16b9981da0732fb62fe11463a4d5229c620131343"
 
 [[files]]
+file = "kubejs/assets/mca/sounds.json"
+hash = "7c74ef6052f74d87d6a20e02c1309e02a4b952263a2a082892234cb0cc8900fd"
+
+[[files]]
 file = "kubejs/assets/mca/sounds/villager/female/greet/greet1.ogg"
 hash = "7723e23b4103bf561c0db72522a3eb3788b2b60d9fcf0a26e277c6a6830b9337"
 
@@ -1343,7 +1347,7 @@ hash = "b9e31e150fec10514947f933d0dfc6d3d4633a6b11c66fd7846d76c472e82fd6"
 
 [[files]]
 file = "kubejs/assets/minecolonies/sounds.json"
-hash = "4a52c9598ecf0d161476fbc93c76939ab7391a3feea72ebdd9bab002e3dfbb76"
+hash = "9681106ed8ab31c9d41e443934dc26f8652207b9b3039cd9b2f6541ef43253a2"
 
 [[files]]
 file = "kubejs/assets/minecolonies/sounds/female1/builder/buildbuild.ogg"
@@ -11830,6 +11834,11 @@ metafile = true
 [[files]]
 file = "mods/zmbridge.pw.toml"
 hash = "8972986a37b769210c48f801e2704278b28e5c103904a77fe47546f0c65c7a35"
+metafile = true
+
+[[files]]
+file = "mods/zmclient.pw.toml"
+hash = "b2b9fb0c24c49345b5825cc03979b927a6d79874114fdea4c2e2b86ff5bee2e2"
 metafile = true
 
 [[files]]
