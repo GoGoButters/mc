@@ -11342,6 +11342,11 @@ hash = "426238488c9ffd843f661f8bc74aa8e585fa6b4d342c43c4ba4cb8451298b725"
 metafile = true
 
 [[files]]
+file = "mods/fallingtree.pw.toml"
+hash = "7d61ad815f97afb27f7e97475e80376aa19fecf25a1b04a500a4c3a6e5055973"
+metafile = true
+
+[[files]]
 file = "mods/fancymenu.pw.toml"
 hash = "88afe523b3bc1fed6bd53b6608f0450e9891c8fe25e786a9893243064f8c7e7f"
 metafile = true
@@ -11833,7 +11838,7 @@ metafile = true
 
 [[files]]
 file = "mods/zmbridge.pw.toml"
-hash = "8972986a37b769210c48f801e2704278b28e5c103904a77fe47546f0c65c7a35"
+hash = "171caf4ca27a5448f0fcaad6d15b6c192bbf503b4151ba81428f62de21a44506"
 metafile = true
 
 [[files]]

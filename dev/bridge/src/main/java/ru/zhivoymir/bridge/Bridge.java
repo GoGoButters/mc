@@ -3,6 +3,7 @@ package ru.zhivoymir.bridge;
 import com.minecolonies.api.IMinecoloniesAPI;
 import com.minecolonies.api.eventbus.events.colony.ColonyCreatedModEvent;
 import com.mojang.logging.LogUtils;
+import net.neoforged.bus.api.EventPriority;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
@@ -11,6 +12,8 @@ import net.neoforged.neoforge.common.ModConfigSpec;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.RegisterCommandsEvent;
 import net.neoforged.neoforge.event.entity.living.LivingDeathEvent;
+import net.neoforged.neoforge.event.level.BlockEvent;
+import net.neoforged.neoforge.event.tick.ServerTickEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
 import net.neoforged.neoforge.event.server.ServerStartedEvent;
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
@@ -19,7 +22,7 @@ import org.slf4j.Logger;
 /**
  * Мост поселений: связывает деревни MCA и колонии MineColonies.
  * Предупреждает о колонии у самой деревни, переселяет доверяющих жителей в колонию, ведёт общую репутацию
- * (стражи колонии защищают деревню, воры колонии её грабят).
+ * (стражи колонии защищают деревню, воры колонии её грабят). Заодно сажает саженец на месте срубленного дерева.
  */
 @Mod(Bridge.MOD_ID)
 public final class Bridge {
@@ -37,6 +40,7 @@ public final class Bridge {
     public static final ModConfigSpec.IntValue GUARD_KILL_DAILY_CAP;
     public static final ModConfigSpec.IntValue GUARD_KILL_MARGIN;
     public static final ModConfigSpec.IntValue THEFT_PENALTY;
+    public static final ModConfigSpec.BooleanValue REPLANT;
 
     static {
         ModConfigSpec.Builder b = new ModConfigSpec.Builder();
@@ -60,6 +64,8 @@ public final class Bridge {
                 .defineInRange("guardKillMargin", 32, 0, 256);
         THEFT_PENALTY = b.comment("Reputation lost by the colony owner when a Colonist Thieves heist on a village is spotted (doubled when the thief is caught).")
                 .defineInRange("theftPenalty", 30, 0, 100000);
+        REPLANT = b.comment("When a player fells a natural tree from its base (FallingTree), plant a sapling of the same kind in the stump's place (taken from the drops, else from the player's inventory).")
+                .define("replantSaplings", true);
         SPEC = b.build();
     }
 
@@ -72,6 +78,8 @@ public final class Bridge {
         });
         NeoForge.EVENT_BUS.addListener(Relocation::onEntityInteract);
         NeoForge.EVENT_BUS.addListener((LivingDeathEvent e) -> Reputation.onDeath(e));
+        NeoForge.EVENT_BUS.addListener(EventPriority.LOWEST, (BlockEvent.BreakEvent e) -> Replant.onBreak(e));
+        NeoForge.EVENT_BUS.addListener((ServerTickEvent.Post e) -> Replant.onTick(e));
         NeoForge.EVENT_BUS.addListener((ServerStartedEvent e) -> {
             if (subscribed) return;
             subscribed = true;
