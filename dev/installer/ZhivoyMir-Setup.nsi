@@ -4,6 +4,7 @@
 !define MUI_UNICON "files\ZhivoyMir.ico"
 !include "nsDialogs.nsh"
 !include "LogicLib.nsh"
+!include "WordFunc.nsh"
 !include "WinMessages.nsh"
 !include "x64.nsh"
 
@@ -176,6 +177,26 @@ FunctionEnd
 
 ; ---------- загрузка и распаковка ----------
 
+; Push папка — ставит Java 21 (Temurin) в <папка>\java, если там нет ровно этой версии
+Function InstallJava
+  Exch $R7
+  ${IfNot} ${FileExists} "$R7\java\zm-${JRE_DIR}"
+    Push "${JRE_URL}"
+    Push "$PLUGINSDIR\jre.zip"
+    Push "${JRE_SHA256}"
+    Call Download
+    RMDir /r "$R7\${JRE_DIR}"
+    Push "$PLUGINSDIR\jre.zip"
+    Push "$R7"
+    Call Extract
+    RMDir /r "$R7\java"
+    Rename "$R7\${JRE_DIR}" "$R7\java"
+    FileOpen $0 "$R7\java\zm-${JRE_DIR}" w
+    FileClose $0
+  ${EndIf}
+  Pop $R7
+FunctionEnd
+
 ; Push url, Push file, Push sha256 — скачивает и сверяет хеш, при ошибке прерывает установку
 Function Download
   Pop $R2
@@ -246,18 +267,8 @@ Section "Install"
     Push "$INSTDIR"
     Call Extract
 
-    ${IfNot} ${FileExists} "$INSTDIR\java\release"
-      Push "${JRE_URL}"
-      Push "$PLUGINSDIR\jre.zip"
-      Push "${JRE_SHA256}"
-      Call Download
-      RMDir /r "$INSTDIR\${JRE_DIR}"
-      Push "$PLUGINSDIR\jre.zip"
-      Push "$INSTDIR"
-      Call Extract
-      RMDir /r "$INSTDIR\java"
-      Rename "$INSTDIR\${JRE_DIR}" "$INSTDIR\java"
-    ${EndIf}
+    Push "$INSTDIR"
+    Call InstallJava
 
     ; настройки лаунчера: русский язык, Java из папки установки, без мастера первого запуска
     SetOutPath "$INSTDIR"
@@ -285,6 +296,14 @@ Section "Install"
     ${Else}
       File "/oname=mmc-pack.json" "files\mmc-pack-polymc.json"
     ${EndIf}
+    ; своя Java 21 в папке сборки: не зависим от того, какая Java есть у лаунчера и в системе
+    Push "$R9"
+    Call InstallJava
+    ${WordReplace} "$R9\java\bin\javaw.exe" "\" "/" "+" $R8
+    FileOpen $0 "$R9\instance.cfg" a
+    FileSeek $0 0 END
+    FileWrite $0 "$\r$\nOverrideJava=true$\r$\nOverrideJavaLocation=true$\r$\nJavaPath=$R8$\r$\n"
+    FileClose $0
     StrCpy $INSTDIR "$R9"
     WriteUninstaller "$R9\Удалить Живой мир.exe"
   ${EndIf}
