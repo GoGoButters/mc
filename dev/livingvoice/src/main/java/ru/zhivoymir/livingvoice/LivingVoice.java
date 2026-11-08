@@ -45,7 +45,7 @@ public final class LivingVoice {
         COLONIST_VOICES = b.comment("Colonists (Living Colonists) speak their lines aloud via voice chat.")
                 .define("colonistVoices", true);
         VOICE_DISTANCE = b.comment("How far (blocks) colonist voices are heard.")
-                .defineInRange("voiceDistance", 24.0, 4.0, 64.0);
+                .defineInRange("voiceDistance", 48.0, 4.0, 64.0);
         DUMP_DIR = b.comment("Debug: save every player phrase as WAV (48 kHz, as received) plus recognized text into this folder. Empty = off.")
                 .define("debugDumpDir", "");
         REPLY_GAP_TICKS = b.comment("Pause (ticks) before a colonist starts \"typing\" a reply to a player. Living Colonists waits 70-140 ticks; -1 = keep that.")

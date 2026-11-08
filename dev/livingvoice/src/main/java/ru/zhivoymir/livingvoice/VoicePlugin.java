@@ -150,7 +150,7 @@ public final class VoicePlugin implements VoicechatPlugin {
             ServerPlayer player = p.player;
             String dump = Dump.save(player.getGameProfile().getName(), pcm, len, RATE, stats);
             if (len < MIN_SAMPLES) continue;
-            if (!anyone) {
+            if (!anyone && LivingVoiceApi.phraseHook == null) {
                 player.server.execute(() -> nobody(player));
                 continue;
             }
@@ -166,7 +166,13 @@ public final class VoicePlugin implements VoicechatPlugin {
                     player.displayClientMessage(Component.literal("Не разобрал, повторите").withStyle(ChatFormatting.GRAY), true);
                     return;
                 }
-                Entity target = Targets.resolve(player, looked, text);
+                var hook = LivingVoiceApi.phraseHook;
+                if (hook != null && hook.test(player, text)) {
+                    LivingVoice.LOG.info("[livingvoice] {} -> hook (STT {} ms): {}", player.getGameProfile().getName(),
+                            System.currentTimeMillis() - t0, text);
+                    return;
+                }
+                Entity target = anyone ? Targets.resolve(player, looked, text) : null;
                 LivingVoice.LOG.info("[livingvoice] {} -> {} ({} s audio, {}, STT {} ms): {}", player.getGameProfile().getName(),
                         target == null ? "nobody" : target.getName().getString(), String.format("%.1f", len / (double) RATE), stats,
                         System.currentTimeMillis() - t0, text);

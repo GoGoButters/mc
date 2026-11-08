@@ -11493,7 +11493,7 @@ metafile = true
 
 [[files]]
 file = "mods/livingvoice.pw.toml"
-hash = "51da72e76d18dac87199338f8435893cbca65a3632937af777f6e48d29871a2e"
+hash = "98d6e889c32fc165a1f024a70701b05aeb0b820a76be3e28d447005a12a7998b"
 metafile = true
 
 [[files]]
@@ -11839,6 +11839,11 @@ metafile = true
 [[files]]
 file = "mods/zmclient.pw.toml"
 hash = "77eec476b76680c05304c7bcd4208660e8a8c9ea891f74272596da8c24944d65"
+metafile = true
+
+[[files]]
+file = "mods/zmgod.pw.toml"
+hash = "a40d17ccb460b72fb71fd2d76b3de207247f1f75c24f2b7d5b68e86e0f33075a"
 metafile = true
 
 [[files]]
