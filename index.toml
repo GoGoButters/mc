@@ -11099,7 +11099,7 @@ hash = "fc539dc441c63b4787e442f995f309f17a34b601ac9b4fad19f328626128128f"
 
 [[files]]
 file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/commands.md"
-hash = "6845ec9f2c46a1ef80ae269edb6bdd1d28068fc00f7aeb936b094f3f852e7b0a"
+hash = "b6230a21c35a862261db7d0ea6a725783221a23331386e7865bad97b601ae8d2"
 
 [[files]]
 file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/economy.md"
@@ -11930,7 +11930,7 @@ metafile = true
 
 [[files]]
 file = "mods/zmclient.pw.toml"
-hash = "77eec476b76680c05304c7bcd4208660e8a8c9ea891f74272596da8c24944d65"
+hash = "786e9a7d36140545258ea1fdcfcab803d958a627b5b809cbc1ea6320ba36a584"
 metafile = true
 
 [[files]]
@@ -11940,7 +11940,7 @@ metafile = true
 
 [[files]]
 file = "options.txt"
-hash = "077bebe5394bcfe29d87997dc62be8cb4183c7a08de159acb423fb39cf4fb75f"
+hash = "b7713fe4bc21dbc464bae5dfb99d1b8bb3c60980994e8c9c63f93c610022cd7e"
 preserve = true
 
 [[files]]

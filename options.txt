@@ -1,1 +1,8 @@
 lang:ru_ru
+narrator:0
+narratorHotkey:false
+onboardAccessibility:false
+skipMultiplayerWarning:true
+joinedFirstServer:true
+tutorialStep:none
+key_key.chat:key.keyboard.caps.lock

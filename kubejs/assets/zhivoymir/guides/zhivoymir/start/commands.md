@@ -18,6 +18,7 @@ navigation:
 
 | Клавиша | Что делает |
 |---|---|
+| <KeyBind id="key.chat" /> | Чат |
 | <KeyBind id="key.recruits.command_screen_key" /> | Командование рекрутами |
 | <KeyBind id="key.recruits.team_screen_key" /> | Фракция и дипломатия |
 | <KeyBind id="key.recruits.map_screen_key" /> | Карта территорий |
