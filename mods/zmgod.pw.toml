@@ -1,8 +1,8 @@
 name = "Living World God"
-filename = "zmgod-0.1.0.jar"
+filename = "zmgod-0.1.1.jar"
 side = "server"
 
 [download]
-url = "https://gogobutters.github.io/mc/dist/server-mods/zmgod-0.1.0.jar"
+url = "https://gogobutters.github.io/mc/dist/server-mods/zmgod-0.1.1.jar"
 hash-format = "sha512"
-hash = "6902da4c87ec95012d6d54e2e5186e8f8e7a06f3192ffea92c88ce6760fb2e76fd9b4d459ccacb6a182b1f2c2f13f449185327df29fa5800574d7d742b895af1"
+hash = "4a630326095ff6a49854ebe84ec4ef335ede312bdeced7eced00a928ad1778aefa2a712849e55c79e3acf2f194e6560ee3b930014f068e60e18345befd2e7073"
