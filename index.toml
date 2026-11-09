@@ -10722,8 +10722,12 @@ file = "kubejs/assets/minecolonies_tweaks/lang/ru_ru.json"
 hash = "053bdd94c4a7c2cf788db26cbc3d6ba57629a9175ee1c473af708043c6869ac9"
 
 [[files]]
+file = "kubejs/assets/minecolonytax/lang/en_us.json"
+hash = "7b0ab6f008bac7c0c5589e347a56cb1f1d9a6813c536a2a08c2cf61d4835c210"
+
+[[files]]
 file = "kubejs/assets/minecolonytax/lang/ru_ru.json"
-hash = "e957c5e832d4677c955ee0166e615cef564849b1692ed909dc9ff4486697690b"
+hash = "8c5f13213ab5a850e8ab9f5a994871e434e6beb713c17b73c2cad4a5599f639b"
 
 [[files]]
 file = "kubejs/assets/minecolonytax/patchouli_books/war_taxes_codex/ru_ru/categories/besiege.json"
