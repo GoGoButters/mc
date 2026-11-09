@@ -1,0 +1,38 @@
+{
+  "name": "Вакуумный насос",
+  "icon": "pneumaticcraft:vacuum_pump",
+  "category": "pneumaticcraft:machines",
+  "advancement": "pneumaticcraft:pressure_chamber",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(thing)Вакуумный насос/$ — машина, предназначенная для создания... вакуума. Для этого машина потребляет $(l:base_concepts/pressure)сжатый воздух/$.$(p)Положительное давление следует подавать на $(#0c0)сторону '+'/$; когда будет достигнуто минимальное рабочее давление, $(item)вакуумный насос/$ начнёт качать, и давление на $(#c00)стороне '-'/$ упадёт до минимума в -1.0 бара, то есть до вакуума."
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/patchouli/vacuum_pump.png"
+      ]
+    },
+    {
+      "type": "text",
+      "title": "Применение",
+      "text": "Отрицательное (вакуумное) давление может использоваться так:$(li)Снятие чар: поместите $(item)зачарованный предмет/$ или $(item)чародейскую книгу/$ более чем с одними чарами, а также обычную $(item)книгу/$ в $(l:manufacturing/pressure_chamber)камеру давления/$ и создайте в камере достаточное отрицательное давление. Случайные чары перейдут с предмета на книгу.$(li)$(l:tubes/air_grate_module)Модуль воздушной решётки/$ при подаче отрицательного давления будет притягивать к себе сущностей."
+    },
+    {
+      "type": "text",
+      "title": "Применение (прод.)",
+      "text": "$(li)И $(l:spawning/vacuum_trap)вакуумной ловушке/$, и $(l:spawning/spawner_extractor)экстрактору рассадника/$ — устройствам, необходимым для создания и использования $(l:spawning/pressurized_spawner)герметичных рассадников/$, — для работы требуется отрицательное давление."
+    },
+    {
+      "type": "crafting",
+      "text": "Создание вакуумного насоса",
+      "recipe": "pneumaticcraft:vacuum_pump"
+    },
+    {
+      "type": "pneumaticcraft:pressure_chamber",
+      "header": "Снятие чар вакуумом",
+      "recipe": "pneumaticcraft:pressure_chamber/pressure_chamber_disenchanting"
+    }
+  ]
+}

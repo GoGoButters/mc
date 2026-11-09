@@ -1,0 +1,19 @@
+{
+  "name": "Виджет «Импорт RF»",
+  "icon": "pneumaticcraft:textures/progwidgets/rf_import_piece.png",
+  "category": "pneumaticcraft:widget_interact",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(l:tools/drone)Дроны/$ имеют внутренний буфер на 100 000 FE (энергии Forge). С помощью этого виджета вы можете импортировать энергию из блока, предоставляющего энергию (например, из $(item)энергоячейки Thermal Expansion/$ или $(item)конденсатора Immersive Engineering/$), во внутреннее хранилище дрона.$(p)$(italic)Несмотря на название, этот виджет импортирует FE (энергию Forge), а не RF (Redstone Flux). Название историческое./$"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/progwidgets/rf_import_piece.png"
+      ],
+      "text": "$(italic)У меня есть сила/$"
+    }
+  ]
+}

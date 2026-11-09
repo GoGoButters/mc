@@ -1,0 +1,22 @@
+{
+  "name": "Броня из сжатого железа",
+  "icon": "pneumaticcraft:compressed_iron_helmet",
+  "category": "pneumaticcraft:armor",
+  "advancement": "pneumaticcraft:root",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)Броня из сжатого железа/$ — набор брони ранней игры, который немного лучше аналогичных частей $(item)железной брони/$: чуть выше прочность и бронезащита, а также частичная устойчивость к отбрасыванию. Её можно чинить на $(item)наковальне/$ с помощью $(item)слитков сжатого железа/$."
+    },
+    {
+      "type": "crafting",
+      "recipe": "pneumaticcraft:compressed_iron_helmet",
+      "recipe2": "pneumaticcraft:compressed_iron_chestplate"
+    },
+    {
+      "type": "crafting",
+      "recipe": "pneumaticcraft:compressed_iron_leggings",
+      "recipe2": "pneumaticcraft:compressed_iron_boots"
+    }
+  ]
+}

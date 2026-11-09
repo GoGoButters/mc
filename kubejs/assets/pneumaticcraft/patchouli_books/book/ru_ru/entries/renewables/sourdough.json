@@ -1,0 +1,33 @@
+{
+  "name": "Закваска",
+  "icon": "pneumaticcraft:sourdough",
+  "category": "pneumaticcraft:renewables",
+  "advancement": "pneumaticcraft:yeast_culture",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(thing)Закваску/$ можно скрафтить из $(l:renewables/yeast_culture)дрожжевой культуры/$ и $(thing)пшеничной муки/$. Её можно испечь в $(item)заквасочный хлеб/$, который превосходит по питательности (и вкусу!) скучный старый ванильный $(item)хлеб/$, или использовать для приготовления $(item)лосося темпура/$."
+    },
+    {
+      "type": "crafting",
+      "recipe": "pneumaticcraft:sourdough",
+      "text": "$(italic)Это нужно замесить/$"
+    },
+    {
+      "type": "pneumaticcraft:pressure_chamber",
+      "recipe": "pneumaticcraft:pressure_chamber/wheat_flour"
+    },
+    {
+      "type": "smelting",
+      "recipe": "pneumaticcraft:sourdough_bread"
+    },
+    {
+      "type": "crafting",
+      "recipe": "pneumaticcraft:raw_salmon_tempura"
+    },
+    {
+      "type": "pneumaticcraft:thermo_plant",
+      "recipe": "pneumaticcraft:thermo_plant/salmon_tempura"
+    }
+  ]
+}

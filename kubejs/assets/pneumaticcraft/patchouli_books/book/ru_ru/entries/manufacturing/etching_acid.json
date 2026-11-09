@@ -1,0 +1,16 @@
+{
+  "name": "Травильная кислота",
+  "icon": "pneumaticcraft:etching_acid_bucket",
+  "category": "pneumaticcraft:manufacturing",
+  "advancement": "pneumaticcraft:pressure_chamber",
+  "pages": [
+    {
+      "type": "text",
+      "text": "Травильная кислота используется для химического проявления $(l:components/pcb)PCB/$. Травильная кислота создаётся в $(l:manufacturing/pressure_chamber)камере давления/$ и применяется в $(l:manufacturing/etching_tank)травильном баке/$.$(p)Подробнее о производстве PCB см. в статье о $(l:components/pcb)PCB/$."
+    },
+    {
+      "type": "pneumaticcraft:pressure_chamber",
+      "recipe": "pneumaticcraft:pressure_chamber/etching_acid"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Флюкс-компрессор",
+  "icon": "pneumaticcraft:flux_compressor",
+  "category": "pneumaticcraft:compressors",
+  "advancement": "pneumaticcraft:advanced_pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)Флюкс-компрессор/$ преобразует $(thing)энергию Forge/$ (совместимую с $(thing)Redstone Flux/$ и энергосистемами различных других модов) в $(l:base_concepts/pressure)сжатый воздух/$. Он потребляет базовые 40 FE/тик и может быть улучшен с помощью $(l:base_concepts/upgrades#speed)улучшений скорости/$.$(p)Ёмкость флюкс-компрессора — 100 000 FE, и он принимает FE со скоростью, вдвое превышающей скорость его потребления."
+    },
+    {
+      "type": "crafting",
+      "text": "Создание $(item)флюкс-компрессора/$$(p)Этот генератор нужно $(l:base_concepts/heat)охлаждать/$, так как его эффективность падает с ростом температуры, вплоть до полного прекращения выработки воздуха.",
+      "recipe": "pneumaticcraft:flux_compressor"
+    }
+  ]
+}

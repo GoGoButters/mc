@@ -1,0 +1,30 @@
+{
+  "name": "Радиатор",
+  "icon": "pneumaticcraft:heat_sink",
+  "category": "pneumaticcraft:machines",
+  "advancement": "pneumaticcraft:root",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)Радиатор/$ — это блок, используемый для избавления от $(l:base_concepts/heat)тепла/$.$(p)Будьте осторожны: $(item)радиатор/$ горячее 60°C или холоднее -60°C причинит вам вред при прикосновении!$(p)$(item)Радиаторы/$ рассеивают тепло только от блока, к которому они непосредственно подключены. Чтобы подключить много $(item)радиаторов/$, используйте $(l:machines/heat_pipe)тепловые трубы/$, чтобы обеспечить больше поверхностей."
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/patchouli/heat_sinks.png"
+      ],
+      "border": "true",
+      "text": "$(italic)$(l:compressors/advanced_liquid_compressor)Продвинутый жидкостный компрессор/$ $(italic)с несколькими радиаторами/$"
+    },
+    {
+      "type": "text",
+      "title": "Активное охлаждение",
+      "text": "Можно повысить эффективность $(item)радиатора/$, разместив его в радиусе действия $(l:tubes/air_grate_module#active_cooling)модуля воздушной решётки/$. Радиус действия модуля отображается, когда вы прикрепляете его к $(l:tubes/pressure_tubes)трубе давления/$. Эффективность охлаждения можно накапливать, используя несколько модулей воздушной решётки."
+    },
+    {
+      "type": "crafting",
+      "text": "Создание радиатора",
+      "recipe": "pneumaticcraft:heat_sink"
+    }
+  ]
+}

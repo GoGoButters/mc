@@ -1,0 +1,23 @@
+{
+  "name": "Виджет метки",
+  "icon": "pneumaticcraft:textures/progwidgets/label_piece.png",
+  "category": "pneumaticcraft:widget_flow",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "Этот виджет полностью посвящён $(l:programming/flow_control)управлению потоком программы/$. Метка определяет точку в программе, к которой могут переходить виджеты $(l:programming/jump)перехода/$ и $(l:programming/conditions)условия/$. К этому виджету необходимо прикрепить виджет $(l:programming/text)текста/$, чтобы дать ему имя. Любые переходы/условия, использующие виджет $(thing)текста/$ с таким именем, будут переходить к этой метке."
+    },
+    {
+      "type": "text",
+      "text": "Виджет $(thing)метки/$ можно использовать для создания $(italic)ветви/$ в потоке программы (при использовании $(l:programming/conditions)условий/$) или просто для организации секций программы для наглядности, разместив их рядом друг с другом. Полезный совет: отметьте флажок $(bold)Показать поток/$ внизу слева в GUI $(l:programming/programmer)программиста/$; он покажет линии, связывающие виджеты $(thing)перехода/условия/метки/$ с одинаковыми именами."
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/progwidgets/label_piece.png"
+      ],
+      "text": "$(italic)Виджет метки/$"
+    }
+  ]
+}

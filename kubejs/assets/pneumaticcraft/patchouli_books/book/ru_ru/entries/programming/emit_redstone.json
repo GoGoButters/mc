@@ -1,0 +1,19 @@
+{
+  "name": "Виджет «Подача редстоун-сигнала»",
+  "icon": "pneumaticcraft:textures/progwidgets/emit_redstone_piece.png",
+  "category": "pneumaticcraft:widget_interact",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "С помощью этого виджета можно заставить $(l:tools/drone)дрона/$ подавать $(#f00)редстоун-сигнал/$. Стороны, с которых он подаёт сигнал, задаются $(thing)кликом ПКМ/$ по виджету и настройкой в GUI настройки. Уровень редстоун-сигнала задаётся подключением виджета $(l:programming/text)«Текст»/$ с числом в нём (от 0 до 15)."
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/progwidgets/emit_redstone_piece.png"
+      ],
+      "text": "$(italic)Виджет «Подача редстоун-сигнала»/$"
+    }
+  ]
+}

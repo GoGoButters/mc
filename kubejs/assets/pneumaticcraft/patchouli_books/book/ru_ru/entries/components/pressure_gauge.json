@@ -1,0 +1,17 @@
+{
+  "name": "Манометр",
+  "icon": "pneumaticcraft:pressure_gauge",
+  "category": "pneumaticcraft:components",
+  "advancement": "pneumaticcraft:root",
+  "pages": [
+    {
+      "type": "text",
+      "text": "Это компонент для крафта других устройств. Сам по себе он не используется."
+    },
+    {
+      "type": "crafting",
+      "text": "Крафт манометра",
+      "recipe": "pneumaticcraft:pressure_gauge"
+    }
+  ]
+}

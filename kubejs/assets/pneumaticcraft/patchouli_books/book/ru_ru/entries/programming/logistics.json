@@ -1,0 +1,19 @@
+{
+  "name": "Виджет «Логистика»",
+  "icon": "pneumaticcraft:textures/progwidgets/logistics_piece.png",
+  "category": "pneumaticcraft:widget_interact",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "Этот виджет заставляет $(l:tools/drone)дрона/$ вести себя как $(l:logistics/logistics_drone)логистический дрон/$, но даёт дополнительную гибкость по сравнению с базовым логистическим дроном:$(li)Его можно использовать вместе с другими виджетами, например с виджетом $(l:programming/standby)«Ожидание»/$ для более эффективного расхода воздуха$(li)Можно задать свою $(l:programming/area)область/$ (обычный логистический дрон имеет область 33x33x33 с центром на дроне, которую нельзя изменить)"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/progwidgets/logistics_piece.png"
+      ],
+      "text": "$(italic)Виджет «Логистика»/$"
+    }
+  ]
+}

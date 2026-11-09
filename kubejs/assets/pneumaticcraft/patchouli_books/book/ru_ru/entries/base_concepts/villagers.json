@@ -1,0 +1,17 @@
+{
+  "name": "Жители-механики",
+  "icon": "minecraft:emerald",
+  "category": "pneumaticcraft:base_concepts",
+  "pages": [
+    {
+      "type": "text",
+      "text": "Вы слышали слухи о $(thing)жителе/$, который торгует интересными компонентами $(pncr). Говорят, он попал в аварию с $(l:manufacturing/pressure_chamber)камерой давления/$? Так или иначе, в наши дни он предпочитает жить в собственном доме, который можно найти в деревнях. Если не выйдет, $(l:machines/charging_station)зарядная станция/$ может привлечь безработных жителей..."
+    },
+    {
+      "type": "entity",
+      "name": "Механик",
+      "entity": "minecraft:villager{VillagerData:{profession:'pneumaticcraft:mechanic'}}",
+      "text": "$(italic)Не фанат $(l:tools/amadron_tablet)Амадрона/$."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Опора для культур",
+  "icon": "pneumaticcraft:crop_support",
+  "category": "pneumaticcraft:semiblocks",
+  "advancement": "pneumaticcraft:root",
+  "pages": [
+    {
+      "type": "text",
+      "text": "При установке на грядку с $(thing)культурой/$ она ускоряет рост этой культуры. $(thing)Зелёные частицы/$ сигнализируют о том, что $(item)опора для культур/$ ускоряет рост.$(p)Чтобы убрать $(item)опору для культур/$, либо сломайте блок под ней, либо $(thing)кликните Шифт+ПКМ/$ по блоку $(l:tools/logistics_configurator)конфигуратором логистики/$ или другой $(item)опорой для культур/$."
+    },
+    {
+      "type": "crafting",
+      "text": "Создание опоры для культур",
+      "recipe": "pneumaticcraft:crop_support"
+    }
+  ]
+}
