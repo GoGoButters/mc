@@ -6,6 +6,10 @@ hash = "e39b59d05d172f7f63c50d75d11e9704070809348cf1b200f51c32ab71153551"
 preserve = true
 
 [[files]]
+file = "config/biomesoplenty/generation.toml"
+hash = "5024d5b309629150452170ff3ab84963926b379ac0f5fe153cc0519cb5712e46"
+
+[[files]]
 file = "config/bountiful/bountiful.json"
 hash = "f4cfb8881b612b44d4414a94cd365e82f6f0e5638d870115fe4ae7fb446b761c"
 
@@ -16,6 +20,10 @@ hash = "d95b4b1bc275a03703b3ff02c6a0dca1b44a76e8228b5429b363c7e19a47f854"
 [[files]]
 file = "config/fancymenu/customization/zhivoy_mir_title.txt"
 hash = "ad928499d6f4c89cd87bf886940af12f07b6a99eac493dddf3ca20782e4fdc46"
+
+[[files]]
+file = "config/graveyard/graveyard.json5"
+hash = "b02fdf1b230f06f8436ca4a8e893b630d6312247f3d8f50b0520f635ad94e74d"
 
 [[files]]
 file = "config/mca.json"
@@ -11170,6 +11178,10 @@ file = "kubejs/data/ad_astra/tags/entity_type/lives_without_oxygen.json"
 hash = "94684e022dd1be4e6827a99794e226aba9c15763dc08ffd1bdb72bdc804f9fb4"
 
 [[files]]
+file = "kubejs/data/c/tags/fluid/crude_oil.json"
+hash = "7cda0e42f18e788f401bf19fe2377f0abe1ab74376ebc55c4ce260e533ff33b3"
+
+[[files]]
 file = "kubejs/server_scripts/guide.js"
 hash = "b1d65fdb8df470ec5ce60bc12c2eb38c3b80e4564fc185febb9fe87a21110d4f"
 
@@ -11219,6 +11231,11 @@ hash = "657a01a86bbf8617e4726c77df08f708e43a3db12db74b837eebd8eb1d93faae"
 metafile = true
 
 [[files]]
+file = "mods/artifacts.pw.toml"
+hash = "416b7f130791397fb2ceb9e89ce3fd0e870f207c8e40b759c069cb58b7544314"
+metafile = true
+
+[[files]]
 file = "mods/backpacked.pw.toml"
 hash = "e0a479fef621fd91d0a022358046eb6af947fd5d4191b1286504f6b958605686"
 metafile = true
@@ -11226,6 +11243,11 @@ metafile = true
 [[files]]
 file = "mods/badoptimizations.pw.toml"
 hash = "dd56ff2bcc4253d1d70c08333632743fb56cdc4cf5518dc6afc024164633145d"
+metafile = true
+
+[[files]]
+file = "mods/balm.pw.toml"
+hash = "fc8954e0d3fa66b917d2c84ee04d07b073a9eb6f719d09e1ff85527c1d61a10e"
 metafile = true
 
 [[files]]
@@ -11246,6 +11268,11 @@ metafile = true
 [[files]]
 file = "mods/betterf3.pw.toml"
 hash = "c9aca350959a8936b054c7164fb55d789ab1e0d38cff2af48b78f70af2bc0c6d"
+metafile = true
+
+[[files]]
+file = "mods/biomes-o-plenty.pw.toml"
+hash = "a4931e5abbec081a08ab3a1d69b2d470596b6361d707a7756f6ad34c0f21f81e"
 metafile = true
 
 [[files]]
@@ -11419,6 +11446,11 @@ hash = "d89b50af502aab4416e07fa8f92433a18fac11285fe1c39ebccea610dbfdd1e7"
 metafile = true
 
 [[files]]
+file = "mods/dungeons-and-taverns.pw.toml"
+hash = "b9244dca740d333c22f3425991fdd2fd40d3ae12384079a40a6fb7d4bca18a18"
+metafile = true
+
+[[files]]
 file = "mods/dynamic-fps.pw.toml"
 hash = "ae6fd52d8bdcbeca5bbe6db840f22f92c1928fe0fda22017b19612b9b00a245a"
 metafile = true
@@ -11501,6 +11533,11 @@ metafile = true
 [[files]]
 file = "mods/immersive-aircraft.pw.toml"
 hash = "60bc5f39269cc9b2f93611526c62a0ce8600dd211c5b683f485e6e921e352686"
+metafile = true
+
+[[files]]
+file = "mods/immersive-armors.pw.toml"
+hash = "3fd5ea4eed85e2d0f62a61d8de7185b6bf20d021cbdc83f5c9210d4ea72bab88"
 metafile = true
 
 [[files]]
@@ -11596,6 +11633,11 @@ metafile = true
 [[files]]
 file = "mods/lmd.pw.toml"
 hash = "3a7ce6901bb81cff9fe73366613defe50708cb401dc03daa27e7abe918089d7b"
+metafile = true
+
+[[files]]
+file = "mods/lootr.pw.toml"
+hash = "0d3683a8c533e1fb67bf0b1668089a322fc5f594f9610d441657378ab4f64383"
 metafile = true
 
 [[files]]
@@ -11719,6 +11761,11 @@ hash = "840eb517a83c586b9f543ab9781d4c8529b6fedf2d679f411577c7a583e50fe5"
 metafile = true
 
 [[files]]
+file = "mods/patchouli.pw.toml"
+hash = "d7f360ebb9f009d6dc0b368cd8fa399bdff70c0f6ef931687b2a35137f72715d"
+metafile = true
+
+[[files]]
 file = "mods/pathfinding-edition-for-minecolonies.pw.toml"
 hash = "18cb458bd29a0e05fae21ac0598955cf39ccfeccad0e55018112cde45d800e73"
 metafile = true
@@ -11726,6 +11773,11 @@ metafile = true
 [[files]]
 file = "mods/playeranimator.pw.toml"
 hash = "93284ca7f2f23f0bb76d42b797cabf2aea1914ee9825bec82bf6ffe4c60dda0d"
+metafile = true
+
+[[files]]
+file = "mods/pneumaticcraft-repressurized.pw.toml"
+hash = "46838ef65d3c86f6b77f136f525ecf234a0c48fb6bba19a267a179861cc924da"
 metafile = true
 
 [[files]]
@@ -11786,6 +11838,11 @@ metafile = true
 [[files]]
 file = "mods/simple-voice-chat.pw.toml"
 hash = "6f9502735fcac7a35468358e2aa0fd9333b12df885db3325c472d298ce315a72"
+metafile = true
+
+[[files]]
+file = "mods/skylands-upport.pw.toml"
+hash = "75480de9d1db7804b3a01bc72ce3bff4f6d0d8e0121142410d6c17f06abc8ebc"
 metafile = true
 
 [[files]]
@@ -11854,6 +11911,11 @@ hash = "15962183bec2468058c70e87aa32e902a08489b0f86741088cdc9aa958ba4931"
 metafile = true
 
 [[files]]
+file = "mods/the-graveyard-fabric.pw.toml"
+hash = "dc2c6aee92eeeac4527b10dd8ecb7f3f6332f0c08c6603ca523e7e8a6a961448"
+metafile = true
+
+[[files]]
 file = "mods/torch-hit.pw.toml"
 hash = "4dbc8f0c60584c9d82db94f3cde7350f87d3847683f4ecf6f45ba744f17adc31"
 metafile = true
@@ -11861,6 +11923,16 @@ metafile = true
 [[files]]
 file = "mods/villager-recruits.pw.toml"
 hash = "7232dbb03d90defb2405f87bb1f5bb9e637f2ed98b819c7970adccc023a94cf8"
+metafile = true
+
+[[files]]
+file = "mods/villagerstradingplus.pw.toml"
+hash = "a15e0c1dbfe367ca9997c3464024960f2d38010d227aed65c33dc874c2b3e2d8"
+metafile = true
+
+[[files]]
+file = "mods/waystones.pw.toml"
+hash = "2dad5577c5ec5e73bb3d5cec8da606e3b72e384207c9291a25e1ae96fd20bb70"
 metafile = true
 
 [[files]]
