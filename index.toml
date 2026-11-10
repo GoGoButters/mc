@@ -51,7 +51,7 @@ hash = "f08775b583268b1e64aa80f7a71bdbed5ac41a51f0d39e5dbe6e691ffe0d8012"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ruler.snbt"
-hash = "29e14e39b7b2099d0152d19ea4352301e168354a2ac73e71a33dd3bc26a6f9f7"
+hash = "6a83acd594df6d483af104a33e2dab677537b52cb3d63b1428939af102bc1f94"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -59,11 +59,11 @@ hash = "9ed41e4f88656f2051b5630ad587bf5517ceb6820e616e91ae1050af708d33eb"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "e06c88de67312f2159afe0fef88f35a7a732198f94f654fb6b1737de213db4ee"
+hash = "caf5e3fe79f84e768220c8a608011820383c532ecb6d7a2078976040a77b739c"
 
 [[files]]
 file = "config/ftbquests/quests/lang/ru_ru.snbt"
-hash = "e06c88de67312f2159afe0fef88f35a7a732198f94f654fb6b1737de213db4ee"
+hash = "caf5e3fe79f84e768220c8a608011820383c532ecb6d7a2078976040a77b739c"
 
 [[files]]
 file = "config/graveyard/graveyard.json5"
