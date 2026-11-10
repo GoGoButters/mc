@@ -12307,7 +12307,7 @@ hash = "a69bb1b9dc7fe343796957b30f43b89642501c5d1c3a8f7537f6177f2f18d421"
 
 [[files]]
 file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/eng/computers.md"
-hash = "276dfe483940466ccc467fe29a79014dcc5c879648f2465bdf73144f0b704bb0"
+hash = "872ce8f04eaea34ef7a7a98cf3a9b9cd522b59c7e899d5597f620b03468b79be"
 
 [[files]]
 file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/eng/create-electric.md"
@@ -12335,7 +12335,7 @@ hash = "cf727d9a42fb527498fe0f2de5cf084909c9948daa4b1d47b1af75807453cf61"
 
 [[files]]
 file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/eng/railcraft.md"
-hash = "685fe493c324c44ef11fc791016183078089cec8d544a8268fe018ccefe11059"
+hash = "4cd43467b50c993e0e8334e5a4a4b5b3e24c306e2149f5150cb46afe7d501c9d"
 
 [[files]]
 file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/farm/cooking.md"
@@ -12419,7 +12419,7 @@ hash = "8ae0c1687df92095861ba076337f4f14236c7bce6ffda278ff84f3088d4e092d"
 
 [[files]]
 file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/ref/guides.md"
-hash = "e1e60d23462e3315dc914ab39d9d6e359ff25a3fe8883992e52c7452dedc8c38"
+hash = "af5d2a7e25d156aa5fbb4d7da6441cf26dfa40199712a69f09fd28c949891846"
 
 [[files]]
 file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/ref/index.md"
@@ -12540,6 +12540,10 @@ hash = "7cda0e42f18e788f401bf19fe2377f0abe1ab74376ebc55c4ce260e533ff33b3"
 [[files]]
 file = "kubejs/server_scripts/guide.js"
 hash = "b1d65fdb8df470ec5ce60bc12c2eb38c3b80e4564fc185febb9fe87a21110d4f"
+
+[[files]]
+file = "kubejs/server_scripts/guide_books.js"
+hash = "bee363d4eed44b3150ca9ff66a9df07d05e1926c47446862d71ceaefa7daba11"
 
 [[files]]
 file = "mods/ad-astra.pw.toml"
