@@ -11,23 +11,23 @@ navigation:
 
 ## Ранняя игра: разведка
 
-1. **Изучи биомы.** Biomes O' Plenty, Regions Unexplored и Tectonic перекроили местность: горы, каньоны, глубокие пещеры ([world/biomes →](../world/biomes.md)).
+1. **Изучи биомы.** Biomes O' Plenty, Regions Unexplored и Tectonic перекроили местность: новые биомы, горы и каньоны ([world/biomes →](../world/biomes.md)).
 2. **Поставь веху.** <ItemLink id="waystones:waystone" /> — путеводный обелиск: точка быстрой телепортации и возврата ([life/travel →](../life/travel.md)).
 
 ## Средняя игра: структуры и лут
 
-3. **Ищи структуры.** `/locate structure <id>` приводит к храмам, данжам и шахтам YUNG, тавернам и руинам, переработанным деревням ([world/structures →](../world/structures.md)).
+3. **Ищи структуры.** Храмы, данжи и шахты YUNG, таверны и руины, переработанные деревни — что и где искать ([world/structures →](../world/structures.md)).
 4. **Лут и сундуки.** Сундуки структур (Lootr) хранят лут для каждого игрока отдельно — грабь смело ([world/structures →](../world/structures.md)).
-5. **Артефакты.** Не крафтятся — только лут: <ItemLink id="artifacts:everlasting_beef" /> — бесконечная еда, а ещё двойной прыжок и бег без устали ([adv/artifacts →](../adv/artifacts.md)).
+5. **Артефакты.** Не крафтятся — только лут: например <ItemLink id="artifacts:everlasting_beef" /> — бесконечная еда; другие дают двойной прыжок, скорость бега и защиту от огня ([adv/artifacts →](../adv/artifacts.md)).
 
 ## Поздняя игра: боссы
 
-6. **Нежить и боссы.** Кладбища Graveyard и катакомбы Cataclysm: от костяного посоха до Игниса ([adv/bosses →](../adv/bosses.md)).
+6. **Нежить и боссы.** Кладбища и Испорченный чемпион Graveyard, боссы Cataclysm — от Игниса до Левиафана ([adv/bosses →](../adv/bosses.md)).
 
 ## Небо и космос
 
 7. **Самолёты.** <ItemLink id="immersive_aircraft:quadrocopter" /> — первый аппарат, дальше биплан и дирижабль ([adv/sky →](../adv/sky.md)).
-8. **Ракета.** <ItemLink id="ad_astra:tier_1_rocket" />, стартовая площадка — и ты на орбите, а затем на Луне и Марсе ([adv/sky →](../adv/sky.md)).
+8. **Ракета.** <ItemLink id="ad_astra:tier_1_rocket" />, стартовая площадка — и ты на Луне, а ракеты следующих уровней везут на Марс и дальше ([adv/sky →](../adv/sky.md)).
 
 > Пока другие строят города, искатель смотрит, что спрятано между ними.
 

@@ -24,7 +24,7 @@ navigation:
 |---|---|
 | Жители деревни (MCA Reborn) | MCA + Living Voice |
 | Колонисты (MineColonies) | Living Colonists + Living Voice |
-| Бог | зmgod, улавливает речь как молитву |
+| Бог | мод бога (zmgod): речь с обращением к богу — молитва |
 
 ## Настройки голоса
 

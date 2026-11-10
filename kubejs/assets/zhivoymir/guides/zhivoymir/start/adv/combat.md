@@ -32,7 +32,7 @@ navigation:
 
 Примеры одного железного «тира»:
 
-- <ItemLink id="spartan_weaponry_unofficial:iron_dagger" /> — скрытый кинжал
+- <ItemLink id="spartan_weaponry_unofficial:iron_dagger" /> — кинжал
 - <ItemLink id="spartan_weaponry_unofficial:iron_spear" /> — копьё
 - <ItemLink id="spartan_weaponry_unofficial:iron_greatsword" /> — двуручный меч
 - <ItemLink id="spartan_weaponry_unofficial:iron_halberd" /> — алебарда

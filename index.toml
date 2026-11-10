@@ -12234,64 +12234,240 @@ file = "kubejs/assets/zhivoymir/guideme_guides/start.json"
 hash = "f36587cf1753595900753745abba0e9a60b5a6f9f6a9475fc492a1b1f5d74d78"
 
 [[files]]
-file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/colony-and-village.md"
-hash = "5bb0b6caf46eb26639e36f73a2a72c7c800d1bb98084cf0e2529c2c64d74961c"
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/adv/artifacts.md"
+hash = "a112a2dc8817cf5482e000a3c8653027f75dba1ae18d95770a280953e22bfe04"
 
 [[files]]
-file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/colony.md"
-hash = "fc539dc441c63b4787e442f995f309f17a34b601ac9b4fad19f328626128128f"
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/adv/bosses.md"
+hash = "cd270c993b635a21246679c5b741a8b8c21e82439d3c6f55d6349a503eeb7ac8"
 
 [[files]]
-file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/commands.md"
-hash = "b6230a21c35a862261db7d0ea6a725783221a23331386e7865bad97b601ae8d2"
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/adv/combat.md"
+hash = "98fb82db7dd3fc2ee7e8281fb5d0adafe22c780b4ce09f1e2e74d21f2b4c643f"
 
 [[files]]
-file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/economy.md"
-hash = "08679af873e0b2429fb01f41fe38ec3e9d72cbb5012f01ba741733b1c8816554"
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/adv/index.md"
+hash = "a8f330ab61dca7a4f3e7540505cac8d599daed1ffec080799cc2330e95455c4e"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/adv/sky.md"
+hash = "1c7a0a69a1238901ed2ab436542e53e1c7550ddec93373a130de7cbfb1745118"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/eng/ae2.md"
+hash = "3f89d4724f701e92fcdcac1b27e731c349d8fc97e5f1e19cbbf3b96fd0bef4bd"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/eng/buildcraft.md"
+hash = "a69bb1b9dc7fe343796957b30f43b89642501c5d1c3a8f7537f6177f2f18d421"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/eng/computers.md"
+hash = "276dfe483940466ccc467fe29a79014dcc5c879648f2465bdf73144f0b704bb0"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/eng/create-electric.md"
+hash = "f48633abc24f90345c32440baace4c7868528dc11e6e6b785f9a298a641e059d"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/eng/create.md"
+hash = "a4c9fe9f5cf16768f039e2d025a35760943dc060f87b29cfaace59892a15e20a"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/eng/index.md"
+hash = "e16839daf2e87e3ddb58e05b01e145fc8423a7ee77ea139491593a20b933dfd8"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/eng/mek-ae2.md"
+hash = "d783322c4d0ee82460dead7c414eb482838aa1f1ac58f2b3e470581cef79d425"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/eng/mekanism.md"
+hash = "9013b18a8d45dc2b781b0fb9c72521800a4d6c543164f46aacfed2fa4765d8bc"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/eng/pneumaticcraft.md"
+hash = "cf727d9a42fb527498fe0f2de5cf084909c9948daa4b1d47b1af75807453cf61"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/eng/railcraft.md"
+hash = "685fe493c324c44ef11fc791016183078089cec8d544a8268fe018ccefe11059"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/farm/cooking.md"
+hash = "88e830244d9cb42991b7bbe322e26f832a093edf5e040dc6b2f3e7a4a633d84e"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/farm/crabber.md"
+hash = "4177bb712a7c96915d846bf854090c515a6ef48905b132228d703417032a0fd1"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/farm/index.md"
+hash = "11564c945bd3e22cb1e6bc8b200069510e948b2ad790fd8ffe5826ff87e31778"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/farm/kitchen-auto.md"
+hash = "73fdefe41bc82c7fc348986c66e7535d25c37482b79ba7a3216618b86febcf82"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/farm/seasons.md"
+hash = "378cc804bdb53f2b7d14c4dcbd7a9472bf91adcd14d1430d83945afdf06c5a44"
 
 [[files]]
 file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/first-steps.md"
-hash = "1d87701b4e242f42fbfc63fbe0ee67ef1b3177b6c36ffcb4a32d7be0239a3828"
+hash = "75ff3c7e5c0950c108f63fa63219e4f82d3318d14714118169d324337787395e"
 
 [[files]]
-file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/foreign-villages.md"
-hash = "3f09265f3a6078e52a7fa10aa5413f4bd4be3a74696044e6c91ed9ff7d14ce47"
-
-[[files]]
-file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/god.md"
-hash = "80cb7a9daa0fe744a0b4fe54b006f836cfd2079487808c554f5d8ca889267b18"
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/god/god.md"
+hash = "6045dde375f6eb7cc2f1ca901280d731d1065c5b31eb05fff6f9f372e8ab3798"
 
 [[files]]
 file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/index.md"
-hash = "0f5c878f28750b726ad582a574d18ee01299e4aee63edc94c308ccabea72cf1a"
+hash = "6bf5ddba9a52b1c57b85a20ebc06a6321c0ab0db239bd57c438f6d44a725aab5"
 
 [[files]]
-file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/neighbors.md"
-hash = "46d9492b0ebad1548d75080d126f5e08cfd878f2335c635aa23fbc83e954422b"
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/life/backpacks.md"
+hash = "40f76fc87d9f116c4796b1df5db797edd8788d648a3137dc234a9bcf300072c8"
 
 [[files]]
-file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/peace.md"
-hash = "9c1044cbed1abb0343e6bb7050da1b14c64123c0d900553b7d7b18fd66ca4e40"
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/life/chests.md"
+hash = "197afb5717fd5983158abeae5aa168378e4836cf0e9d1afc128ea473a8999e1b"
 
 [[files]]
-file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/recruits.md"
-hash = "e2cc86f2e2515a0399eac9b07eec363de21ebd836bd8c3a3f37d8bca7134d90e"
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/life/index.md"
+hash = "fbe1be62d81220e9ec96f726c89a7de39471a435e576aaeb15db5d372e3d5ad6"
 
 [[files]]
-file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/trade.md"
-hash = "5e1c4e79b55715021355b82a89b97de079198873a3458019006e2ff9778b5bfc"
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/life/tarot.md"
+hash = "b680cd08451202bdc73702ea4b4fd8bd49a289da045a66a5060eced9a9d57921"
 
 [[files]]
-file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/treasury.md"
-hash = "ef0d0e0b87a7e7596681b4c473975e6fe1761c9e358746acbf1bac2c4a8b8b94"
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/life/travel.md"
+hash = "2077882503f090398af696a3839f9bd138ff7d0f7a8a81b40d41963e412d19e9"
 
 [[files]]
-file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/village.md"
-hash = "d94e2f816d84303e51d3f677e136ed32bc1c043385676f8c3e01a7105ec76a9c"
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/life/vanilla-plus.md"
+hash = "2dac20a2f56e920c283ee292bcbefe6ff192a7b16bc40b3839d4c3035a38a7da"
 
 [[files]]
-file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/war.md"
-hash = "d868c0034ee8956e6f5100785dce493c07f799b7dc826abf5108bed1f83b90f6"
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/path/adventurer.md"
+hash = "28b8ed8aa0421993ab32bd5973de9adbb266e2b1c4475058734df207adf2c191"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/path/engineer.md"
+hash = "fded933d0f954bedea084b57524b6ff03f8a9112d7cd3de9766f834c46b24346"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/path/farmer.md"
+hash = "314ec20cfb479c34d2fd0a3b578c5b436f73451f9a384066253b700a985bea1a"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/path/index.md"
+hash = "389d50d4bd25545cbebac495bab0d45d54f825f802eb1d94e1f0d564f7c68184"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/path/ruler.md"
+hash = "f9d1925fbc37130b745f494e30f1af6ce4768eb9345e08c0482b52807fba8267"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/ref/commands.md"
+hash = "8ae0c1687df92095861ba076337f4f14236c7bce6ffda278ff84f3088d4e092d"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/ref/guides.md"
+hash = "e1e60d23462e3315dc914ab39d9d6e359ff25a3fe8883992e52c7452dedc8c38"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/ref/index.md"
+hash = "9ee93ec09a44d40905214a92aa32673f0dd310316ee6795cdb88db56a4f213dc"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/ref/jei.md"
+hash = "eb50ad4080641b4b3b4188b82631d97635e85a351ab7471fda4681075280a619"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/ref/keys.md"
+hash = "7d760d8d6e1cd592a955a832a1bbc247d21379f0e61333284ef114f2097df083"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/ref/maps-hud.md"
+hash = "aa42d7da0af79c406f9c184caf0a2c761d6a3458da370051443046a9c869a4cd"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/ref/ui.md"
+hash = "803f7aea6cb5309db951dce1ba77c42d18ad511e066f95b0dcc269fd6364ecc7"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/ruler/colony-and-village.md"
+hash = "38648df63348a1a82232dc94bb57de59250bab59379b607c0aa8d2d09aceadd4"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/ruler/colony-build.md"
+hash = "c5919534d92c965b2fe40014dfe1dee747a5072a4ff97276f355bb6a9b864932"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/ruler/colony.md"
+hash = "6ceffc107846cc5084712774f0f03398b0a930eb918e2dce3bd86337a419f435"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/ruler/economy.md"
+hash = "651bb5c7e65ab9618845186b58d9723d6fbf2a0c46a5af25bb093276e377d338"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/ruler/foreign-villages.md"
+hash = "f32430bc1c70a86381b4b357ac5e9b06fc20eec096ce21202f29cfcdd5086944"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/ruler/index.md"
+hash = "1338bd4c69927edba53342c76d1e9487877ccacc8ef91790b972fe6b93248976"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/ruler/mca.md"
+hash = "402969ac2a8d88a9d604cd01af6638b7ab27be6ca1772e74cff47babae797f43"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/ruler/neighbors.md"
+hash = "cb0b8839b4645e6eaff497bafa2eaed3488261ab814ef22e1abce10aeabe3c9f"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/ruler/peace.md"
+hash = "18ffa40a3b15e9491eee9cd37c1d12b767b20cbcf3bc63429e13e2c688fa4678"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/ruler/recruits.md"
+hash = "3f15bb0a43c0e960a54ba81c7527274818089d6b2f2a8c6b155e070762b32ab4"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/ruler/treasury.md"
+hash = "16963005c880ab87bdb5abad009cf1bf73c740413292384925f199b432507d9a"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/ruler/village.md"
+hash = "9cd7981ef90f7c3e58b4d590a577a28e3505952c55b9919c12218f9216f82ef2"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/ruler/voice.md"
+hash = "6e95e1011d9005b3007e959435440c0089e45a7e27a47bb2a6ac05e4066fa422"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/ruler/war.md"
+hash = "e75808a44894f87db1560ade519be6c4b8fed91a9d56eb85c323252436e5b1fa"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/world/biomes.md"
+hash = "ce3a9239c16010dc04325d1a2a93a0a7d918ad3543609ab27e62a875cf43be06"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/world/index.md"
+hash = "95400c05c644cfe6daacfc4cdfe25e525497a3f875c52fba71771bcf51545a09"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/world/skylands.md"
+hash = "edab7ddef2f990504886439d463b09c6d1a5480d31248bb67f16cab08644f380"
+
+[[files]]
+file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/world/structures.md"
+hash = "ef100155235ae10e7451b64d46d6968893c4e2b8a8b485094389d815452049ea"
 
 [[files]]
 file = "kubejs/assets/zhivoymir/lang/ru_ru.json"

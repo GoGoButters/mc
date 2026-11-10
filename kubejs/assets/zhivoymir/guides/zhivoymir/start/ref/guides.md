@@ -9,18 +9,23 @@ navigation:
 
 ## Книги в игре
 
-| Руководство | Предмет | Как получить |
-|---|---|---|
-| AE2 (ME-сеть) | <ItemLink id="ae2:guide" /> | Зарядить книгу в заряднике (<Recipe id="ae2:charger/guide" fallbackText="Книга в заряднике AE2." />) |
-| Ad Astra (космос) | «Астродукс» | <Recipe id="ad_astra:astrodux" fallbackText="Книга + железо + синий краситель." /> |
-| PneumaticCraft (пневматика) | <ItemLink id="pneumaticcraft:manual" /> | Выдаётся/крафт — ищи в JEI |
-| Railcraft (железные дороги) | <ItemLink id="railcraft:guide_book" /> | Ищи в JEI |
-| War 'N Taxes (налоги и войны) | <ItemLink id="minecolonytax:war_taxes_codex" /> | Кодекс колонии; список команд — в «Голос, клавиши и команды» |
-| Advanced Peripherals | <ItemLink id="advancedperipherals:manual" /> | Ищи в JEI |
+| Руководство | Как получить |
+|---|---|
+| **AE2** (МЭ-сеть) | Зарядить обычную книгу в заряднике AE2 (рецепт ниже). Открывается и клавишей <KeyBind id="key.ae2.guide" /> над предметом |
+| **«Астродукс»** (Ad Astra, космос) | Книга + железо + синий краситель (рецепт ниже) |
+| **Руководство PneumaticCraft** | Слиток сжатого железа + книга, крафт без формы |
+| **Кодекс War 'N Taxes** (налоги и войны) | Выдаётся при первом входе в мир |
+| **Руководство Railcraft** | Рецепта в сборке нет — попроси администратора |
+
+<Recipe id="ae2:charger/guide" fallbackText="Книга в заряднике AE2." />
+
+<Recipe id="ad_astra:astrodux" fallbackText="Книга + железо + синий краситель." />
+
+Все эти книги переведены на русский. Список команд War 'N Taxes — ещё и в разделе «Голос, клавиши и команды».
 
 ## Обучение на механизмах
 
-- **Create** — Ponder-сцены: зажми `W` и нажми правой кнопкой по механизму.
+- **Create** и аддоны — Ponder-сцены: наведи курсор на механизм в инвентаре или в JEI и зажми <KeyBind id="key.ponder.ponder" />.
 - **Mekanism** — Ponder-сцены (аддон Mekanism: Ponders) + расчёт мультиблоков в JEI (см. «JEI и рецепты»).
 - **CC:Tweaked** — встроенная справка в компьютере: команда `help`.
 
