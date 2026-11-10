@@ -747,7 +747,7 @@ hash = "8e272fa92d552f7eab36a6fa28909e6bca3f6ff5b928f2d3f4c86c5cf48ee614"
 
 [[files]]
 file = "kubejs/assets/backpacked/lang/ru_ru.json"
-hash = "073510d91a89acbec0e3921c5bdf47aaf9e9cba0bf463693908577b684d49f2d"
+hash = "e9e9796ee5c67e01171ed9523b56c519355465f9d9c5319d5d78a5f7bc3e2144"
 
 [[files]]
 file = "kubejs/assets/balm/lang/ru_ru.json"
@@ -12371,7 +12371,7 @@ hash = "6bf5ddba9a52b1c57b85a20ebc06a6321c0ab0db239bd57c438f6d44a725aab5"
 
 [[files]]
 file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/life/backpacks.md"
-hash = "40f76fc87d9f116c4796b1df5db797edd8788d648a3137dc234a9bcf300072c8"
+hash = "209144f83115d91006fcdb8810fb0799defc6d9a0735c368592227e849d97a50"
 
 [[files]]
 file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/life/chests.md"
@@ -12431,7 +12431,7 @@ hash = "eb50ad4080641b4b3b4188b82631d97635e85a351ab7471fda4681075280a619"
 
 [[files]]
 file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/ref/keys.md"
-hash = "7d760d8d6e1cd592a955a832a1bbc247d21379f0e61333284ef114f2097df083"
+hash = "a964aa563e9b6397ea52c7708625c9498aa215886636dadcf2edec9b8da6ad48"
 
 [[files]]
 file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/ref/maps-hud.md"
@@ -13362,7 +13362,7 @@ metafile = true
 
 [[files]]
 file = "mods/zmclient.pw.toml"
-hash = "be799765382680f04741c8449f2053a43c41e89451a5eee8fbcbd57e9a293fc9"
+hash = "af46be2bc6a4bfdb5ccb5d13293d2079897462c182402bc78ffa1f3643e08f67"
 metafile = true
 
 [[files]]
@@ -13372,7 +13372,7 @@ metafile = true
 
 [[files]]
 file = "options.txt"
-hash = "c1cd771f48853d1442e6d92834c27bfe55b99460a97fdb76cac8ed5df711464a"
+hash = "dbe3bcbf33764bfe3e8c661b93f4a7e6ae1b85e2a53363142240fc45ca5e1ebc"
 preserve = true
 
 [[files]]
