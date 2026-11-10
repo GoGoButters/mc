@@ -1,0 +1,296 @@
+{
+	id: "73FEE18A96B01016"
+	group: ""
+	order_index: 0
+	filename: "first"
+	icon: {
+		id: "minecolonies:supplycampdeployer"
+		count: 1
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quest_links: [ ]
+	images: [ ]
+	quests: [
+		{
+			id: "1999FE22DAB27518"
+			x: 0d
+			y: 0d
+			tasks: [
+				{
+					id: "749EC6A6CD90DBB8"
+					type: "item"
+					item: {
+						id: "minecolonies:supplycampdeployer"
+						count: 1
+					}
+					count: 1
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "12E1884E11CA64B1"
+					type: "item"
+					item: {
+						id: "minecraft:bread"
+						count: 8
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "2EF0C4F6BA01DDD6"
+			x: 2d
+			y: 0d
+			icon: {
+				id: "mca:family_tree"
+				count: 1
+			}
+			dependencies: [
+				"1999FE22DAB27518"
+			]
+			tasks: [
+				{
+					id: "25CCC439C6BC3204"
+					type: "interaction"
+					interaction_type: "entity_type_tag"
+					to_interact: "minecraft:villager"
+				}
+			]
+			rewards: [
+				{
+					id: "2318C8B57CBC97B3"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "47BFF2BCC859CAD8"
+			x: 4d
+			y: 0d
+			dependencies: [
+				"2EF0C4F6BA01DDD6"
+			]
+			tasks: [
+				{
+					id: "7CBEA790DCCAB7AE"
+					type: "item"
+					item: {
+						id: "minecraft:emerald"
+						count: 1
+					}
+					count: 1
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "0D326DC01E5E4C89"
+					type: "item"
+					item: {
+						id: "minecraft:emerald"
+						count: 2
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			id: "2FC3A81E913734E1"
+			x: 4d
+			y: 1.5d
+			icon: {
+				id: "bountiful:bountyboard"
+				count: 1
+			}
+			dependencies: [
+				"2EF0C4F6BA01DDD6"
+			]
+			tasks: [
+				{
+					id: "23D839E8861F9B7B"
+					type: "interaction"
+					interaction_type: "block"
+					to_interact: "bountiful:bountyboard"
+				}
+			]
+			rewards: [
+				{
+					id: "21869597A58814FD"
+					type: "item"
+					item: {
+						id: "minecraft:emerald"
+						count: 1
+					}
+					count: 1
+				}
+			]
+		}
+		{
+			id: "6AD014DBA3B0F61A"
+			x: 2d
+			y: 6d
+			dependencies: [
+				"1999FE22DAB27518"
+			]
+			tasks: [
+				{
+					id: "123C96B7A3F985EC"
+					type: "item"
+					item: {
+						id: "structurize:sceptergold"
+						count: 1
+					}
+					count: 1
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "30FD9E3089AAC8AC"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "5BA242BA92C66780"
+			x: 4d
+			y: 6d
+			icon: {
+				id: "minecolonies:blockhuttownhall"
+				count: 1
+			}
+			dependencies: [
+				"6AD014DBA3B0F61A"
+			]
+			tasks: [
+				{
+					id: "2E0160FE0801A208"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "07DC7D5C4327C032"
+					type: "item"
+					item: {
+						id: "minecraft:oak_planks"
+						count: 32
+					}
+					count: 32
+				}
+			]
+		}
+		{
+			id: "422BE98F9FFBD028"
+			x: 4d
+			y: 3d
+			dependencies: [
+				"2EF0C4F6BA01DDD6"
+			]
+			tasks: [
+				{
+					id: "14F286E95D78E4BE"
+					type: "item"
+					item: {
+						id: "minecraft:bread"
+						count: 1
+					}
+					count: 1
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "1E2B30AD8E0AB5EF"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "2D0D0D9D5D247C02"
+			x: 4d
+			y: 4.5d
+			dependencies: [
+				"2EF0C4F6BA01DDD6"
+			]
+			tasks: [
+				{
+					id: "1648DFFFD898CA88"
+					type: "item"
+					item: {
+						id: "minecraft:iron_sword"
+						count: 1
+					}
+					count: 1
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "213DB8EC55DB0B54"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "058F06583463DCDA"
+			x: 6d
+			y: 4.5d
+			icon: {
+				id: "minecraft:zombie_head"
+				count: 1
+			}
+			dependencies: [
+				"2D0D0D9D5D247C02"
+			]
+			tasks: [
+				{
+					id: "0B32F5A71E65066A"
+					type: "kill"
+					entity: "minecraft:zombie"
+					value: 1
+				}
+			]
+			rewards: [
+				{
+					id: "6020382217278F2A"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "694439E53E153453"
+			x: 8d
+			y: 4.5d
+			icon: {
+				id: "minecraft:compass"
+				count: 1
+			}
+			dependencies: [
+				"5BA242BA92C66780"
+				"058F06583463DCDA"
+			]
+			tasks: [
+				{
+					id: "493402D33D7A1F2B"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "21CF0A6570A5339D"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+	]
+}

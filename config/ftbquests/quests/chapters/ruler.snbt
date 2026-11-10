@@ -1,0 +1,397 @@
+{
+	id: "0C9C5350D528AC8E"
+	group: ""
+	order_index: 1
+	filename: "ruler"
+	icon: {
+		id: "minecraft:golden_helmet"
+		count: 1
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quest_links: [ ]
+	images: [ ]
+	quests: [
+		{
+			id: "64A6D67E9082EADE"
+			x: 0d
+			y: 0d
+			dependencies: [
+				"694439E53E153453"
+			]
+			tasks: [
+				{
+					id: "0831620F64C701D2"
+					type: "item"
+					item: {
+						id: "mca:family_tree"
+						count: 1
+					}
+					count: 1
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "5DFBDF3CAE898161"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "57DD1A2A24538C1C"
+			x: 2d
+			y: 0d
+			dependencies: [
+				"64A6D67E9082EADE"
+			]
+			tasks: [
+				{
+					id: "153658B47A80B996"
+					type: "item"
+					item: {
+						id: "mca:matchmakers_ring"
+						count: 1
+					}
+					count: 1
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "7D9AE34CAE477EAC"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "251640809A8C2A54"
+			x: 4d
+			y: 0d
+			dependencies: [
+				"57DD1A2A24538C1C"
+			]
+			tasks: [
+				{
+					id: "16D9163C0626600E"
+					type: "item"
+					item: {
+						id: "mca:engagement_ring"
+						count: 1
+					}
+					count: 1
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "62E3D56D742BEC07"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "2BE34388AD810557"
+			x: 6d
+			y: 0d
+			icon: {
+				id: "mca:wedding_ring"
+				count: 1
+			}
+			dependencies: [
+				"251640809A8C2A54"
+			]
+			tasks: [
+				{
+					id: "0F4CD6895D56A614"
+					type: "advancement"
+					advancement: "mca:marriage"
+					criterion: ""
+				}
+			]
+			rewards: [
+				{
+					id: "197142DE4B88C873"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+		{
+			id: "4862A411E8D236DE"
+			x: 0d
+			y: 1.5d
+			icon: {
+				id: "minecolonies:blockhutbuilder"
+				count: 1
+			}
+			dependencies: [
+				"5BA242BA92C66780"
+				"694439E53E153453"
+			]
+			tasks: [
+				{
+					id: "1D71C04E41E94B4E"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "3C18EC1ADD315AC4"
+					type: "item"
+					item: {
+						id: "minecraft:oak_planks"
+						count: 16
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "7806F37AF786449B"
+			x: 2d
+			y: 1.5d
+			icon: {
+				id: "minecraft:paper"
+				count: 1
+			}
+			dependencies: [
+				"4862A411E8D236DE"
+			]
+			tasks: [
+				{
+					id: "615156F1FCDC0441"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "186CE6569070FA6D"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+		{
+			id: "0C8E601D5C3D43E7"
+			x: 2d
+			y: 3d
+			icon: {
+				id: "minecraft:iron_sword"
+				count: 1
+			}
+			dependencies: [
+				"4862A411E8D236DE"
+			]
+			tasks: [
+				{
+					id: "27A7AA29D6F77B7A"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "5CBF5FEF4F71134A"
+					type: "item"
+					item: {
+						id: "minecraft:emerald"
+						count: 2
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			id: "62A6B429EE33DA19"
+			x: 4d
+			y: 3d
+			icon: {
+				id: "minecraft:shield"
+				count: 1
+			}
+			dependencies: [
+				"0C8E601D5C3D43E7"
+			]
+			tasks: [
+				{
+					id: "18C8770A555D4FBA"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "1C9E361FE0B07232"
+					type: "item"
+					item: {
+						id: "minecraft:emerald"
+						count: 3
+					}
+					count: 3
+				}
+			]
+		}
+		{
+			id: "1E6EA6BA3BE3C362"
+			x: 0d
+			y: 4.5d
+			dependencies: [
+				"694439E53E153453"
+			]
+			tasks: [
+				{
+					id: "29BD9376AE2B5CF1"
+					type: "item"
+					item: {
+						id: "numismatics:bank_terminal"
+						count: 1
+					}
+					count: 1
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "3C2871F9575A73FD"
+					type: "item"
+					item: {
+						id: "minecraft:emerald"
+						count: 2
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			id: "2DE6EE9A5BFB0492"
+			x: 0d
+			y: 6d
+			icon: {
+				id: "minecraft:writable_book"
+				count: 1
+			}
+			dependencies: [
+				"694439E53E153453"
+			]
+			tasks: [
+				{
+					id: "6C0DAD28DCDD9E63"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "32F4C84344050A01"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "628F37C6F53A9A5F"
+			x: 2d
+			y: 6d
+			icon: {
+				id: "minecraft:gold_ingot"
+				count: 1
+			}
+			dependencies: [
+				"2DE6EE9A5BFB0492"
+			]
+			tasks: [
+				{
+					id: "0D27E09A776D4C2C"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "2D9F2F76156A6490"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+		{
+			id: "11688C7516E3CD9B"
+			x: 0d
+			y: 7.5d
+			icon: {
+				id: "minecraft:goat_horn"
+				count: 1
+			}
+			dependencies: [
+				"694439E53E153453"
+			]
+			tasks: [
+				{
+					id: "5FFC8580F5E29693"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "6FE21D0F6AA5AE0E"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "615164E233A61B66"
+			x: 4d
+			y: 6d
+			icon: {
+				id: "minecraft:iron_axe"
+				count: 1
+			}
+			dependencies: [
+				"628F37C6F53A9A5F"
+			]
+			optional: true
+			tasks: [
+				{
+					id: "5CA4850ED83F1E29"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "1EF08C299999D175"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+			]
+		}
+		{
+			id: "01B3218E23E6CCCC"
+			x: 8d
+			y: 0d
+			icon: {
+				id: "minecraft:golden_helmet"
+				count: 1
+			}
+			dependencies: [
+				"2BE34388AD810557"
+			]
+			optional: true
+			tasks: [
+				{
+					id: "6218CFF95F7718B7"
+					type: "advancement"
+					advancement: "mca:monarch"
+					criterion: ""
+				}
+			]
+			rewards: [
+				{
+					id: "0AC4A7D5DF9666EC"
+					type: "xp_levels"
+					xp_levels: 50
+				}
+			]
+		}
+	]
+}

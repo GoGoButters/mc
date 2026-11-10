@@ -22,6 +22,50 @@ file = "config/fancymenu/customization/zhivoy_mir_title.txt"
 hash = "ad928499d6f4c89cd87bf886940af12f07b6a99eac493dddf3ca20782e4fdc46"
 
 [[files]]
+file = "config/ftbquests/quests/chapter_groups.snbt"
+hash = "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/adventurer.snbt"
+hash = "a56e8f3828832bd87fdf0e26c4aa2406a15b8bd31f35e14ce156db6b4c37a8b9"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/engineer.snbt"
+hash = "0de1990f6a0695765badc70349820332d9cbc858a88bd0f1cc4c64c7357e7d9e"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/farmer.snbt"
+hash = "17d111e6741ca76b03d96ab3d5584a27da16f5adcbd5d19269be31838987f7ad"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/first.snbt"
+hash = "8c7036822de16f8aea5bf12e271340e231dd6fb621eef0aeea6beea6af3904b2"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/god.snbt"
+hash = "6be0a602b69305b9c26620c08ccb852aba1a8230bbc66e36b43d24eed4c739f8"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/life.snbt"
+hash = "f08775b583268b1e64aa80f7a71bdbed5ac41a51f0d39e5dbe6e691ffe0d8012"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/ruler.snbt"
+hash = "29e14e39b7b2099d0152d19ea4352301e168354a2ac73e71a33dd3bc26a6f9f7"
+
+[[files]]
+file = "config/ftbquests/quests/data.snbt"
+hash = "9ed41e4f88656f2051b5630ad587bf5517ceb6820e616e91ae1050af708d33eb"
+
+[[files]]
+file = "config/ftbquests/quests/lang/en_us.snbt"
+hash = "e06c88de67312f2159afe0fef88f35a7a732198f94f654fb6b1737de213db4ee"
+
+[[files]]
+file = "config/ftbquests/quests/lang/ru_ru.snbt"
+hash = "e06c88de67312f2159afe0fef88f35a7a732198f94f654fb6b1737de213db4ee"
+
+[[files]]
 file = "config/graveyard/graveyard.json5"
 hash = "b02fdf1b230f06f8436ca4a8e893b630d6312247f3d8f50b0520f635ad94e74d"
 

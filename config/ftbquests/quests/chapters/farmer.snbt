@@ -1,0 +1,261 @@
+{
+	id: "6FA3E1DF77852EC2"
+	group: ""
+	order_index: 4
+	filename: "farmer"
+	icon: {
+		id: "farmersdelight:cooking_pot"
+		count: 1
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quest_links: [ ]
+	images: [ ]
+	quests: [
+		{
+			id: "4B9C7D7A2E2A8A99"
+			x: 0d
+			y: 0d
+			dependencies: [
+				"694439E53E153453"
+			]
+			tasks: [
+				{
+					id: "562FA03F54D4DD2E"
+					type: "item"
+					item: {
+						id: "farmersdelight:cooking_pot"
+						count: 1
+					}
+					count: 1
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "219EF30C08BA58BD"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "2AF0A794BDFCF93F"
+			x: 2d
+			y: 0d
+			dependencies: [
+				"4B9C7D7A2E2A8A99"
+			]
+			tasks: [
+				{
+					id: "3DFAE195BC1FC602"
+					type: "item"
+					item: {
+						id: "farmersdelight:stove"
+						count: 1
+					}
+					count: 1
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "7AE726BC2CDE9DF2"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "6A064B14AED204E5"
+			x: 2d
+			y: 1.5d
+			dependencies: [
+				"4B9C7D7A2E2A8A99"
+			]
+			tasks: [
+				{
+					id: "76EAF6CA316C1EF2"
+					type: "item"
+					item: {
+						id: "farmersdelight:cutting_board"
+						count: 1
+					}
+					count: 1
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "1CA586B43D1D80A9"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "27A0B2219C22864D"
+			x: 4d
+			y: 1.5d
+			dependencies: [
+				"2AF0A794BDFCF93F"
+				"6A064B14AED204E5"
+			]
+			tasks: [
+				{
+					id: "3FFC8A700A885AD2"
+					type: "item"
+					item: {
+						id: "farmersdelight:chicken_soup"
+						count: 1
+					}
+					count: 1
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "4F1342A0561F3B35"
+					type: "item"
+					item: {
+						id: "minecraft:bread"
+						count: 4
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "10CAFEE1CB005C51"
+			x: 0d
+			y: 4.5d
+			dependencies: [
+				"694439E53E153453"
+			]
+			tasks: [
+				{
+					id: "5B307E75BA554F1D"
+					type: "item"
+					item: {
+						id: "crabbersdelight:crab_trap"
+						count: 1
+					}
+					count: 1
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "373AF32FAAED7D39"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "1A1FD280CBCE44C1"
+			x: 2d
+			y: 4.5d
+			dependencies: [
+				"10CAFEE1CB005C51"
+			]
+			tasks: [
+				{
+					id: "599DD80A2270D140"
+					type: "item"
+					item: {
+						id: "crabbersdelight:cooked_crab"
+						count: 1
+					}
+					count: 1
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "2BCC572BA1698FA6"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "27FA86D72D9E38D6"
+			x: 6d
+			y: 1.5d
+			dependencies: [
+				"27A0B2219C22864D"
+			]
+			tasks: [
+				{
+					id: "7A6060E6AC21F984"
+					type: "item"
+					item: {
+						id: "sereneseasons:calendar"
+						count: 1
+					}
+					count: 1
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "0E46922A6785672B"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "34FA1F1647A0B5F6"
+			x: 8d
+			y: 1.5d
+			icon: {
+				id: "minecraft:wheat"
+				count: 1
+			}
+			dependencies: [
+				"27FA86D72D9E38D6"
+			]
+			tasks: [
+				{
+					id: "0DA24C0B5DE95890"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "4CBE6427F6EBD77E"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+		{
+			id: "4D8BBB408885D430"
+			x: 6d
+			y: 3d
+			icon: {
+				id: "create:mechanical_arm"
+				count: 1
+			}
+			dependencies: [
+				"27A0B2219C22864D"
+			]
+			optional: true
+			tasks: [
+				{
+					id: "6C09E574ED31D642"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "2A51E11DC78E7928"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+			]
+		}
+	]
+}

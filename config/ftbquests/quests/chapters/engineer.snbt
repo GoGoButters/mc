@@ -1,0 +1,534 @@
+{
+	id: "303EB50EAF2D4C54"
+	group: ""
+	order_index: 2
+	filename: "engineer"
+	icon: {
+		id: "create:wrench"
+		count: 1
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quest_links: [ ]
+	images: [ ]
+	quests: [
+		{
+			id: "6D6BD4277098B710"
+			x: 0d
+			y: 0d
+			dependencies: [
+				"694439E53E153453"
+			]
+			tasks: [
+				{
+					id: "7A173D10F24B114D"
+					type: "item"
+					item: {
+						id: "create:wrench"
+						count: 1
+					}
+					count: 1
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "26E926AE82332522"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "2075526AC5E72D83"
+			x: 2d
+			y: 0d
+			dependencies: [
+				"6D6BD4277098B710"
+			]
+			tasks: [
+				{
+					id: "6D3515DA7B8FDFF2"
+					type: "item"
+					item: {
+						id: "create:hand_crank"
+						count: 1
+					}
+					count: 1
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "1FC82CD08D600FA1"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "050AD02303EE9046"
+			x: 4d
+			y: 0d
+			dependencies: [
+				"2075526AC5E72D83"
+			]
+			tasks: [
+				{
+					id: "30F3CA368F958EB9"
+					type: "item"
+					item: {
+						id: "create:cogwheel"
+						count: 1
+					}
+					count: 1
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "63BAA2A1E5EBEA89"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "41B9745B9286A9D6"
+			x: 6d
+			y: 0d
+			dependencies: [
+				"050AD02303EE9046"
+			]
+			tasks: [
+				{
+					id: "566D7FDAB26ECEF4"
+					type: "item"
+					item: {
+						id: "create:shaft"
+						count: 1
+					}
+					count: 1
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "0C29F4D6DDD9128B"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "5E818BE1A845E675"
+			x: 6d
+			y: 1.5d
+			dependencies: [
+				"050AD02303EE9046"
+			]
+			tasks: [
+				{
+					id: "7C01B55EA88EFB02"
+					type: "item"
+					item: {
+						id: "mekanism:ingot_osmium"
+						count: 1
+					}
+					count: 1
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "236E16ABE33B1F62"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "2C982DEB8E133B1E"
+			x: 8d
+			y: 1.5d
+			dependencies: [
+				"5E818BE1A845E675"
+			]
+			tasks: [
+				{
+					id: "55B1EF48326842C8"
+					type: "item"
+					item: {
+						id: "mekanism:metallurgic_infuser"
+						count: 1
+					}
+					count: 1
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "5007CC0EABA31B5C"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "7429BACFCC067AB5"
+			x: 10d
+			y: 1.5d
+			dependencies: [
+				"2C982DEB8E133B1E"
+			]
+			tasks: [
+				{
+					id: "7107E3CEDA6C9498"
+					type: "item"
+					item: {
+						id: "mekanism:enrichment_chamber"
+						count: 1
+					}
+					count: 1
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "3666449F7392BA6E"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "32FA79948ED96CDA"
+			x: 12d
+			y: 1.5d
+			dependencies: [
+				"7429BACFCC067AB5"
+			]
+			optional: true
+			tasks: [
+				{
+					id: "0ABCAD90B6EB0AFA"
+					type: "item"
+					item: {
+						id: "mekanism:basic_energy_cube"
+						count: 1
+					}
+					count: 1
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "5D332968DF4B58EA"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "53030D219C0FF6B3"
+			x: 12d
+			y: 3d
+			dependencies: [
+				"7429BACFCC067AB5"
+			]
+			tasks: [
+				{
+					id: "3D3DEE0ED0BBA4ED"
+					type: "item"
+					item: {
+						id: "ae2:charger"
+						count: 1
+					}
+					count: 1
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "44C88CE213BB510C"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "08F0EE3C135747BB"
+			x: 14d
+			y: 3d
+			dependencies: [
+				"53030D219C0FF6B3"
+			]
+			tasks: [
+				{
+					id: "1327221DAB54988B"
+					type: "item"
+					item: {
+						id: "ae2:inscriber"
+						count: 1
+					}
+					count: 1
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "6BDCB865187E0F98"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "41EE284E234C59A5"
+			x: 16d
+			y: 3d
+			dependencies: [
+				"08F0EE3C135747BB"
+			]
+			tasks: [
+				{
+					id: "6C6E6EB89D810C3C"
+					type: "item"
+					item: {
+						id: "ae2:drive"
+						count: 1
+					}
+					count: 1
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "3682B4911F9BD864"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+		{
+			id: "5BE2539A1EA8EA8F"
+			x: 18d
+			y: 3d
+			dependencies: [
+				"41EE284E234C59A5"
+			]
+			tasks: [
+				{
+					id: "64C5A7D89EFE1F92"
+					type: "item"
+					item: {
+						id: "ae2:item_storage_cell_1k"
+						count: 1
+					}
+					count: 1
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "6A50490CAE9F09C4"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "375A9EA74161BE29"
+			x: 12d
+			y: 7.5d
+			dependencies: [
+				"7429BACFCC067AB5"
+			]
+			tasks: [
+				{
+					id: "7FDC9E0E37B5A551"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:air_compressor"
+						count: 1
+					}
+					count: 1
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "3CF8BFC6A2C3A736"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+		{
+			id: "533D948C7234E472"
+			x: 14d
+			y: 7.5d
+			dependencies: [
+				"375A9EA74161BE29"
+			]
+			optional: true
+			tasks: [
+				{
+					id: "331F6AB97731ABB5"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:drone"
+						count: 1
+					}
+					count: 1
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "3DBEA7BFAEAB787E"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+		{
+			id: "6CBAF14C3E4E2FDC"
+			x: 0d
+			y: 9d
+			dependencies: [
+				"694439E53E153453"
+			]
+			tasks: [
+				{
+					id: "25A35F08C735864A"
+					type: "item"
+					item: {
+						id: "railcraft:strap_iron_track"
+						count: 1
+					}
+					count: 1
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "75D4B843023BFD58"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "0CFCB817B0930F09"
+			x: 2d
+			y: 9d
+			dependencies: [
+				"6CBAF14C3E4E2FDC"
+			]
+			optional: true
+			tasks: [
+				{
+					id: "5F037A18AE61AAA9"
+					type: "item"
+					item: {
+						id: "railcraft:steam_locomotive"
+						count: 1
+					}
+					count: 1
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "77342EDE8BAB60F2"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+			]
+		}
+		{
+			id: "3BB9ED40AA25F49F"
+			x: 0d
+			y: 10.5d
+			dependencies: [
+				"694439E53E153453"
+			]
+			tasks: [
+				{
+					id: "7DA4D98B5344B672"
+					type: "item"
+					item: {
+						id: "computercraft:computer_advanced"
+						count: 1
+					}
+					count: 1
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "4E02393E1CF1338A"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+		{
+			id: "2C6E63547FCCD0B7"
+			x: 18d
+			y: 4.5d
+			dependencies: [
+				"41EE284E234C59A5"
+			]
+			optional: true
+			tasks: [
+				{
+					id: "0ABBC63153D6AD2A"
+					type: "item"
+					item: {
+						id: "colonylink:colony_link_wand"
+						count: 1
+					}
+					count: 1
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "7EA6989F56D868B1"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+			]
+		}
+		{
+			id: "1659350DCA46DED2"
+			x: 18d
+			y: 6d
+			dependencies: [
+				"41EE284E234C59A5"
+			]
+			optional: true
+			tasks: [
+				{
+					id: "561A258AC8C1E361"
+					type: "item"
+					item: {
+						id: "appmek:chemical_storage_cell_1k"
+						count: 1
+					}
+					count: 1
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "08575D5FAA8080F4"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+		}
+	]
+}
