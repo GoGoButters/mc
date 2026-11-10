@@ -1,7 +1,7 @@
 ---
 navigation:
   title: Деревня и жители
-  parent: index.md
+  parent: ruler/index.md
   position: 2
 ---
 

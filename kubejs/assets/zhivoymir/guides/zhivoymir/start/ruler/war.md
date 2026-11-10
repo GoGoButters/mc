@@ -1,8 +1,8 @@
 ---
 navigation:
   title: Война
-  parent: neighbors.md
-  position: 5
+  parent: ruler/index.md
+  position: 11
 ---
 
 # Война

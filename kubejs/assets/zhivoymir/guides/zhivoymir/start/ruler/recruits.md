@@ -1,8 +1,8 @@
 ---
 navigation:
-  title: Рекруты
-  parent: neighbors.md
-  position: 6
+  title: Рекруты и армия
+  parent: ruler/index.md
+  position: 7
 ---
 
 # Рекруты

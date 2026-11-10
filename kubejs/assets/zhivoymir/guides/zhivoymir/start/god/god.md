@@ -2,7 +2,7 @@
 navigation:
   title: Бог и вера
   parent: index.md
-  position: 7
+  position: 80
 ---
 
 # Бог и вера

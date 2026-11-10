@@ -1,8 +1,8 @@
 ---
 navigation:
   title: Мир и союзы
-  parent: neighbors.md
-  position: 2
+  parent: ruler/index.md
+  position: 12
 ---
 
 # Мир и союзы

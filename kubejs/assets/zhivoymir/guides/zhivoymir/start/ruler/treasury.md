@@ -1,8 +1,8 @@
 ---
 navigation:
   title: Казна и налоги
-  parent: neighbors.md
-  position: 4
+  parent: ruler/index.md
+  position: 10
 ---
 
 # Казна и налоги

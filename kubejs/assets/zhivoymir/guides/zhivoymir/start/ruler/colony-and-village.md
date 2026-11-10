@@ -1,8 +1,8 @@
 ---
 navigation:
   title: Деревня и колония вместе
-  parent: index.md
-  position: 4
+  parent: ruler/index.md
+  position: 5
 ---
 
 # Деревня и колония вместе

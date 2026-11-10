@@ -1,7 +1,7 @@
 ---
 navigation:
   title: Твоя колония
-  parent: index.md
+  parent: ruler/index.md
   position: 3
 ---
 

@@ -1,8 +1,8 @@
 ---
 navigation:
   title: Чужие деревни и короли
-  parent: neighbors.md
-  position: 1
+  parent: ruler/index.md
+  position: 8
 ---
 
 # Чужие деревни и короли
