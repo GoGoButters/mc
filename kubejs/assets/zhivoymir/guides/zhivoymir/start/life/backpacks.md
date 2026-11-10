@@ -13,7 +13,7 @@ navigation:
 
 - Надень рюкзак — он появится в слоте «Рюкзак» рядом с инвентарём.
 - <KeyBind id="key.backpacked.open_backpack" /> — открыть рюкзак.
-- <KeyBind id="key.backpacked.open_management" /> — управление рюкзаком.
+- <KeyBind id="key.backpacked.open_management" /> — управление рюкзаками.
 
 ## Слоты и внешний вид
 

@@ -6,4 +6,6 @@ onboardAccessibility:false
 skipMultiplayerWarning:true
 joinedFirstServer:true
 tutorialStep:none
-key_key.chat:key.keyboard.caps.lock
+key_key.chat:key.keyboard.t
+key_key.push_to_talk:key.keyboard.caps.lock
+key_key.backpacked.open_management:key.keyboard.b:SHIFT

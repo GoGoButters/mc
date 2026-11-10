@@ -13,7 +13,7 @@ navigation:
 
 | Клавиша | Что делает |
 |---|---|
-| <KeyBind id="key.push_to_talk" /> | Говорить (держать) |
+| <KeyBind id="key.push_to_talk" /> | Говорить: держи клавишу, пока говоришь |
 | <KeyBind id="key.whisper" /> | Шёпот |
 | <KeyBind id="key.voice_chat" /> | Окно голосового чата |
 | <KeyBind id="key.voice_chat_settings" /> | Настройки голосового чата |
@@ -27,7 +27,7 @@ navigation:
 |---|---|
 | <KeyBind id="keybinds.combat_roll.roll" /> | Рывок-кувырок (Combat Roll) |
 | <KeyBind id="key.backpacked.open_backpack" /> | Открыть рюкзак |
-| <KeyBind id="key.backpacked.open_management" /> | Управление рюкзаком |
+| <KeyBind id="key.backpacked.open_management" /> | Управление рюкзаками |
 | <KeyBind id="key.corpse.death_history" /> | История смертей (Corpse) |
 
 ## Колония и войны
