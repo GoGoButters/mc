@@ -3,6 +3,6 @@
   "minVersion": "0.8",
   "package": "ru.zhivoymir.client.mixin",
   "compatibilityLevel": "JAVA_21",
-  "client": ["McaSpeechRangeMixin", "McaHubOpenerMixin", "McaSpeechQueueMixin"],
+  "client": ["McaSpeechRangeMixin", "McaHubOpenerMixin", "McaSpeechQueueMixin", "StructurizeBuildToolMixin", "StructurizeListsMixin$Alternatives", "StructurizeListsMixin$Levels", "StructurizeSwitchPackMixin", "McolBlueprintNamesMixin$StyleList", "McolBlueprintNamesMixin$TownHallStyle", "McolBlueprintNamesMixin$BuildingBrowser", "McolBlueprintNamesMixin$Decoration"],
   "injectors": { "defaultRequire": 0 }
 }

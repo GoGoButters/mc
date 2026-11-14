@@ -21,6 +21,10 @@ neoForge {
 dependencies {
     // MCA — только для компиляции
     compileOnly files('libs/mca-neoforge-7.7.36-beta.3+1.21.1.jar')
+    // Xaero's Minimap — только для компиляции (метки колоний)
+    compileOnly files('libs/xaerominimap-neoforge-1.21.1-26.6.0.jar')
+    // Structurize — только для компиляции (русские названия в инструменте строителя)
+    compileOnly files('libs/structurize-1.0.837-1.21.1-snapshot.jar')
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {

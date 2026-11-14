@@ -1,8 +1,8 @@
 name = "Zhivoy Mir Client Tweaks"
-filename = "zmclient-0.3.3.jar"
+filename = "zmclient-0.4.1.jar"
 side = "client"
 
 [download]
-url = "https://gogobutters.github.io/mc/dist/client-mods/zmclient-0.3.3.jar"
+url = "https://gogobutters.github.io/mc/dist/client-mods/zmclient-0.4.1.jar"
 hash-format = "sha512"
-hash = "2a3687315a970dcddca0a72618250753422bb35e53bf2a776f9f390481e9a00aae0378f43efad2dea445eeec4c5797fd3b40834f235812376d87305552d02815"
+hash = "d2e146f51e997ad45aaed3f96d64850b3c2198998bc5268ac8c6202d9effb6e4727a28f43df5bef963620ab07964c5c3e3899c29883d0537f540315d78c0067c"
