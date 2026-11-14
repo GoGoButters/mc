@@ -2,5 +2,7 @@
   "blockui.config.default.boolean": "[По умолчанию: %s]",
   "blockui.config.default.enum": "[По умолчанию: %s, значения: %s]",
   "blockui.config.default.number": "[По умолчанию: %s, мин: %s, макс: %s]",
-  "blockui.config.default.string": "[По умолчанию: %s]"
+  "blockui.config.default.string": "[По умолчанию: %s]",
+  "blockui.tooltip.item_additional_info": "Удерживайте %s, чтобы показать дополнительную информацию",
+  "blockui.tooltip.properties": "Свойства BlockState:"
 }
