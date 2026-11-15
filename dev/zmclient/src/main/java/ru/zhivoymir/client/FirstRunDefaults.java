@@ -42,9 +42,10 @@ public final class FirstRunDefaults {
     private static final Path KEYS_MARKER = FMLPaths.CONFIGDIR.get().resolve("zmclient-defaults-2.done");
     private static final Path VOICE_MARKER = FMLPaths.CONFIGDIR.get().resolve("zmclient-defaults-3.done");
     private static final Path MAP_MARKER = FMLPaths.CONFIGDIR.get().resolve("zmclient-defaults-4.done");
+    private static final Path MAP_M_MARKER = FMLPaths.CONFIGDIR.get().resolve("zmclient-defaults-5.done");
     private static final Logger LOG = LogUtils.getLogger();
     private static boolean done = Files.exists(MARKER) && Files.exists(KEYS_MARKER) && Files.exists(VOICE_MARKER)
-            && Files.exists(MAP_MARKER);
+            && Files.exists(MAP_MARKER) && Files.exists(MAP_M_MARKER);
 
     private FirstRunDefaults() {}
 
@@ -93,6 +94,15 @@ public final class FirstRunDefaults {
             }
             mark(MAP_MARKER);
         }
+        if (!Files.exists(MAP_M_MARKER)) {  // M — полная карта JourneyMap, карта владений Recruits — Shift+M
+            for (KeyMapping k : o.keyMappings) {
+                if (k.getName().equals("key.recruits.map_screen_key")) rebind(k, "m", KeyModifier.SHIFT, "key.keyboard.m");
+            }
+            for (KeyMapping k : o.keyMappings) {
+                if (k.getName().equals("key.journeymap.map_toggle_alt")) rebind(k, "j", "key.keyboard.m");
+            }
+            mark(MAP_M_MARKER);
+        }
         KeyMapping.resetMapping();
         o.save();
         if (event.getNewScreen() instanceof AccessibilityOnboardingScreen) event.setNewScreen(new TitleScreen(true));
@@ -101,8 +111,12 @@ public final class FirstRunDefaults {
 
     /** Переназначает клавишу ({@code to} = null — снять), только если она стоит на {@code from} без модификатора (как по умолчанию). */
     private static void rebind(KeyMapping k, String from, String to) {
+        rebind(k, from, KeyModifier.NONE, to);
+    }
+
+    private static void rebind(KeyMapping k, String from, KeyModifier mod, String to) {
         if (k.getKeyModifier() == KeyModifier.NONE && k.getKey().equals(InputConstants.getKey("key.keyboard." + from)))
-            k.setKeyModifierAndCode(KeyModifier.NONE, to == null ? InputConstants.UNKNOWN : InputConstants.getKey(to));
+            k.setKeyModifierAndCode(mod, to == null ? InputConstants.UNKNOWN : InputConstants.getKey(to));
     }
 
     /** Simple Voice Chat: режим микрофона — активация голосом. False — не вышло, попробуем при следующем запуске. */

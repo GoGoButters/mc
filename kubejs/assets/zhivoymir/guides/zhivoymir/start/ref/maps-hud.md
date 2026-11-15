@@ -14,6 +14,7 @@ navigation:
 - **Метки** — создать на своём месте: <KeyBind id="key.journeymap.create_waypoint" />, список меток: <KeyBind id="key.journeymap.fullscreen_waypoints" />.
 - **Колонии** — сервер сам ставит золотые метки всех колоний MineColonies: «Название (Владелец)», в группе «Колонии». Удалить их нельзя: через секунду они вернутся.
 - **Границы колоний** MineColonies видны на миникарте и полной карте.
+- **Карта территорий** Villager Recruits (владения фракций) — отдельная карта на <KeyBind id="key.recruits.map_screen_key" />; меток и границ колоний на ней нет.
 
 ## Наведение и инфо
 

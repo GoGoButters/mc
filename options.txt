@@ -13,3 +13,5 @@ key_key.journeymap.create_waypoint:key.keyboard.z
 key_key.journeymap.fullscreen_create_waypoint:key.keyboard.z
 key_key.journeymap.fullscreen_waypoints:key.keyboard.right.bracket
 key_key.journeymap.toggle_entity_names:key.keyboard.unknown
+key_key.journeymap.map_toggle_alt:key.keyboard.m
+key_key.recruits.map_screen_key:key.keyboard.m:SHIFT
