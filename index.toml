@@ -12395,7 +12395,7 @@ hash = "314ec20cfb479c34d2fd0a3b578c5b436f73451f9a384066253b700a985bea1a"
 
 [[files]]
 file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/path/index.md"
-hash = "389d50d4bd25545cbebac495bab0d45d54f825f802eb1d94e1f0d564f7c68184"
+hash = "119409a5d5afd7ebe3d97b452b25f5d37cc63dc893c473dc7b1c21c81313e49d"
 
 [[files]]
 file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/path/ruler.md"
@@ -12530,8 +12530,24 @@ file = "kubejs/data/ad_astra/tags/entity_type/lives_without_oxygen.json"
 hash = "94684e022dd1be4e6827a99794e226aba9c15763dc08ffd1bdb72bdc804f9fb4"
 
 [[files]]
+file = "kubejs/data/buildcraftfactory/recipe/distiller/zm/ad_astra_oil.json"
+hash = "f9b4ebe5f1657a28298df6ec734f14993e2c7fa802083303a9993b763d2c7a5f"
+
+[[files]]
+file = "kubejs/data/buildcraftfactory/recipe/distiller/zm/pneumaticcraft_oil.json"
+hash = "133d2055548acc779e9cc56328c0c0d1f5ec2dfddc91bf74752a1899133c5708"
+
+[[files]]
 file = "kubejs/data/c/tags/fluid/crude_oil.json"
-hash = "7cda0e42f18e788f401bf19fe2377f0abe1ab74376ebc55c4ce260e533ff33b3"
+hash = "75f16443a44d6d62d378279dc7f7e6cbf3e9bd162fb55d17c4c7acd138df0aec"
+
+[[files]]
+file = "kubejs/data/c/tags/fluid/oil.json"
+hash = "e8212a0115ddd616ef57c1e57dc0854aa35ef5349e033f2cf89778881cc947e4"
+
+[[files]]
+file = "kubejs/data/railcraft/data_maps/fluid/fluid_heat.json"
+hash = "e9c5da53cc9351b3e326d68410a970960cbcfe1eff76424205fb2f6859312294"
 
 [[files]]
 file = "kubejs/server_scripts/guide.js"
