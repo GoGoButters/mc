@@ -3,6 +3,6 @@
   "minVersion": "0.8",
   "package": "ru.zhivoymir.bridge.mixin",
   "compatibilityLevel": "JAVA_21",
-  "mixins": ["ThiefSettleMixin"],
+  "mixins": ["SleepInBedHomeMixin", "ThiefSettleMixin"],
   "injectors": { "defaultRequire": 0 }
 }
