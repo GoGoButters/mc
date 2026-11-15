@@ -2,6 +2,8 @@ package ru.zhivoymir.bridge;
 
 import com.minecolonies.api.IMinecoloniesAPI;
 import com.minecolonies.api.eventbus.events.colony.ColonyCreatedModEvent;
+import com.minecolonies.api.eventbus.events.colony.ColonyDeletedModEvent;
+import com.minecolonies.api.eventbus.events.colony.ColonyNameChangedModEvent;
 import com.mojang.logging.LogUtils;
 import net.neoforged.bus.api.EventPriority;
 import net.neoforged.bus.api.IEventBus;
@@ -14,8 +16,10 @@ import net.neoforged.neoforge.event.RegisterCommandsEvent;
 import net.neoforged.neoforge.event.entity.living.LivingDeathEvent;
 import net.neoforged.neoforge.event.level.BlockEvent;
 import net.neoforged.neoforge.event.tick.ServerTickEvent;
+import net.neoforged.neoforge.event.entity.player.PlayerEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
 import net.neoforged.neoforge.event.server.ServerStartedEvent;
+import net.neoforged.neoforge.event.server.ServerStoppedEvent;
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 import org.slf4j.Logger;
 
@@ -41,6 +45,8 @@ public final class Bridge {
     public static final ModConfigSpec.IntValue GUARD_KILL_MARGIN;
     public static final ModConfigSpec.IntValue THEFT_PENALTY;
     public static final ModConfigSpec.BooleanValue REPLANT;
+    public static final ModConfigSpec.BooleanValue COLONY_MARKERS;
+    public static final ModConfigSpec.BooleanValue COLONY_ANNOUNCE;
 
     static {
         ModConfigSpec.Builder b = new ModConfigSpec.Builder();
@@ -66,6 +72,10 @@ public final class Bridge {
                 .defineInRange("theftPenalty", 30, 0, 100000);
         REPLANT = b.comment("When a player fells a natural tree from its base (FallingTree), plant a sapling of the same kind in the stump's place (taken from the drops, else from the player's inventory).")
                 .define("replantSaplings", true);
+        COLONY_MARKERS = b.comment("Send all MineColonies colonies to clients (zmclient) as JourneyMap waypoints. When off, clients get an empty list once.")
+                .define("colonyMarkers", true);
+        COLONY_ANNOUNCE = b.comment("Announce a newly founded colony to all players in chat.")
+                .define("colonyAnnounce", true);
         SPEC = b.build();
     }
 
@@ -79,11 +89,20 @@ public final class Bridge {
         NeoForge.EVENT_BUS.addListener(Relocation::onEntityInteract);
         NeoForge.EVENT_BUS.addListener((LivingDeathEvent e) -> Reputation.onDeath(e));
         NeoForge.EVENT_BUS.addListener(EventPriority.LOWEST, (BlockEvent.BreakEvent e) -> Replant.onBreak(e));
-        NeoForge.EVENT_BUS.addListener((ServerTickEvent.Post e) -> Replant.onTick(e));
+        NeoForge.EVENT_BUS.addListener((ServerTickEvent.Post e) -> {
+            Replant.onTick(e);
+            ColonyMarkers.onServerTick(e);
+        });
+        bus.addListener(ColonyMarkers::onRegisterPayloads);
+        NeoForge.EVENT_BUS.addListener((PlayerEvent.PlayerLoggedInEvent e) -> ColonyMarkers.onLogin(e));
+        NeoForge.EVENT_BUS.addListener((ServerStoppedEvent e) -> ColonyMarkers.onServerStopped(e));
         NeoForge.EVENT_BUS.addListener((ServerStartedEvent e) -> {
             if (subscribed) return;
             subscribed = true;
             IMinecoloniesAPI.getInstance().getEventBus().subscribe(ColonyCreatedModEvent.class, ProximityWarning::onColonyCreated);
+            IMinecoloniesAPI.getInstance().getEventBus().subscribe(ColonyCreatedModEvent.class, ColonyMarkers::onColonyCreated);
+            IMinecoloniesAPI.getInstance().getEventBus().subscribe(ColonyNameChangedModEvent.class, ev -> ColonyMarkers.markDirty());
+            IMinecoloniesAPI.getInstance().getEventBus().subscribe(ColonyDeletedModEvent.class, ev -> ColonyMarkers.markDirty());
         });
     }
 

@@ -13,9 +13,9 @@ import net.neoforged.neoforge.client.event.ScreenEvent;
 import org.lwjgl.glfw.GLFW;
 
 /**
- * Говорят в голосовом чате, зажав Caps Lock, но Windows при каждом нажатии переключает заглавные буквы.
+ * С жителями говорят, зажав Caps Lock, но Windows при каждом нажатии переключает заглавные буквы.
  * Если при открытии любого окна (чат, табличка, наковальня) Caps Lock горит — нажимаем его ещё раз,
- * чтобы игрок писал строчными. Работает, только пока на Caps Lock стоит «Говорить» или чат.
+ * чтобы игрок писал строчными. Работает, только пока на Caps Lock стоит «Говорить с жителями» или чат.
  */
 @EventBusSubscriber(modid = ZhivoyMirClient.MOD_ID, value = Dist.CLIENT)
 public final class CapsLockTalk {
@@ -48,11 +48,11 @@ public final class CapsLockTalk {
     }
 
     private static boolean onCapsLock() {
-        for (KeyMapping k : Minecraft.getInstance().options.keyMappings) {
-            if (!k.getName().equals("key.push_to_talk") && !k.getName().equals("key.chat")) continue;
-            InputConstants.Key key = k.getKey();
-            if (key.getType() == InputConstants.Type.KEYSYM && key.getValue() == GLFW.GLFW_KEY_CAPS_LOCK) return true;
-        }
-        return false;
+        return isCapsLock(NpcTalk.KEY) || isCapsLock(Minecraft.getInstance().options.keyChat);
+    }
+
+    private static boolean isCapsLock(KeyMapping k) {
+        InputConstants.Key key = k.getKey();
+        return key.getType() == InputConstants.Type.KEYSYM && key.getValue() == GLFW.GLFW_KEY_CAPS_LOCK;
     }
 }

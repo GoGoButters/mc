@@ -6,7 +6,7 @@ license = "${mod_license}"
 modId = "${mod_id}"
 version = "${mod_version}"
 displayName = "${mod_name}"
-description = '''Клиентские правки «Живого мира»: озвучку жителей MCA слышно вдвое дальше (без прибавки громкости вблизи); метки колоний MineColonies на карте Xaero (список присылает сервер); русские названия стилей, разделов и чертежей в инструменте строителя Structurize/MineColonies. Только для клиента.'''
+description = '''Клиентские правки «Живого мира»: озвучку жителей MCA слышно вдвое дальше (без прибавки громкости вблизи); метки колоний MineColonies на карте JourneyMap (список присылает сервер); клавиша «Говорить с жителями»; русские названия стилей, разделов и чертежей в инструменте строителя Structurize/MineColonies. Только для клиента.'''
 
 [[mixins]]
 config = "${mod_id}.mixins.json"
@@ -26,7 +26,7 @@ ordering = "AFTER"
 side = "CLIENT"
 
 [[dependencies.${mod_id}]]
-modId = "xaerominimap"
+modId = "journeymap"
 type = "optional"
 versionRange = "*"
 ordering = "AFTER"

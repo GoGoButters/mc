@@ -14,5 +14,11 @@ public final class ZhivoyMirClient {
         bus.addListener(ColonyWaypoints::onRegisterPayloads);
         NeoForge.EVENT_BUS.addListener(ColonyWaypoints::onClientTick);
         NeoForge.EVENT_BUS.addListener(ColonyWaypoints::onLoggingOut);
+        bus.addListener(NpcTalk::onRegisterKeys);
+        bus.addListener(NpcTalk::onRegisterPayloads);
+        bus.addListener(NpcTalk::onRegisterLayers);
+        NeoForge.EVENT_BUS.addListener(NpcTalk::onClientTick);
+        NeoForge.EVENT_BUS.addListener(NpcTalk::onScreenOpening);
+        NeoForge.EVENT_BUS.addListener(NpcTalk::onLoggingOut);
     }
 }

@@ -11,15 +11,27 @@ navigation:
 
 ## Голос (Simple Voice Chat)
 
+Друзья слышат тебя всегда: микрофон включается сам, когда ты говоришь (активация голосом). Жителям и богу — только пока зажата клавиша «Говорить с жителями».
+
 | Клавиша | Что делает |
 |---|---|
-| <KeyBind id="key.push_to_talk" /> | Говорить: держи клавишу, пока говоришь |
+| <KeyBind id="key.zmclient.talk" /> | Говорить с жителями: держи, пока говоришь, — слышат жители, колонисты и бог |
 | <KeyBind id="key.whisper" /> | Шёпот |
 | <KeyBind id="key.voice_chat" /> | Окно голосового чата |
 | <KeyBind id="key.voice_chat_settings" /> | Настройки голосового чата |
 | <KeyBind id="key.voice_chat_group" /> | Групповой чат |
 | <KeyBind id="key.mute_microphone" /> | Отключить микрофон |
 | <KeyBind id="key.disable_voice_chat" /> | Выключить голосовой чат |
+
+## Карта (JourneyMap)
+
+| Клавиша | Что делает |
+|---|---|
+| <KeyBind id="key.journeymap.map_toggle_alt" /> | Полная карта мира |
+| <KeyBind id="key.journeymap.minimap_toggle_alt" /> | Показать/спрятать миникарту |
+| <KeyBind id="key.journeymap.create_waypoint" /> | Создать метку на своём месте |
+| <KeyBind id="key.journeymap.fullscreen_waypoints" /> | Список меток |
+| <KeyBind id="key.journeymap.zoom_in" /> / <KeyBind id="key.journeymap.zoom_out" /> | Приблизить / отдалить миникарту |
 
 ## Бой и снаряжение
 

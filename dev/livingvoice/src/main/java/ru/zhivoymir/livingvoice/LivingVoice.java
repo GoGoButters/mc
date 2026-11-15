@@ -11,7 +11,7 @@ import net.neoforged.neoforge.event.RegisterCommandsEvent;
 import org.slf4j.Logger;
 
 /**
- * Голосовые разговоры с жителями: речь из Simple Voice Chat (пока игрок держит кнопку) распознаётся
+ * Голосовые разговоры с жителями: речь из Simple Voice Chat (пока игрок держит клавишу «Говорить с жителями») распознаётся
  * сервисом STT и уходит тому жителю MCA или колонисту, на которого игрок смотрит. Колонисты отвечают голосом.
  */
 @Mod(LivingVoice.MOD_ID)
@@ -29,6 +29,9 @@ public final class LivingVoice {
     public static final ModConfigSpec.DoubleValue VOICE_DISTANCE;
     public static final ModConfigSpec.ConfigValue<String> DUMP_DIR;
     public static final ModConfigSpec.IntValue REPLY_GAP_TICKS;
+    public static final ModConfigSpec.BooleanValue REQUIRE_TALK_KEY;
+    public static final ModConfigSpec.IntValue TALK_KEY_GRACE_MS;
+    public static final ModConfigSpec.BooleanValue SHOW_HINTS;
 
     static {
         ModConfigSpec.Builder b = new ModConfigSpec.Builder();
@@ -50,11 +53,19 @@ public final class LivingVoice {
                 .define("debugDumpDir", "");
         REPLY_GAP_TICKS = b.comment("Pause (ticks) before a colonist starts \"typing\" a reply to a player. Living Colonists waits 70-140 ticks; -1 = keep that.")
                 .defineInRange("replyGapTicks", 10, -1, 200);
+        REQUIRE_TALK_KEY = b.comment("Recognize speech only while the player holds the \"talk to villagers\" key (zmclient). False = every voice chat phrase.")
+                .define("requireTalkKey", true);
+        TALK_KEY_GRACE_MS = b.comment("Voice packets still count this long (ms) after the key is released, and this much speech before the press is kept.")
+                .defineInRange("talkKeyGraceMs", 300, 0, 2000);
+        SHOW_HINTS = b.comment("Show \"didn't catch that\" and \"nobody is listening\" hints in the action bar.")
+                .define("showHints", false);
         SPEC = b.build();
     }
 
     public LivingVoice(IEventBus bus, ModContainer container) {
         container.registerConfig(ModConfig.Type.COMMON, SPEC);
+        bus.addListener(TalkKey::onRegisterPayloads);
+        NeoForge.EVENT_BUS.addListener(TalkKey::onLoggedOut);
         NeoForge.EVENT_BUS.addListener((RegisterCommandsEvent e) -> DebugCommands.register(e.getDispatcher()));
     }
 }

@@ -12258,22 +12258,6 @@ file = "kubejs/assets/waystones/lang/ru_ru.json"
 hash = "766b0ffbb2d941af3fe5240eb7f71790ce9e5f994f202627a1f03076f6d23a63"
 
 [[files]]
-file = "kubejs/assets/xaerobetterpvp/lang/ru_ru.json"
-hash = "dd8da831f4d7eed9d2d747dc5b1e6480d46f37d85753c4b634ada06f54c89d1f"
-
-[[files]]
-file = "kubejs/assets/xaerolib/lang/ru_ru.json"
-hash = "bf765fbf5749e6c57bf720709308146eeb98afda853960dc1cea9320896f45d7"
-
-[[files]]
-file = "kubejs/assets/xaerominimap/lang/ru_ru.json"
-hash = "e961059566c84760cd6477dc83e22589a7983b217af1d853b34dab1e05f246e2"
-
-[[files]]
-file = "kubejs/assets/xaeroworldmap/lang/ru_ru.json"
-hash = "0f9adbd35d178c78399ddd848bd553bd181bb01af5f5eda96122c1923efd7e34"
-
-[[files]]
 file = "kubejs/assets/yungsapi/lang/ru_ru.json"
 hash = "699131728660e5287ceddc972ddff6d1aa5f5304119ad657532b114c8de69cf8"
 
@@ -12363,11 +12347,11 @@ hash = "378cc804bdb53f2b7d14c4dcbd7a9472bf91adcd14d1430d83945afdf06c5a44"
 
 [[files]]
 file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/first-steps.md"
-hash = "75ff3c7e5c0950c108f63fa63219e4f82d3318d14714118169d324337787395e"
+hash = "6d879bb59f8ca26baa89ba1c94a17e1ec2ddabd3bdce69238006dabd910dd7bb"
 
 [[files]]
 file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/god/god.md"
-hash = "6045dde375f6eb7cc2f1ca901280d731d1065c5b31eb05fff6f9f372e8ab3798"
+hash = "2b0f8bfb0d712308c6b68576bf8daea22e41cc78affd393599a4bc870dd208a8"
 
 [[files]]
 file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/index.md"
@@ -12419,7 +12403,7 @@ hash = "f9d1925fbc37130b745f494e30f1af6ce4768eb9345e08c0482b52807fba8267"
 
 [[files]]
 file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/ref/commands.md"
-hash = "8ae0c1687df92095861ba076337f4f14236c7bce6ffda278ff84f3088d4e092d"
+hash = "45692c306b4029cc84916b21bafada1ff97fd15935b023a0291d22164928585e"
 
 [[files]]
 file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/ref/guides.md"
@@ -12435,11 +12419,11 @@ hash = "eb50ad4080641b4b3b4188b82631d97635e85a351ab7471fda4681075280a619"
 
 [[files]]
 file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/ref/keys.md"
-hash = "a964aa563e9b6397ea52c7708625c9498aa215886636dadcf2edec9b8da6ad48"
+hash = "79a4a3602fb3036bee6ac75321c92672b0bfa9dcb62cada0ce3602020d51da25"
 
 [[files]]
 file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/ref/maps-hud.md"
-hash = "aa42d7da0af79c406f9c184caf0a2c761d6a3458da370051443046a9c869a4cd"
+hash = "e59bcbd264e39f421c7e83646f0cc8ae47d4875b8d3ef5e6c3e3921af8a33a29"
 
 [[files]]
 file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/ref/ui.md"
@@ -12491,11 +12475,11 @@ hash = "16963005c880ab87bdb5abad009cf1bf73c740413292384925f199b432507d9a"
 
 [[files]]
 file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/ruler/village.md"
-hash = "9cd7981ef90f7c3e58b4d590a577a28e3505952c55b9919c12218f9216f82ef2"
+hash = "5eb94a06f71dc5827b918725ba59dd40bc0451e37de8fb295f35d8069e54ba71"
 
 [[files]]
 file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/ruler/voice.md"
-hash = "6e95e1011d9005b3007e959435440c0089e45a7e27a47bb2a6ac05e4066fa422"
+hash = "3ca0893ad7c6e03a4da1248f8a76f56e32c7b4886d62f42e1e8989680b8096ec"
 
 [[files]]
 file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/ruler/war.md"
@@ -12522,8 +12506,12 @@ file = "kubejs/assets/zhivoymir/lang/ru_ru.json"
 hash = "034b8f9758f40dee1280b76810952e383a5322c74ff3e16357b9597b2bd046c4"
 
 [[files]]
+file = "kubejs/assets/zmclient/lang/en_us.json"
+hash = "fed64978297dcc813ea35ab421c0aa751b4abc02aa57449ed8ad4db6fb8ce4d4"
+
+[[files]]
 file = "kubejs/assets/zmclient/lang/ru_ru.json"
-hash = "44e5bdde1bb8aee20aebd615932dc63cc2f92eb783d5ff4c9a00927235d5c0f5"
+hash = "6118477738d9fcf02ecb13c0f46265b424cd0ed02d0474d3f3516c1da26fc2b7"
 
 [[files]]
 file = "kubejs/data/ad_astra/tags/entity_type/can_survive_extreme_cold.json"
@@ -12934,6 +12922,11 @@ hash = "b0c37ca9826781a6bf1373ae02a141b4202037515eb071ec2327410771de6ea5"
 metafile = true
 
 [[files]]
+file = "mods/journeymap.pw.toml"
+hash = "7be9b6349280a4358f79495a4415e6a8ab54db7166112213062576f6c8051571"
+metafile = true
+
+[[files]]
 file = "mods/just-enough-mekanism-multiblocks.pw.toml"
 hash = "df8734def5da91f5e78c468e41e64e32a54c504a006d3bb5615e789c325219a3"
 metafile = true
@@ -12995,7 +12988,7 @@ metafile = true
 
 [[files]]
 file = "mods/livingvoice.pw.toml"
-hash = "98d6e889c32fc165a1f024a70701b05aeb0b820a76be3e28d447005a12a7998b"
+hash = "df0725a3d23a5cbac1cd37bbcac92a4e604334b14fe1537f88a59e7066361d23"
 metafile = true
 
 [[files]]
@@ -13304,16 +13297,6 @@ hash = "2dad5577c5ec5e73bb3d5cec8da606e3b72e384207c9291a25e1ae96fd20bb70"
 metafile = true
 
 [[files]]
-file = "mods/xaeros-minimap.pw.toml"
-hash = "e97cb865d7a8c8310905d9140899fa55ea23c3fff2e23a17255ce2c162322ad7"
-metafile = true
-
-[[files]]
-file = "mods/xaeros-world-map.pw.toml"
-hash = "3a8e91aecdb602039ba1f7445bbf6b64cc5a46344339a3ffaf3b2e3eb2f5bcbc"
-metafile = true
-
-[[files]]
 file = "mods/yungs-api.pw.toml"
 hash = "dde31f05114c72cb2f58e522417487730b872e456f77fdd02c032c9235791f6c"
 metafile = true
@@ -13365,12 +13348,12 @@ metafile = true
 
 [[files]]
 file = "mods/zmbridge.pw.toml"
-hash = "171caf4ca27a5448f0fcaad6d15b6c192bbf503b4151ba81428f62de21a44506"
+hash = "5d1fd9f206bd6c6cd9855250d1bd90cb1ba578ea3a3ad025e281d5131559f2c3"
 metafile = true
 
 [[files]]
 file = "mods/zmclient.pw.toml"
-hash = "1ae3b6423b62e01f1e6b4f962e7b74fdd1d143ba7d2bb9b5699b07d1cbb379ab"
+hash = "2c9e20cfdb5501b1198b599203614d9c704f1d62fb826e5de1ab5da5825a6bf3"
 metafile = true
 
 [[files]]
@@ -13380,7 +13363,7 @@ metafile = true
 
 [[files]]
 file = "options.txt"
-hash = "dbe3bcbf33764bfe3e8c661b93f4a7e6ae1b85e2a53363142240fc45ca5e1ebc"
+hash = "9f3e87612969e32d6db0a33c2ce3505c93ba2eaaf31bd95faf5eb5f90b64fa19"
 preserve = true
 
 [[files]]

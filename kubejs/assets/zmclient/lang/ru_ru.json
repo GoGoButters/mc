@@ -1,4 +1,7 @@
 {
+  "key.categories.zmclient": "Живой мир",
+  "key.zmclient.talk": "Говорить с жителями",
+  "zmclient.talk.active": "Жители слышат вас",
   "zmclient.bp.level": "Уровень %s",
   "zmclient.bp.back": "Назад",
   "zmclient.bp.pack.urban_savanna": "Городская саванна",

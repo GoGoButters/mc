@@ -160,8 +160,7 @@
 | Villager Recruits | recruits | both | игровой контент | Правитель | Наёмные рекруты с рангами, фракции, командование (как в Bannerlord). | — | Экраны командования (клавиши — Справка); предмет-вербовки уточнить. |
 | VillagersTradingPlus | villagertradingplus | both | библиотека/оптимизация | — | (datapack-движок торговли жителей — влияет на торговлю; разобраться в конфиге на этапе 2) | — | — |
 | Waystones | waystones | both | игровой контент | Быт | Телепортация между вехами (waystone), возврат на точку смерти. | — | Веха <ItemLink id="waystones:waystone"/> ✓ (крафт/находка). |
-| Xaero's Minimap | xaerominimap | both | интерфейс-удобство | Справка | Миникарта. | — | — |
-| Xaero's World Map | xaeroworldmap | both | интерфейс-удобство | Справка | Полная карта мира (самопишущаяся). | — | — |
+| JourneyMap | journeymap | client | интерфейс-удобство | Справка | Миникарта и полная карта мира, метки; метки колоний ставит zmclient. | — | — |
 | YUNG's API | yungsapi | both | библиотека/оптимизация | — | — | — | — |
 | YUNG's Better Desert Temples | betterdeserttemples | both | игровой контент | Мир | Пустынные храмы переработаны. | — | Искать /locate; старта-предмета нет. |
 | YUNG's Better Dungeons | betterdungeons | both | игровой контент | Мир | Данжи переработаны (многоуровневые). | — | Искать /locate; старта-предмета нет. |

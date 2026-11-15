@@ -18,7 +18,7 @@ import java.util.List;
 
 /**
  * Метки колоний на карте: сервер (zmbridge) присылает полный список колоний, здесь он хранится
- * и раз в секунду передаётся в Xaero. Класс не ссылается на Xaero — без него клиент не падает.
+ * и раз в секунду сверяется с JourneyMap. Класс не ссылается на JourneyMap — без него клиент не падает.
  */
 final class ColonyWaypoints {
     private static final Logger LOG = LogUtils.getLogger();
@@ -61,9 +61,9 @@ final class ColonyWaypoints {
 
     /** Последний присланный список. */
     private static List<Entry> entries = List.of();
-    /** Список сменился и ещё не передан в Xaero. */
+    /** Список сменился и ещё не передан в JourneyMap. */
     private static boolean dirty;
-    /** Xaero бросил ошибку — больше не трогаем до перезапуска. */
+    /** JourneyMap бросил ошибку — больше не трогаем до перезапуска. */
     private static boolean broken;
     private static int ticks;
 
@@ -80,18 +80,18 @@ final class ColonyWaypoints {
 
     static void onClientTick(ClientTickEvent.Post e) {
         if (broken || ++ticks % 20 != 0) return;
-        if (!ModList.get().isLoaded("xaerominimap")) return;
+        if (!ModList.get().isLoaded("journeymap")) return;
         try {
-            if (XaeroColonies.apply(entries, dirty)) dirty = false;
+            if (JourneyMapColonies.apply(entries, dirty)) dirty = false;
         } catch (Throwable t) {
             broken = true;
-            LOG.error("Метки колоний на карте Xaero отключены до перезапуска", t);
+            LOG.error("Метки колоний на карте JourneyMap отключены до перезапуска", t);
         }
     }
 
     static void onLoggingOut(ClientPlayerNetworkEvent.LoggingOut e) {
-        // метки Xaero уйдут вместе с его сессией, достаточно забыть список
+        // метки не пишутся на диск; в следующем мире первая же расстановка снимет оставшиеся
         entries = List.of();
-        dirty = false;
+        dirty = true;
     }
 }

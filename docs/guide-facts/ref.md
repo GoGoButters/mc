@@ -32,7 +32,7 @@
 - Polymorph: выбор результата крафта при конфликте рецептов; команда /polymorph conflicts (commands.polymorph.conflicts.* lang jar polymorph-1.2.0).
 
 ## Карты и HUD (ref/maps-hud.md) — по описи docs/guide-inventory.md
-- Xaero's Minimap / World Map (xaerominimap/xaeroworldmap), BetterF3-11.0.3, Jade+JadeAddons, Dynamic Crosshair, Chat Heads, Not Enough Animations, Better Third Person, AmbientSounds v6.3.11, Sound Physics Remastered 1.5.2, Distant Horizons 3.3.3, Sodium Extra 0.9.5, Sodium Dynamic Lights.
+- JourneyMap 6.0.9 (journeymap, client; миникарта справа сверху, полная карта J, метка Z, список меток ], метки колоний — zmclient), BetterF3-11.0.3, Jade+JadeAddons, Dynamic Crosshair, Chat Heads, Not Enough Animations, Better Third Person, AmbientSounds v6.3.11, Sound Physics Remastered 1.5.2, Distant Horizons 3.3.3, Sodium Extra 0.9.5, Sodium Dynamic Lights.
 - Клавиши Jade и «показ деталей при наведении» — см. keys.md.
 
 ## Инвентарь и интерфейс (ref/ui.md) — по описи docs/guide-inventory.md

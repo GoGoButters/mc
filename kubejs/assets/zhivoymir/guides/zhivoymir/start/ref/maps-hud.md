@@ -7,10 +7,13 @@ navigation:
 
 # Карты и HUD
 
-## Карты (Xaero)
+## Карты (JourneyMap)
 
-- **Xaero's Minimap** — мини-карта в углу экрана: биомы, сущности (настройки), точки пути.
-- **Xaero's World Map** — полная карта мира, заполняется при исследовании; можно ставить метки и делиться ими.
+- **Миникарта** — в правом верхнем углу экрана; спрятать/показать — <KeyBind id="key.journeymap.minimap_toggle_alt" />, сменить вид (день, ночь, пещеры) — <KeyBind id="key.journeymap.minimap_type" />, масштаб — <KeyBind id="key.journeymap.zoom_in" /> и <KeyBind id="key.journeymap.zoom_out" />.
+- **Полная карта мира** — <KeyBind id="key.journeymap.map_toggle_alt" />; заполняется по мере того, как ты исследуешь мир.
+- **Метки** — создать на своём месте: <KeyBind id="key.journeymap.create_waypoint" />, список меток: <KeyBind id="key.journeymap.fullscreen_waypoints" />.
+- **Колонии** — сервер сам ставит золотые метки всех колоний MineColonies: «Название (Владелец)», в группе «Колонии». Удалить их нельзя: через секунду они вернутся.
+- **Границы колоний** MineColonies видны на миникарте и полной карте.
 
 ## Наведение и инфо
 

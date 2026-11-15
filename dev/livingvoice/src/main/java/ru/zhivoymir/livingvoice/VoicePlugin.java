@@ -17,6 +17,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.Entity;
 
 import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
@@ -24,7 +25,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
-/** Плагин Simple Voice Chat: собирает фразы игроков (между нажатием и отпусканием кнопки) и отдаёт их жителям. */
+/** Плагин Simple Voice Chat: собирает фразы игроков, сказанные с зажатой клавишей «Говорить с жителями», и отдаёт их жителям. */
 @ForgeVoicechatPlugin
 public final class VoicePlugin implements VoicechatPlugin {
     private static final int RATE = 48000;
@@ -73,7 +74,13 @@ public final class VoicePlugin implements VoicechatPlugin {
                 t.setDaemon(true);
                 return t;
             });
-            ticker.scheduleWithFixedDelay(VoicePlugin::finishPhrases, 100, 100, TimeUnit.MILLISECONDS);
+            ticker.scheduleWithFixedDelay(() -> {
+                try {
+                    finishPhrases();
+                } catch (Throwable t) {  // исключение отменило бы повтор насовсем
+                    LivingVoice.LOG.error("[livingvoice] finishing phrases failed", t);
+                }
+            }, 100, 100, TimeUnit.MILLISECONDS);
             ColonistVoice.reset();
         });
         reg.registerEvent(VoicechatServerStoppedEvent.class, e -> {
@@ -84,7 +91,9 @@ public final class VoicePlugin implements VoicechatPlugin {
         });
         reg.registerEvent(PlayerDisconnectedEvent.class, e -> {
             Phrase p = PHRASES.remove(e.getPlayerUuid());
-            if (p != null) p.decoder.close();
+            if (p != null) synchronized (p) {  // onMicrophone декодирует под тем же замком
+                p.decoder.close();
+            }
         });
         reg.registerEvent(MicrophonePacketEvent.class, this::onMicrophone);
     }
@@ -96,9 +105,14 @@ public final class VoicePlugin implements VoicechatPlugin {
         if (!(con.getPlayer().getPlayer() instanceof ServerPlayer player)) return;
         byte[] opus = e.getPacket().getOpusEncodedData();
         if (opus.length == 0) return;
+        long now = System.currentTimeMillis();
+        // без зажатой клавиши «Говорить с жителями» речь — игрокам, не жителям; декодер не трогаем
+        List<byte[]> frames = TalkKey.accept(player.getUUID(), opus, now);
+        if (frames.isEmpty()) return;
         Phrase p = PHRASES.computeIfAbsent(player.getUUID(), id -> new Phrase(player, a.createDecoder()));
         synchronized (p) {
             if (p.len == 0) {  // начало фразы: кому игрок говорит — тот, на кого смотрит сейчас
+                p.decoder.resetState();  // пропущенные кадры не должны портить начало новой фразы
                 p.targetKnown = false;
                 player.server.execute(() -> {
                     p.looked = Targets.looked(player);
@@ -106,25 +120,26 @@ public final class VoicePlugin implements VoicechatPlugin {
                     p.targetKnown = true;
                 });
             }
-            short[] frame;
-            try {
-                frame = p.decoder.decode(opus);
-            } catch (Exception ex) {  // битый пакет не должен ломать голосовой чат
-                LivingVoice.LOG.debug("[livingvoice] opus decode failed: {}", ex.toString());
-                return;
+            for (byte[] data : frames) {
+                short[] frame;
+                try {
+                    frame = p.decoder.decode(data);
+                } catch (Exception ex) {  // битый пакет не должен ломать голосовой чат
+                    LivingVoice.LOG.debug("[livingvoice] opus decode failed: {}", ex.toString());
+                    continue;
+                }
+                if (p.len + frame.length > MAX_SAMPLES) return;
+                if (p.len + frame.length > p.pcm.length) p.pcm = Arrays.copyOf(p.pcm, Math.min(MAX_SAMPLES, p.pcm.length * 2));
+                if (p.len > 0) p.maxGap = Math.max(p.maxGap, now - p.last);
+                System.arraycopy(frame, 0, p.pcm, p.len, frame.length);
+                p.len += frame.length;
+                p.packets++;
+                p.last = now;
             }
-            if (p.len + frame.length > MAX_SAMPLES) return;
-            if (p.len + frame.length > p.pcm.length) p.pcm = Arrays.copyOf(p.pcm, Math.min(MAX_SAMPLES, p.pcm.length * 2));
-            long now = System.currentTimeMillis();
-            if (p.len > 0) p.maxGap = Math.max(p.maxGap, now - p.last);
-            System.arraycopy(frame, 0, p.pcm, p.len, frame.length);
-            p.len += frame.length;
-            p.packets++;
-            p.last = now;
         }
     }
 
-    /** Фраза закончилась, если пакеты не приходят silenceMs (игрок отпустил кнопку). */
+    /** Фраза закончилась, если пакеты не приходят silenceMs (игрок замолчал или отпустил клавишу). */
     private static void finishPhrases() {
         long now = System.currentTimeMillis();
         int silence = LivingVoice.SILENCE_MS.get();
@@ -163,7 +178,8 @@ public final class VoicePlugin implements VoicechatPlugin {
                     return;
                 }
                 if (text.isEmpty()) {
-                    player.displayClientMessage(Component.literal("Не разобрал, повторите").withStyle(ChatFormatting.GRAY), true);
+                    if (LivingVoice.SHOW_HINTS.get())
+                        player.displayClientMessage(Component.literal("Не разобрал, повторите").withStyle(ChatFormatting.GRAY), true);
                     return;
                 }
                 var hook = LivingVoiceApi.phraseHook;
@@ -186,6 +202,7 @@ public final class VoicePlugin implements VoicechatPlugin {
     }
 
     private static void nobody(ServerPlayer player) {
+        if (!LivingVoice.SHOW_HINTS.get()) return;
         player.displayClientMessage(Component.literal(
                 "Вас никто не слушает — посмотрите на жителя или позовите его по имени").withStyle(ChatFormatting.GRAY), true);
     }
