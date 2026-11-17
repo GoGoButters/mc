@@ -26,7 +26,7 @@ navigation:
 
 - **Инженер ⇄ Правитель. ColonyLink** связывает стройку колонии с ME-автокрафтом: сеть заказывает стройматериалы сама ([eng/mek-ae2 →](../eng/mek-ae2.md), [eng/ae2 →](../eng/ae2.md)).
 - **Инженер ⇄ Хозяин. Create: Central Kitchen** ставит готовку Farmer's Delight на конвейеры: механические руки, шлюзы и пилы кормят котёл и разделочную доску ([farm/kitchen-auto →](../farm/kitchen-auto.md)).
-- **Инженер ⇄ Искатель.** Нефть BuildCraft, PneumaticCraft и Ad Astra взаимозаменяема: любая идёт в перегонку PNC, дистиллятор BuildCraft и нефтезавод Ad Astra, а нефть и топливо горят в жидкостном котле Railcraft. Энергию для Mekanism даёт FE: пневмодинамо PNC, MJ-динамо BC или турбина Railcraft ([eng/pneumaticcraft →](../eng/pneumaticcraft.md), [adv/sky →](../adv/sky.md)).
+- **Инженер ⇄ Искатель.** Нефть BuildCraft, PneumaticCraft и Ad Astra взаимозаменяема: любая идёт в перегонку PNC, дистиллятор BuildCraft и нефтезавод Ad Astra (в его рецепте — совершенный наполняющий механизм Mekanism), а нефть и топливо горят в жидкостном котле Railcraft. Энергию для Mekanism даёт FE: пневмодинамо PNC, MJ-динамо BC или турбина Railcraft ([eng/pneumaticcraft →](../eng/pneumaticcraft.md), [adv/sky →](../adv/sky.md)).
 - **Правитель ⇄ Инженер.** Монеты Numismatics — валюта для торговли между игроками: банковский терминал и торговые автоматы; жители деревень по-прежнему берут изумруды ([ruler/economy →](../ruler/economy.md), [eng/create-electric →](../eng/create-electric.md)).
 - **Искатель ⇄ Быт.** Путеводные обелиски Waystones — твои точки возврата из дальних походов ([life/travel →](../life/travel.md)).
 
