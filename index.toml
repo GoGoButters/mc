@@ -1083,7 +1083,7 @@ hash = "a11a2d3d8ec3d69f793e1064de50fbae069e180c02f3cd64ce28d8173f95020c"
 
 [[files]]
 file = "kubejs/assets/immersive_aircraft/objects/gyrodyne.bbmodel"
-hash = "ddc108768a9e8f1cf508584f69b20d1b2c4b1726e9901788894f88456bdc16e0"
+hash = "860740a6638f992cd5f4a187b04562be1e330b6ba72e648ea389449209ca6d26"
 
 [[files]]
 file = "kubejs/assets/immersive_aircraft/textures/entity/gyrodyne.png"
@@ -12571,7 +12571,7 @@ hash = "e8212a0115ddd616ef57c1e57dc0854aa35ef5349e033f2cf89778881cc947e4"
 
 [[files]]
 file = "kubejs/data/immersive_aircraft/aircraft/gyrodyne.json"
-hash = "4714e9e55e32ca1adb2c507524f3b7b736ef806b9b2918972ed05e849ea55722"
+hash = "36a5d47735b91d34d7b8be4f1be253f69bb8d3159061bf5a312774a7debba395"
 
 [[files]]
 file = "kubejs/data/railcraft/data_maps/fluid/fluid_heat.json"
@@ -13407,7 +13407,7 @@ metafile = true
 
 [[files]]
 file = "mods/zmtweaks.pw.toml"
-hash = "be3e0b4b33fd9374c8237134a99b40ad9c63ca59fe9be993fe5442718a6a8764"
+hash = "0dc1ca6e587d9d2c752b210997bdc93a92f9335d16e181342370ab8d382ddaf9"
 metafile = true
 
 [[files]]
