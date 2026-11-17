@@ -1,4 +1,4 @@
-package ru.zhivoymir.aircraft.mixin;
+package ru.zhivoymir.tweaks.mixin;
 
 import immersive_aircraft.neoforge.cobalt.registration.CobaltFuelRegistryImpl;
 import immersive_aircraft.util.Utils;
@@ -19,7 +19,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public abstract class PartialFluidRefuelMixin {
     @Inject(method = "refuelFluid(Lnet/neoforged/neoforge/fluids/capability/IFluidHandlerItem;Z)I",
             at = @At("HEAD"), cancellable = true)
-    private void zmaircraft$partialRefuel(IFluidHandlerItem handler, boolean simulate, CallbackInfoReturnable<Integer> cir) {
+    private void zmtweaks$partialRefuel(IFluidHandlerItem handler, boolean simulate, CallbackInfoReturnable<Integer> cir) {
         if (handler == null) {
             cir.setReturnValue(0);
             return;

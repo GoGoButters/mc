@@ -1,0 +1,8 @@
+name = "Zhivoy Mir Tweaks"
+filename = "zmtweaks-0.2.0.jar"
+side = "both"
+
+[download]
+url = "https://gogobutters.github.io/mc/dist/mods/zmtweaks-0.2.0.jar"
+hash-format = "sha512"
+hash = "253d161e6b05e11dbf481523c3f2f0a827b19661abce9d8687d865b361723a165b3e8f79f18abf1f88001806bd86557f6898891c3abf212f00aba9e51563139a"

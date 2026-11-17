@@ -1,4 +1,4 @@
-package ru.zhivoymir.aircraft.mixin;
+package ru.zhivoymir.tweaks.mixin;
 
 import immersive_aircraft.entity.EngineVehicle;
 import net.minecraft.network.syncher.EntityDataAccessor;
@@ -9,15 +9,15 @@ import org.spongepowered.asm.mixin.gen.Accessor;
 @Mixin(EngineVehicle.class)
 public interface EngineVehicleAccessor {
     @Accessor("fuel")
-    int[] zmaircraft$getFuel();
+    int[] zmtweaks$getFuel();
 
     @Accessor("UTILIZATION")
-    static EntityDataAccessor<Float> zmaircraft$utilization() {
+    static EntityDataAccessor<Float> zmtweaks$utilization() {
         throw new AssertionError();
     }
 
     @Accessor("LOW_ON_FUEL")
-    static EntityDataAccessor<Boolean> zmaircraft$lowOnFuel() {
+    static EntityDataAccessor<Boolean> zmtweaks$lowOnFuel() {
         throw new AssertionError();
     }
 }

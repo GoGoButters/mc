@@ -1,8 +1,0 @@
-name = "Zhivoy Mir Aircraft Tweaks"
-filename = "zmaircraft-0.1.0.jar"
-side = "both"
-
-[download]
-url = "https://gogobutters.github.io/mc/dist/mods/zmaircraft-0.1.0.jar"
-hash-format = "sha512"
-hash = "8891dcadf804749c798660ec61c6a209822ea11be48ad2444ed00368f0a1b72626021c3b6b15e47d4296b66c5ffab16a6553b9c759de02477f19f3e6a219e68f"

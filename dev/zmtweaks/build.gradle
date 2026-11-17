@@ -19,8 +19,9 @@ neoForge {
 }
 
 dependencies {
-    // Immersive Aircraft — только для компиляции
+    // Immersive Aircraft и Mekanism — только для компиляции
     compileOnly files('libs/immersive_aircraft-neoforge-1.7.0+1.21.1.jar')
+    compileOnly files('libs/Mekanism-1.21.1-10.7.19.85.jar')
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
