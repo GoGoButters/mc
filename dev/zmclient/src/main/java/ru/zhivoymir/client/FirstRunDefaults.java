@@ -35,6 +35,8 @@ import java.nio.file.Path;
  * без назначенной клавиши.
  * Четвёртая версия: клавиши JourneyMap, совпадавшие с другими модами, если стоят по умолчанию: «Создать метку»
  * B (рюкзак) → Z, «Менеджер меток» N (выключить голосовой чат) → ], «Имена существ» G (занята шестью модами) — снята.
+ * Шестая версия: у голосового чата сняты «Выключить микрофон» M (полная карта JourneyMap) и «Выключить голосовой чат»
+ * N (режим руки Mekanism), если стоят по умолчанию.
  */
 @EventBusSubscriber(modid = ZhivoyMirClient.MOD_ID, value = Dist.CLIENT)
 public final class FirstRunDefaults {
@@ -43,9 +45,10 @@ public final class FirstRunDefaults {
     private static final Path VOICE_MARKER = FMLPaths.CONFIGDIR.get().resolve("zmclient-defaults-3.done");
     private static final Path MAP_MARKER = FMLPaths.CONFIGDIR.get().resolve("zmclient-defaults-4.done");
     private static final Path MAP_M_MARKER = FMLPaths.CONFIGDIR.get().resolve("zmclient-defaults-5.done");
+    private static final Path VOICE_KEYS_MARKER = FMLPaths.CONFIGDIR.get().resolve("zmclient-defaults-6.done");
     private static final Logger LOG = LogUtils.getLogger();
     private static boolean done = Files.exists(MARKER) && Files.exists(KEYS_MARKER) && Files.exists(VOICE_MARKER)
-            && Files.exists(MAP_MARKER) && Files.exists(MAP_M_MARKER);
+            && Files.exists(MAP_MARKER) && Files.exists(MAP_M_MARKER) && Files.exists(VOICE_KEYS_MARKER);
 
     private FirstRunDefaults() {}
 
@@ -102,6 +105,16 @@ public final class FirstRunDefaults {
                 if (k.getName().equals("key.journeymap.map_toggle_alt")) rebind(k, "j", "key.keyboard.m");
             }
             mark(MAP_M_MARKER);
+        }
+        if (!Files.exists(VOICE_KEYS_MARKER)) {  // без голосового чата цикл ничего не найдёт — всё равно отмечаем
+            for (KeyMapping k : o.keyMappings) {
+                switch (k.getName()) {
+                    case "key.mute_microphone" -> rebind(k, "m", null);
+                    case "key.disable_voice_chat" -> rebind(k, "n", null);
+                    default -> {}
+                }
+            }
+            mark(VOICE_KEYS_MARKER);
         }
         KeyMapping.resetMapping();
         o.save();
