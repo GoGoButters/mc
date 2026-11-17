@@ -122,7 +122,7 @@ public abstract class GyrodyneMixin {
     private void zmtweaks$exhaustSmoke(CallbackInfo ci) {
         GyrodyneEntity self = (GyrodyneEntity) (Object) this;
         if (self.level().isClientSide && self.tickCount % 2 == 0 && self.getEnginePower() > 0.0f) {
-            self.emitSmokeParticle(0.0f, 0.4f, -1.6f, 0.0f, 0.05f, -0.2f);
+            self.emitSmokeParticle(0.3125f, 0.375f, -2.25f, 0.0f, 0.05f, -0.2f);
         }
     }
 }
