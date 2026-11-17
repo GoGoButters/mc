@@ -59,15 +59,19 @@ hash = "9ed41e4f88656f2051b5630ad587bf5517ceb6820e616e91ae1050af708d33eb"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "caf5e3fe79f84e768220c8a608011820383c532ecb6d7a2078976040a77b739c"
+hash = "e6c3f11ef77dcd2c4ab0d00e9063f5eba1f81a5e5c15a724c3c1a77c537fca45"
 
 [[files]]
 file = "config/ftbquests/quests/lang/ru_ru.snbt"
-hash = "caf5e3fe79f84e768220c8a608011820383c532ecb6d7a2078976040a77b739c"
+hash = "e6c3f11ef77dcd2c4ab0d00e9063f5eba1f81a5e5c15a724c3c1a77c537fca45"
 
 [[files]]
 file = "config/graveyard/graveyard.json5"
 hash = "b02fdf1b230f06f8436ca4a8e893b630d6312247f3d8f50b0520f635ad94e74d"
+
+[[files]]
+file = "config/immersive_aircraft.json"
+hash = "e86203a8be198a804e5a3f922dbb3554edb62638554fe4b483d2f23014d3cad3"
 
 [[files]]
 file = "config/mca.json"
@@ -1068,6 +1072,22 @@ hash = "a2c01e0e4914db51d32751565f01a5a54ebf791545c5c375829b562b4c47b282"
 [[files]]
 file = "kubejs/assets/guideme/lang/ru_ru.json"
 hash = "061ead23edac3249557f2273c193641c348ccabd970318d0824cbcc77dff614f"
+
+[[files]]
+file = "kubejs/assets/immersive_aircraft/lang/en_us.json"
+hash = "0457f9f9da35e3147038003bc1f27403105dc9bd0e5398001a69545271a560c6"
+
+[[files]]
+file = "kubejs/assets/immersive_aircraft/lang/ru_ru.json"
+hash = "a11a2d3d8ec3d69f793e1064de50fbae069e180c02f3cd64ce28d8173f95020c"
+
+[[files]]
+file = "kubejs/assets/immersive_aircraft/objects/gyrodyne.bbmodel"
+hash = "ddc108768a9e8f1cf508584f69b20d1b2c4b1726e9901788894f88456bdc16e0"
+
+[[files]]
+file = "kubejs/assets/immersive_aircraft/textures/entity/gyrodyne.png"
+hash = "4cde70a47676015836c3413bc891551e60890d485effc674725818f9c1ce65d5"
 
 [[files]]
 file = "kubejs/assets/inventoryprofilesnext/lang/ru_ru.json"
@@ -12283,7 +12303,7 @@ hash = "a8f330ab61dca7a4f3e7540505cac8d599daed1ffec080799cc2330e95455c4e"
 
 [[files]]
 file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/adv/sky.md"
-hash = "1c7a0a69a1238901ed2ab436542e53e1c7550ddec93373a130de7cbfb1745118"
+hash = "512a5f762dccb554c3b8351c9375820557ff11e98ffac32350edf73fd271befa"
 
 [[files]]
 file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/eng/ae2.md"
@@ -12383,7 +12403,7 @@ hash = "2dac20a2f56e920c283ee292bcbefe6ff192a7b16bc40b3839d4c3035a38a7da"
 
 [[files]]
 file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/path/adventurer.md"
-hash = "28b8ed8aa0421993ab32bd5973de9adbb266e2b1c4475058734df207adf2c191"
+hash = "4e72321a94898ae2c32b56eb2226c0f038b0ff815dae33d17b15e0afb02f5a94"
 
 [[files]]
 file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/path/engineer.md"
@@ -12395,7 +12415,7 @@ hash = "314ec20cfb479c34d2fd0a3b578c5b436f73451f9a384066253b700a985bea1a"
 
 [[files]]
 file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/path/index.md"
-hash = "119409a5d5afd7ebe3d97b452b25f5d37cc63dc893c473dc7b1c21c81313e49d"
+hash = "ef96a6847ec63a335c25b215a0df73a2791909ff479e719ba0d5b07ed987162e"
 
 [[files]]
 file = "kubejs/assets/zhivoymir/guides/zhivoymir/start/path/ruler.md"
@@ -12514,6 +12534,10 @@ file = "kubejs/assets/zmclient/lang/ru_ru.json"
 hash = "6118477738d9fcf02ecb13c0f46265b424cd0ed02d0474d3f3516c1da26fc2b7"
 
 [[files]]
+file = "kubejs/data/ad_astra/recipe/fuel_refinery.json"
+hash = "b00b60d6430cdf7fa16424e7e84deeaaf31b66d9acbbb8cb4e1cd56ea462d147"
+
+[[files]]
 file = "kubejs/data/ad_astra/tags/entity_type/can_survive_extreme_cold.json"
 hash = "94684e022dd1be4e6827a99794e226aba9c15763dc08ffd1bdb72bdc804f9fb4"
 
@@ -12544,6 +12568,10 @@ hash = "75f16443a44d6d62d378279dc7f7e6cbf3e9bd162fb55d17c4c7acd138df0aec"
 [[files]]
 file = "kubejs/data/c/tags/fluid/oil.json"
 hash = "e8212a0115ddd616ef57c1e57dc0854aa35ef5349e033f2cf89778881cc947e4"
+
+[[files]]
+file = "kubejs/data/immersive_aircraft/aircraft/gyrodyne.json"
+hash = "4714e9e55e32ca1adb2c507524f3b7b736ef806b9b2918972ed05e849ea55722"
 
 [[files]]
 file = "kubejs/data/railcraft/data_maps/fluid/fluid_heat.json"
@@ -13369,7 +13397,7 @@ metafile = true
 
 [[files]]
 file = "mods/zmclient.pw.toml"
-hash = "2e6080742c9c78843697b7c47ffa9bea4b75a15076104ae38276aa68ed90812b"
+hash = "2e3d95aa5fbeb650186bb539533f2c5e24e0a7a1e992b325ce6e0ff144c751f4"
 metafile = true
 
 [[files]]
@@ -13378,8 +13406,13 @@ hash = "1434a8c364233bb2db4db9af065afb87a17b937ef06cecef18e5f00b329f4515"
 metafile = true
 
 [[files]]
+file = "mods/zmtweaks.pw.toml"
+hash = "be3e0b4b33fd9374c8237134a99b40ad9c63ca59fe9be993fe5442718a6a8764"
+metafile = true
+
+[[files]]
 file = "options.txt"
-hash = "4a792c82a00e3f519e403f1704e4d920f787a009df02cede6bdb03af98edf273"
+hash = "a5be4f7b4bae08c0acda2daafbb8f10fbe358cfc6dd3757e94fc2bdcbf20e902"
 preserve = true
 
 [[files]]
