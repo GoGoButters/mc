@@ -7,20 +7,40 @@ import immersive_aircraft.entity.GyrodyneEntity;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvent;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.Redirect;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
+import ru.zhivoymir.tweaks.ZmSounds;
+import ru.zhivoymir.tweaks.aircraft.FuelTank;
+import ru.zhivoymir.tweaks.aircraft.PsyCarrier;
+import ru.zhivoymir.tweaks.aircraft.PsyWeapon;
 
 /**
  * Винтокрыл как вертолёт с ДВС: топливо из котла вместо сытости пилота, мгновенный запуск
- * по клавише подъёма вместо раскрутки педалями, звуки мотора как у биплана, дым из хвоста.
- * isFuelLow/getFuelUtilization повторяют EngineVehicle 1.7.0 (super из миксина не вызвать:
- * виртуальный вызов вернётся в GyrodyneEntity).
+ * по клавише подъёма вместо раскрутки педалями, мотор биплана вдвое тише, дым из выхлопной трубы,
+ * психологическое оружие. isFuelLow/getFuelUtilization повторяют EngineVehicle (super из миксина
+ * не вызвать: виртуальный вызов вернётся в GyrodyneEntity).
  */
 @Mixin(GyrodyneEntity.class)
-public abstract class GyrodyneMixin {
+public abstract class GyrodyneMixin implements PsyCarrier {
+    @Unique
+    private final PsyCarrier.State zmtweaks$psyState = new PsyCarrier.State();
+
+    @Override
+    public PsyCarrier.State zmtweaks$psy() {
+        return zmtweaks$psyState;
+    }
+
+    /** Психологическое оружие: рассылка start/pos/stop слушателям в радиусе 150 блоков. */
+    @Inject(method = "tick", at = @At("TAIL"))
+    private void zmtweaks$psyTick(CallbackInfo ci) {
+        GyrodyneEntity self = (GyrodyneEntity) (Object) this;
+        if (!self.level().isClientSide) PsyWeapon.serverTick(self);
+    }
+
     @Inject(method = "getFuelType", at = @At("HEAD"), cancellable = true)
     private void zmtweaks$fuelType(CallbackInfoReturnable<String> cir) {
         cir.setReturnValue("fuel");
@@ -37,25 +57,10 @@ public abstract class GyrodyneMixin {
         // пилот не голодает: топливо тратит EngineVehicle.tick
     }
 
+    /** Та же логика, что у всей авиации: мало топлива — бак < 1000 мБ и котёл почти пуст. */
     @Inject(method = "isFuelLow", at = @At("HEAD"), cancellable = true)
     private void zmtweaks$isFuelLow(CallbackInfoReturnable<Boolean> cir) {
-        GyrodyneEntity self = (GyrodyneEntity) (Object) this;
-        if (!Config.getInstance().burnFuelInCreative && self.isPilotCreative()) {
-            cir.setReturnValue(false);
-            return;
-        }
-        if (self.level().isClientSide) {
-            cir.setReturnValue(self.getEntityData().get(EngineVehicleAccessor.zmtweaks$lowOnFuel()));
-            return;
-        }
-        boolean low = true;
-        for (int i : ((EngineVehicleAccessor) self).zmtweaks$getFuel()) {
-            if (i <= 900) continue;
-            low = false;
-            break;
-        }
-        self.getEntityData().set(EngineVehicleAccessor.zmtweaks$lowOnFuel(), low);
-        cir.setReturnValue(low);
+        cir.setReturnValue(FuelTank.isFuelLow((GyrodyneEntity) (Object) this));
     }
 
     @Inject(method = "getFuelUtilization", at = @At("HEAD"), cancellable = true)
@@ -108,21 +113,26 @@ public abstract class GyrodyneMixin {
         cir.setReturnValue(Sounds.ENGINE_START.get());
     }
 
-    /** Звук работы — дефолт EngineVehicle (пропеллер), вместо WOOSH. */
+    /**
+     * Звук работы — пропеллер EngineVehicle вдвое тише: zmtweaks:gyrodyne_engine = файл
+     * immersive_aircraft:propeller с volume 0.5. IA играет его с громкостью min(1, 0.25 + раскрутка),
+     * клиент умножает её на volume из sounds.json, а дистанция затухания max(громкость, 1) × 24
+     * не меняется — итог ровно ×0.5.
+     */
     @Inject(method = "getEngineSound", at = @At("HEAD"), cancellable = true)
     private void zmtweaks$engineSound(CallbackInfoReturnable<SoundEvent> cir) {
-        cir.setReturnValue(Sounds.PROPELLER.get());
+        cir.setReturnValue(ZmSounds.GYRODYNE_ENGINE.get());
     }
 
     /**
-     * Дым выхлопа из задней части рамы (модель кончается на z ≈ -1.56), через тик, как у биплана.
+     * Дым из среза выхлопной трубы (модель поднята на 0.25 — полозья на земле), через тик, как у биплана.
      * emitSmokeParticle сам проверяет клиент, дальность частиц и мощность > 0.05.
      */
     @Inject(method = "tick", at = @At("TAIL"))
     private void zmtweaks$exhaustSmoke(CallbackInfo ci) {
         GyrodyneEntity self = (GyrodyneEntity) (Object) this;
         if (self.level().isClientSide && self.tickCount % 2 == 0 && self.getEnginePower() > 0.0f) {
-            self.emitSmokeParticle(0.3125f, 0.375f, -2.25f, 0.0f, 0.05f, -0.2f);
+            self.emitSmokeParticle(0.3125f, 0.625f, -2.25f, 0.0f, 0.05f, -0.2f);
         }
     }
 }

@@ -1,0 +1,13 @@
+{
+  "gyrodyne_engine": {
+    "sounds": [
+      { "name": "immersive_aircraft:propeller", "volume": 0.5, "attenuation_distance": 24 }
+    ]
+  },
+  "valkyries": {
+    "subtitle": "subtitles.zmtweaks.valkyries",
+    "sounds": [
+      { "name": "zmtweaks:psy/valkyries", "stream": true }
+    ]
+  }
+}

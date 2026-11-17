@@ -1,0 +1,26 @@
+# Zhivoy Mir Tweaks (zmtweaks)
+
+Правки модов для сборки «Живой мир» (NeoForge 1.21.1, сервер и клиент). Код — MIT.
+
+- Immersive Aircraft: винтокрыл как вертолёт с ДВС (топливо из котла, запуск по подъёму, мотор вдвое
+  тише, дым из выхлопной трубы); психологическое оружие винтокрыла (левый Ctrl — «Полёт валькирий»,
+  слышно до 150 блоков, громкость «Музыкальные блоки»); внутренний бак 10 000 мБ у всей авиации
+  с индикатором у первого котла; неполные ёмкости с жидким топливом.
+- Mekanism: фабрики тратят вдвое больше энергии на линию, буфер вдвое больше.
+
+## Музыка
+
+`src/main/resources/assets/zmtweaks/sounds/psy/valkyries.ogg` — Рихард Вагнер, «Полёт валькирий»
+(«Die Walküre», 1870), исполняет American Symphony Orchestra, запись Edison Records, декабрь 1921
+(Edison Diamond Disc 80638-R, матрица 7846-B-1-6, каталог NPS EDIS 41877).
+
+- Источник: https://commons.wikimedia.org/wiki/File:Richard_Wagner_-_Ride_of_the_Valkyries.ogg
+  (Park Service Menlo Park site, Classical Music collection; шипение снижено участниками Commons).
+- Лицензия: **общественное достояние** — шаблон Commons `{{PD-Edison Records}}`
+  (записи Edison из коллекции Службы национальных парков США переданы в общественное достояние).
+  Проверено на странице файла 2026-11-17.
+- Файл без изменений (sha1 `4c8e228e0e2e7f55ec70a42fa7b60959d8ff63d1` совпадает с Commons): он уже
+  OGG Vorbis, моно, 44,1 кГц, ~96 кбит/с, 4:18 — перекодирование только потеряло бы качество.
+
+Запись `File:Richard_Wagner_-_The_Valkyrie_-_Ride_of_the_Valkyries.ogg` не использована: она под
+EFF Open Audio License 1.0 (не общественное достояние и не CC-BY).

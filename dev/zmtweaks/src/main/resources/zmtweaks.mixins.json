@@ -3,6 +3,7 @@
   "minVersion": "0.8",
   "package": "ru.zhivoymir.tweaks.mixin",
   "compatibilityLevel": "JAVA_21",
-  "mixins": ["EngineVehicleAccessor", "FactoryEnergyMixin", "GyrodyneMixin", "PartialFluidRefuelMixin"],
-  "injectors": { "defaultRequire": 1 }
+  "mixins": ["EngineVehicleAccessor", "EngineVehicleTankMixin", "FactoryEnergyMixin", "GyrodyneMixin", "PartialFluidRefuelMixin", "VehicleScreenHandlerMixin"],
+  "client": ["client.VehicleScreenMixin"],
+  "injectors": {"defaultRequire": 1}
 }
