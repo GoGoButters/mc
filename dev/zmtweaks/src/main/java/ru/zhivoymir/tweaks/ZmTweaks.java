@@ -1,5 +1,6 @@
 package ru.zhivoymir.tweaks;
 
+import net.neoforged.bus.api.EventPriority;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.common.NeoForge;
@@ -15,7 +16,7 @@ public final class ZmTweaks {
         ZmSounds.REGISTER.register(bus);
         bus.addListener(PsyWeapon::onRegisterPayloads);
         NeoForge.EVENT_BUS.addListener(PsyWeapon::onEntityLeave);
-        NeoForge.EVENT_BUS.addListener(PassengerDismount::onInteractSpecific);
-        NeoForge.EVENT_BUS.addListener(PassengerDismount::onInteract);
+        NeoForge.EVENT_BUS.addListener(EventPriority.HIGHEST, PassengerDismount::onInteractSpecific);
+        NeoForge.EVENT_BUS.addListener(EventPriority.HIGHEST, PassengerDismount::onInteract);
     }
 }
