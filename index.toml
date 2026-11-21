@@ -6,6 +6,10 @@ hash = "e39b59d05d172f7f63c50d75d11e9704070809348cf1b200f51c32ab71153551"
 preserve = true
 
 [[files]]
+file = "config/betterdays-common.toml"
+hash = "0dbe602801a3f2b74500acc0aefa2f317be0f44c79c3d8a04fccee4a3a3a2d61"
+
+[[files]]
 file = "config/biomesoplenty/generation.toml"
 hash = "5024d5b309629150452170ff3ab84963926b379ac0f5fe153cc0519cb5712e46"
 
@@ -12666,6 +12670,11 @@ hash = "e1f1588b18947699ddc9b4f7c5b5406c5559155b8cb52dcd0f203c07c31cd0b8"
 metafile = true
 
 [[files]]
+file = "mods/betterdays.pw.toml"
+hash = "f567df6f58cbb28cd6e28dfa72dde29ed8c787afc6e4694c797b0896fa07c8f6"
+metafile = true
+
+[[files]]
 file = "mods/betterf3.pw.toml"
 hash = "c9aca350959a8936b054c7164fb55d789ab1e0d38cff2af48b78f70af2bc0c6d"
 metafile = true
@@ -13407,7 +13416,7 @@ metafile = true
 
 [[files]]
 file = "mods/zmtweaks.pw.toml"
-hash = "0dc1ca6e587d9d2c752b210997bdc93a92f9335d16e181342370ab8d382ddaf9"
+hash = "65f1456d778151c1a687336313902f4eadea0f2f753f20b443342f3301d0e878"
 metafile = true
 
 [[files]]

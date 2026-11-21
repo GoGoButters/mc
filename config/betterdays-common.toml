@@ -1,0 +1,151 @@
+
+#This section defines settings for time manipulation.
+#This is where you can set day and night speed independently.
+#You can also set the time speed to change dynamically throughout the day/night cycle.
+[time]
+	#Determines which method is used to set day and night speed.
+	#RATIO: Uses daySpeed and nightSpeed settings.
+	#MINUTES: Uses daySpeedMinutes and nightSpeedMinutes settings.
+	#REALTIME: Sets day and night to 12 real-world hours each.
+	#Allowed Values: RATIO, MINUTES, REALTIME
+	speedMethod = "RATIO"
+	#The speed at which time passes during the day.
+	#Day is defined as any time between dayStart (see below) and nightStart (see below) the next day.
+	#This is the RATIO of time passing relative to vanilla.
+	#Vanilla speed: 1.0
+	#Range: 0.0 ~ 24000.0
+	daySpeed = 0.5
+	#The speed at which time passes during the night.
+	#Night is defined as any time between dayStart (see below) and nightStart (see below).
+	#This is the RATIO of time passing relative to vanilla.
+	#Vanilla speed: 1.0
+	#Range: 0.0 ~ 24000.0
+	nightSpeed = 0.5
+	#An alternative way to set day speed. This setting is mutually exclusive with daySpeed.
+	#If both are set, speedMethod (see above) determines which setting is used.
+	#This setting defines the length of the day in real-world minutes.
+	#Vanilla length: 10.0 minutes
+	#Range: 0.1 ~ 10000.0
+	daySpeedMinutes = 10.0
+	#An alternative way to set night speed. This setting is mutually exclusive with nightSpeed.
+	#If both are set, speedMethod (see above) determines which setting is used.
+	#This setting defines the length of the night in real-world minutes.
+	#Vanilla length: 10.0 minutes
+	#Range: 0.1 ~ 10000.0
+	nightSpeedMinutes = 10.0
+	#The time to start day. This is configurable within the time the sun appears and day starts.
+	#Default: 23500
+	#Range: 22300.0 ~ 24000.0
+	dayStart = 23500.0
+	#The time to start night. This is configurable within the time sunset starts and night starts.
+	#Default: 12500
+	#Range: 12000.0 ~ 13000.0
+	nightStart = 12500.0
+	#Enabling this will allow the setting of an infinite amount of time speeds defined as pairs in the form:
+	#(currentTick, desiredSpeed)
+	#where between each value bezier spline interpolation is performed for smooth transitioning
+	#The two default pairs at 0 and 24000 are necessary as they act as bounds. However 
+	#The time speed value for each of them can be freely modified
+	enableInterpolatedTime = false
+	#The value that determines the smoothing factor in the interpolation algorithm.
+	#A high value will make the interpolation softer and curvier
+	#A low value will make the interpolation closer to a piecewise function
+	#Range: 0.0 ~ 10.0
+	interpolatedTimeSmoothingFactor = 0.25
+	#These are the pairs that define what speed time should run at, at the specified day/night tick
+	#The two default pairs need to exist, but their time speed values can be modified
+	interpolatedTimeList = ["0,1.0", "24000,1.0"]
+
+	#This section defines settings for time effects.
+	#These effects modify various game mechanics to match the current speed of time.
+	#These effects can have a significant impact on performance, especially on servers with many players.
+	[time.effects]
+		#When applied, this effect makes weather progress at the rate of the current time-speed.
+		#Allowed Values: NEVER, SLEEPING, ALWAYS
+		weatherEffect = "SLEEPING"
+		#When applied, this effect syncs the random tick speed with the current speed of time, forcing
+		#crop, tree, and grass growth to occur at baseRandomTickSpeed multiplied by the current time-speed.
+		#Allowed Values: NEVER, SLEEPING, ALWAYS
+		randomTickEffect = "NEVER"
+		#The base random tick speed used by the randomTickEffect time effect.
+		#Range: 0 ~ 2147483647
+		baseRandomTickSpeed = 3
+		#When applied, this effect progresses potion effects to match the rate of the current time-speed.
+		#Allowed Values: NEVER, SLEEPING, ALWAYS
+		potionEffect = "NEVER"
+		#When applied, this effect progresses player hunger effects to match the rate of the current time-speed.
+		#Allowed Values: NEVER, SLEEPING, ALWAYS
+		hungerEffect = "NEVER"
+		#When applied, this effect progresses block entities like furnaces, hoppers, and spawners to match the rate of the current time-speed.
+		#Allowed Values: NEVER, SLEEPING, ALWAYS
+		blockEntityEffect = "NEVER"
+
+[sleep]
+	#Enables or disables the sleep feature of this mod. Enabling this setting will modify the vanilla sleep functionality
+	#and may conflict with other sleep mods. If disabled, all settings in the sleep section will not apply.
+	enableSleepFeature = true
+	### THIS SETTING DEFINES THE SLEEP TIME-SPEED IN SINGLE-PLAYER GAMES ###
+	#The maximum speed at which time passes when all players are sleeping.
+	#A value of 110 is nearly equal to the time it takes to sleep in vanilla.
+	#Range: 0.0 ~ 24000.0
+	sleepSpeedMax = 110.0
+	#The minimum speed at which time passes when only 1 player is sleeping in a full server.
+	#Range: 0.0 ~ 24000.0
+	sleepSpeedMin = 1.0
+	#The speed at which time passes when all players are sleeping.
+	#Set to -1 to disable this feature (sleepSpeedMax will be used when all players are sleeping).
+	#Range: -1.0 ~ 24000.0
+	sleepSpeedAll = -1.0
+	#This parameter defines the curvature of the interpolation function that translates the sleeping player percentage into time-speed.
+	#Range: 0.0 ~ 1.0
+	sleepSpeedCurve = 0.3
+	#Set to 'true' for the weather to clear when players wake up in the morning as it does in vanilla.
+	#Set to 'false' to force weather to pass naturally. Adds realism when accelerateWeather is enabled.
+	#Note: This setting is ignored if game rule doWeatherCycle is false.
+	clearWeatherOnWake = true
+	#When true, players are allowed to sleep at all times of day in dimensions controlled by Better Days.
+	#Note: Other mods may override this ability.
+	allowDaySleep = false
+	#When true, a clock is displayed in the sleep interface.
+	displayBedClock = true
+	#The ratio of players in a dimension that must be sleeping to skip to morning.
+	#A value of 1 means all players must be sleeping, 0.5 means half the players must be sleeping, etc.
+	#A value of 0 effectively disables this feature.
+	#Range: 0.0 ~ 1.0
+	ratioPlayersForSleep = 0.0
+
+	#This section defines settings for notification messages.
+	[sleep.messages]
+
+		#This message is sent after a sleep cycle has completed.
+		[sleep.messages.morning]
+			#Formatted message to be sent. Look at documentation in config file for details.
+			message = "§e§oВремя летит!"
+			#Sets where this message appears.
+			#Allowed Values: SYSTEM, GAME_INFO
+			type = "GAME_INFO"
+			#Sets to whom this message is sent.
+			#Allowed Values: ALL, DIMENSION, SLEEPING
+			target = "DIMENSION"
+
+		#This message is sent when a player enters their bed.
+		[sleep.messages.enterBed]
+			#Formatted message to be sent. Look at documentation in config file for details.
+			message = "${player} лёг спать. [${sleepingPlayers}/${totalPlayers}]"
+			#Sets where this message appears.
+			#Allowed Values: SYSTEM, GAME_INFO
+			type = "GAME_INFO"
+			#Sets to whom this message is sent.
+			#Allowed Values: ALL, DIMENSION, SLEEPING
+			target = "DIMENSION"
+
+		#This message is sent when a player leaves their bed (without being woken up naturally by morning).
+		[sleep.messages.leaveBed]
+			#Formatted message to be sent. Look at documentation in config file for details.
+			message = "${player} встал с кровати. [${sleepingPlayers}/${totalPlayers}]"
+			#Sets where this message appears.
+			#Allowed Values: SYSTEM, GAME_INFO
+			type = "GAME_INFO"
+			#Sets to whom this message is sent.
+			#Allowed Values: ALL, DIMENSION, SLEEPING
+			target = "DIMENSION"
