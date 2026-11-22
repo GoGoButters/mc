@@ -46,6 +46,43 @@ opts = z.read("overrides/options.txt").decode()
 if not opts.startswith("version:3955\n"):
     errors.append("options.txt без version:3955 в начале")
 
+# Раскладка Zalith: поля моделей LayerController (ControlLayout/ControlLayer/NormalData/ButtonSize/ClickEvent)
+# и клавиши — как в options.txt сборки (bound_keys экспорта).
+GLFW_NAMES = {"GLFW_KEY_CAPS_LOCK", "GLFW_KEY_LEFT_SHIFT", "GLFW_KEY_LEFT_CONTROL", "GLFW_KEY_LEFT_ALT",
+              "GLFW_KEY_SPACE", "GLFW_KEY_ESCAPE", "GLFW_KEY_TAB", "GLFW_KEY_F3", "GLFW_KEY_F5",
+              "GLFW_KEY_RIGHT_BRACKET"} | {f"GLFW_KEY_{c}" for c in "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"}
+lay = json.load(open(ex.CONTROLS_OUT, encoding="utf-8"))
+if lay.get("editorVersion") != 12 or not {"name", "author", "description", "versionCode", "versionName"} <= set(lay["info"]):
+    errors.append("раскладка: editorVersion/info")
+styles = {s["uuid"] for s in lay["styles"]}
+layers = {l["uuid"] for l in lay["layers"]}
+need = {"text", "uuid", "position", "buttonSize", "visibilityType", "isSwipple", "isPenetrable", "isToggleable"}
+uuids = []
+for l in lay["layers"]:
+    if not {"name", "uuid", "hide", "visibilityType"} <= set(l) or l["visibilityType"] not in ("always", "in_game", "in_menu"):
+        errors.append(f"раскладка: слой {l.get('name')}")
+    for b in l.get("normalButtons", []):
+        t = b.get("text", {}).get("default")
+        uuids.append(b.get("uuid"))
+        s, p = b.get("buttonSize", {}), b.get("position", {})
+        ok = (need <= set(b) and b.get("buttonStyle") in styles | {None}
+              and b.get("textAlignment", "Left") in ("Left", "Center", "Right")
+              and all(0 <= p.get(k, -1) <= 10000 for k in "xy")
+              and all(100 <= s.get(k, 0) <= 10000 for k in ("widthPercentage", "heightPercentage")))
+        for e in b.get("clickEvents", []):
+            if e["type"] == "key" and e["key"] not in GLFW_NAMES:
+                ok = False
+            if e["type"] == "switch_layer" and e["key"] not in layers:
+                ok = False
+        if not ok:
+            errors.append(f"раскладка: кнопка {t}")
+if len(uuids) != len(set(uuids)):
+    errors.append("раскладка: повтор uuid кнопок")
+zm = {b["text"]["default"]: [e["key"] for e in b["clickEvents"]] for b in lay["layers"][0]["normalButtons"]}
+for text, name, default, *_ in ex.ZM_BUTTONS:
+    if zm.get(text) != ex.bound_keys(name, default):
+        errors.append(f"раскладка: {text} не совпадает с options.txt")
+
 for e in errors:
     print("FAIL", e)
 print(f"{path}: модов {len(have)} (ссылками {len(in_pack)}, overrides {len(ovr)}), ожидалось {len(want)}, "

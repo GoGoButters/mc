@@ -5,7 +5,9 @@
 config/, kubejs/, servers.dat — в overrides, как у десктопа; options.txt и голосовой чат — мобильные.
 После сборки прогоняет depcheck.py на мобильном наборе модов.
 
-usage: android-export.py [--cache DIR]   (кэш jar общий с depcheck, по умолчанию /tmp/depcache)
+Заодно пишет раскладку экранных кнопок Zalith: dist/android/ZhivoyMir-controls.json.
+
+usage: android-export.py [--cache DIR] [--controls]   (кэш jar общий с depcheck, по умолчанию /tmp/depcache)
 """
 import argparse, datetime, hashlib, json, os, shutil, subprocess, sys, tempfile, tomllib, urllib.parse, urllib.request, zipfile
 
@@ -79,6 +81,88 @@ def excluded_file(rel):
     return any(rel == p or (p.endswith("/") and rel.startswith(p)) for p in EXCLUDE_FILES)
 
 
+# Экранные кнопки Zalith Launcher 2 (2.8.x, формат LayerController, editorVersion 12).
+# База — их стандартная раскладка (tools/zalith-default-layout.json = assets/default_layout.json из ZalithLauncher2,
+# GPL-3), к ней слой «Живой мир». Клавиши — из options.txt сборки, иначе умолчание мода.
+CONTROLS_OUT = os.path.join(ROOT, "dist", "android", "ZhivoyMir-controls.json")
+CONTROLS_BASE = os.path.join(ROOT, "tools", "zalith-default-layout.json")
+SCREEN = (2944, 1840)  # планшет 12.7", альбомная; позиции Zalith — доля свободного места, размеры — доля высоты экрана
+# (надпись, привязка в options.txt, умолчание мода, левый верхний угол в px, размер в 1/10000 высоты экрана)
+ZM_BUTTONS = [
+    ("Голос", "key.voice_chat", "key.keyboard.v", (1030, 0), (1500, 900)),
+    ("Карта", "key.journeymap.map_toggle_alt", "key.keyboard.j", (1320, 0), (1500, 900)),
+    ("Рюкзак", "key.backpacked.open_backpack", "key.keyboard.b", (1610, 0), (1500, 900)),
+    ("Рюкзак: упр.", "key.backpacked.open_management", "key.keyboard.v", (1900, 0), (1500, 900)),
+    # удерживаемая: пока кнопка зажата, зажат Caps Lock — разговор с жителями (zmclient)
+    ("Жители", "key.zmclient.talk", "key.keyboard.caps.lock", (None, 610), (1900, 1300)),
+]
+# Модификаторы options.txt (key:...:SHIFT) жмутся раньше основной клавиши — Zalith шлёт события по порядку.
+MODIFIER_KEYS = {"SHIFT": "GLFW_KEY_LEFT_SHIFT", "CONTROL": "GLFW_KEY_LEFT_CONTROL", "ALT": "GLFW_KEY_LEFT_ALT"}
+
+
+def bound_keys(name, default):
+    """options.txt «key_<name>:key.keyboard.b:SHIFT» -> ["GLFW_KEY_LEFT_SHIFT", "GLFW_KEY_B"]."""
+    value = default
+    for ln in open(os.path.join(ROOT, "options.txt"), encoding="utf-8").read().splitlines():
+        if ln.startswith(f"key_{name}:"):
+            value = ln.split(":", 1)[1]
+    key, *mods = value.split(":")
+    if not key.startswith("key.keyboard.") or key == "key.keyboard.unknown":
+        raise SystemExit(f"ERROR: {name} = {value}: нужна клавиша клавиатуры")
+    return [MODIFIER_KEYS[m] for m in mods] + ["GLFW_KEY_" + key[len("key.keyboard."):].replace(".", "_").upper()]
+
+
+def zm_uuid(text, n):
+    return hashlib.sha1(("zhivoymir:" + text).encode()).hexdigest()[:n]
+
+
+def controls_layout():
+    lay = json.load(open(CONTROLS_BASE, encoding="utf-8"))
+    lay["info"] = {
+        "name": {"default": "Живой мир (планшет)", "matchQueue": []},
+        "author": {"default": "Живой мир", "matchQueue": []},
+        "description": {"default": "Стандартная раскладка Zalith + кнопки сборки «Живой мир»", "matchQueue": []},
+        "versionCode": 1, "versionName": "1.0",
+    }
+    for layer in lay["layers"]:
+        for b in layer.get("normalButtons", []):
+            if b["clickEvents"] == [{"type": "key", "key": "GLFW_KEY_T"}]:
+                b["text"]["default"] = "Чат"
+                b["clickEvents"] = [{"type": "key", "key": k} for k in bound_keys("key.chat", "key.keyboard.t")]
+    W, H = SCREEN
+    buttons = []
+    for text, name, default, (x, y), (w, h) in ZM_BUTTONS:
+        wpx, hpx = H * w / 10000, H * h / 10000
+        buttons.append({
+            "text": {"default": text, "matchQueue": []},
+            "uuid": zm_uuid(text, 18),
+            "position": {"x": 10000 if x is None else round(x / (W - wpx) * 10000), "y": round(y / (H - hpx) * 10000)},
+            "buttonSize": {"type": "percentage", "widthDp": 50.0, "heightDp": 50.0, "widthPercentage": w,
+                           "heightPercentage": h, "widthReference": "screen_height", "heightReference": "screen_height"},
+            "buttonStyle": "cac8c754ffa0" if text == "Жители" else "d1096cf91caa",  # rounded / default из базы
+            "textAlignment": "Center",  # enum без @SerialName — имя константы
+            "visibilityType": "in_game",
+            "clickEvents": [{"type": "key", "key": k} for k in bound_keys(name, default)],
+            "isSwipple": False, "isPenetrable": False, "isToggleable": False,
+        })
+    zm = {"name": "zhivoymir", "uuid": zm_uuid("layer", 12), "hide": False, "visibilityType": "in_game",
+          "normalButtons": buttons}
+    lay["layers"].insert(0, zm)
+    for layer in lay["layers"]:  # кнопка GUI прячет/показывает и наш слой
+        for b in layer.get("normalButtons", []):
+            if b["clickEvents"] and all(e["type"] == "switch_layer" for e in b["clickEvents"]):
+                b["clickEvents"].append({"type": "switch_layer", "key": zm["uuid"]})
+    return lay
+
+
+def write_controls():
+    os.makedirs(os.path.dirname(CONTROLS_OUT), exist_ok=True)
+    with open(CONTROLS_OUT, "w", encoding="utf-8") as f:
+        json.dump(controls_layout(), f, ensure_ascii=False, indent=1)
+        f.write("\n")
+    print(f"OK {CONTROLS_OUT}")
+
+
 def mobile_options():
     lines = open(os.path.join(ROOT, "options.txt"), encoding="utf-8").read().splitlines()
     seen, out = set(), []
@@ -107,7 +191,11 @@ def client_mods():
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--cache", default="/tmp/depcache")
+    ap.add_argument("--controls", action="store_true", help="только раскладку кнопок Zalith, без mrpack")
     args = ap.parse_args()
+    write_controls()
+    if args.controls:
+        return
     os.makedirs(args.cache, exist_ok=True)
     pack = tomllib.load(open(os.path.join(ROOT, "pack.toml"), "rb"))
     index = tomllib.load(open(os.path.join(ROOT, "index.toml"), "rb"))
