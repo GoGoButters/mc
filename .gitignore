@@ -1,1 +1,2 @@
 dist/android/*.mrpack
+__pycache__/
