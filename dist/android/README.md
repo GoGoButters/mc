@@ -20,7 +20,9 @@ Android-лаунчер при каждом запуске синхронизир
 без `EXCLUDE_FILES`, мобильные `options.txt` и `config/voicechat/voicechat-client.properties`
 (`preserve = true` — синхронизация не затирает настройки игрока). Основной пак её не видит (`.packwizignore`).
 
-**При каждом изменении сборки** (моды, config, kubejs, options.txt) после `packwiz refresh`:
+**Синхронизацию делает `../tools/deploy-test.sh`** сам: после `packwiz refresh`, если вне `android/` всё
+закоммичено, он запускает команды ниже и коммитит `android/` («Android-пак: синхронизация с основным»).
+Вручную (без деплоя):
 
 ```bash
 python3 tools/android-export.py --pack-only   # пересоздаёт android/ (без mrpack и загрузок jar)
