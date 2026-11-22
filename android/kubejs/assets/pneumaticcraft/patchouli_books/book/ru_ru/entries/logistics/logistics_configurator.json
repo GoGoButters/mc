@@ -1,0 +1,22 @@
+{
+  "name": "Конфигуратор логистики",
+  "icon": "pneumaticcraft:logistics_configurator",
+  "category": "pneumaticcraft:logistics",
+  "advancement": "pneumaticcraft:pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "Основное назначение $(item)конфигуратора логистики/$ — помочь с настройкой $(l:logistics/overview)логистической системы/$.$(p)$(thing)ПКМ/$ по любой $(l:logistics/frames)логистической рамке/$ позволяет настраивать различные фильтры.$(p)$(thing)Шифт+ПКМ/$ снимает рамку с инвентаря, к которому она прикреплена."
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:logistics_configurator",
+      "text": "$(item)Конфигуратор логистики/$ также можно использовать для снятия (по $(thing)Шифт+ПКМ/$) других прикрепляемых устройств, таких как $(l:semiblocks/transfer_gadget)устройство передачи/$ и $(l:semiblocks/crop_support)опора для культур/$."
+    },
+    {
+      "type": "crafting",
+      "text": "Создание конфигуратора логистики",
+      "recipe": "pneumaticcraft:logistics_configurator"
+    }
+  ]
+}

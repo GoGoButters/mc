@@ -1,0 +1,17 @@
+{
+  "name": "Трубный переходник",
+  "icon": "pneumaticcraft:tube_junction",
+  "category": "pneumaticcraft:tubes",
+  "advancement": "pneumaticcraft:pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(thing)Трубный переходник/$ — очень простое устройство, которое позволяет двум $(l:tubes/pressure_tubes)трубам давления/$ (любого $(l:base_concepts/pressure_tiers)уровня давления/$) пересекаться, не соединяясь друг с другом."
+    },
+    {
+      "type": "crafting",
+      "text": "Крафт трубного переходника",
+      "recipe": "pneumaticcraft:tube_junction"
+    }
+  ]
+}

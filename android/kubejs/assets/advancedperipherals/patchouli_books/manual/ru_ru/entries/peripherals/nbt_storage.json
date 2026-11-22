@@ -1,0 +1,30 @@
+{
+  "name": "NBT-хранилище",
+  "icon": "advancedperipherals:nbt_storage",
+  "category": "advancedperipherals:peripherals",
+  "pages": [
+    {
+      "type": "text",
+      "text": "NBT-хранилище — это специальный блок, который позволяет записывать и считывать пользовательские данные в блок и из блока. В основном предоставляется для поддержки ID.$(p)Полную документацию смотрите на $(9)$(l:https://docs.advanced-peripherals.de/peripherals/nbt_storage/)официальной вики-странице$(/l)$()!"
+    },
+    {
+      "type": "crafting",
+      "recipe": "advancedperipherals:nbt_storage"
+    },
+    {
+      "type": "multiblock",
+      "multiblock": {
+        "mapping": {
+          "0": "computercraft:computer_advanced",
+          "P": "advancedperipherals:nbt_storage"
+        },
+        "pattern": [
+          [
+            "0P"
+          ]
+        ]
+      },
+      "text": "Подключите NBT-хранилище к компьютеру, чтобы использовать его!"
+    }
+  ]
+}

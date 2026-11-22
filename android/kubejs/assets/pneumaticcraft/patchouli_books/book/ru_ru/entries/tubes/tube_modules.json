@@ -1,0 +1,34 @@
+{
+  "name": "Модули труб",
+  "icon": "minecraft:book",
+  "category": "pneumaticcraft:tubes",
+  "advancement": "pneumaticcraft:pressure_tube",
+  "priority": "true",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(thing)Модули труб/$ — это компоненты, которые можно прикреплять к $(l:tubes/pressure_tubes)трубам давления/$, либо сбоку трубы, либо $(thing)в разрыв/$ трубы.$(p)Установленные модули можно снять, $(thing)нажав Shift+ПКМ/$ $(l:tools/pneumatic_wrench)пневматическим гаечным ключом/$."
+    },
+    {
+      "anchor": "inline",
+      "type": "text",
+      "title": "Модули в разрыв",
+      "text": "$(thing)Модули в разрыв/$ немного особенные:$(li)Труба давления может иметь только один модуль в разрыв.$(li)Труба давления с модулем в разрыв не может иметь других модулей.$(li)Труба давления с модулем в разрыв может быть подключена только с двух сторон: с двух концов модуля в разрыв.$(li)Модули в разрыв могут быть установлены $(italic)только/$ на открытый конец трубы давления."
+    },
+    {
+      "type": "relations",
+      "entries": [
+        "pneumaticcraft:tubes/safety_module",
+        "pneumaticcraft:tubes/pressure_gauge_module",
+        "pneumaticcraft:tubes/flow_detector_module",
+        "pneumaticcraft:tubes/air_grate_module",
+        "pneumaticcraft:tubes/regulator_module",
+        "pneumaticcraft:tubes/charging_module",
+        "pneumaticcraft:tubes/logistics_module",
+        "pneumaticcraft:tubes/redstone_module",
+        "pneumaticcraft:tubes/thermostat_module",
+        "pneumaticcraft:tubes/vacuum_module"
+      ]
+    }
+  ]
+}

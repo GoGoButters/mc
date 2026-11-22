@@ -1,0 +1,23 @@
+{
+  "name": "Виджет координат",
+  "icon": "pneumaticcraft:textures/progwidgets/coordinate_piece.png",
+  "category": "pneumaticcraft:widget_other",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(thing)Координата/$ — это виджет, используемый исключительно как параметр для виджетов $(l:programming/coordinate_operator)оператора координат/$ и $(l:programming/condition_coordinate)условия: координата/$.$(p)Этот виджет можно сравнить с виджетом $(l:programming/area)области/$: виджетом $(thing)области/$ вы задаёте $(italic)две/$ координаты, чтобы составить область, а этим виджетом вы задаёте только $(italic)одну/$. Есть два способа задать координату:"
+    },
+    {
+      "type": "text",
+      "text": "$(bold)Постоянная/$$(br)Постоянная координата — это... постоянная. Вы можете выбрать её, выбрав $(l:tools/gps_tool)GPS-инструмент/$, или просто ввести значения X/Y/Z в текстовые поля напрямую.$(p)$(bold)Переменная/$$(br)Выбрав «Переменная», вы можете вернуть значение, сохранённое в $(l:programming/variables)переменной/$, как координату. Имейте в виду: так можно только задать координату, но не изменить переменную!"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/progwidgets/coordinate_piece.png"
+      ],
+      "text": "$(italic)Виджет координат/$"
+    }
+  ]
+}

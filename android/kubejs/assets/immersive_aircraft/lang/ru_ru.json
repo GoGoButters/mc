@@ -1,0 +1,8 @@
+{
+  "item.immersive_aircraft.gyrodyne.description": "Вертолёт с двигателем внутреннего сгорания на керосине. Заправь — и взлетай!",
+  "immersive_aircraft.fuel.none": "Нет керосина! Положи ведро или бак с керосином в слот топлива.",
+  "immersive_aircraft.fuel.out": "Керосин закончился!",
+  "immersive_aircraft.fuel.low": "Керосин на исходе!",
+  "immersive_aircraft.slot.boiler": "Керосин",
+  "option.immersive_aircraft.acceptVanillaFuel": "Принимать ванильное топливо (уголь, дрова)."
+}

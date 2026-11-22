@@ -1,0 +1,14 @@
+{
+  "values": {
+    "#c:crude_oil": { "heat_value_per_bucket": 6400 },
+    "#c:oil": { "heat_value_per_bucket": 6400 },
+    "#c:diesel": { "heat_value_per_bucket": 24000 },
+    "#c:biodiesel": { "heat_value_per_bucket": 24000 },
+    "#c:kerosene": { "heat_value_per_bucket": 24000 },
+    "#c:gasoline": { "heat_value_per_bucket": 24000 },
+    "#c:lpg": { "heat_value_per_bucket": 24000 },
+    "#c:fuel": { "heat_value_per_bucket": 24000 },
+    "#c:fuel_light": { "heat_value_per_bucket": 24000 },
+    "#c:fuel_dense": { "heat_value_per_bucket": 24000 }
+  }
+}

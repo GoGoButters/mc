@@ -1,0 +1,13 @@
+name = "Railcraft Engines"
+filename = "railcraftengines-1.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "1111731f22cd1f053103530ba0743bda27dc530c"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9014250
+project-id = 1718607

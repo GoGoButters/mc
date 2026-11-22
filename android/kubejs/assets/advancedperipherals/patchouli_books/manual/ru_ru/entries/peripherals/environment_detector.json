@@ -1,0 +1,30 @@
+{
+  "name": "Детектор окружающей среды",
+  "icon": "advancedperipherals:environment_detector",
+  "category": "advancedperipherals:peripherals",
+  "pages": [
+    {
+      "type": "text",
+      "text": "Детектор окружающей среды способен получать информацию из окружения, такую как текущее время, текущая фаза луны, уровень света блока и многое другое.$(p)Полную документацию смотрите на $(9)$(l:https://docs.advanced-peripherals.de/peripherals/environment_detector/)официальной вики-странице$(/l)$()!"
+    },
+    {
+      "type": "crafting",
+      "recipe": "advancedperipherals:environment_detector"
+    },
+    {
+      "type": "multiblock",
+      "multiblock": {
+        "mapping": {
+          "0": "computercraft:computer_advanced",
+          "P": "advancedperipherals:environment_detector"
+        },
+        "pattern": [
+          [
+            "0P"
+          ]
+        ]
+      },
+      "text": "Подключите детектор окружающей среды к компьютеру, чтобы использовать его!"
+    }
+  ]
+}

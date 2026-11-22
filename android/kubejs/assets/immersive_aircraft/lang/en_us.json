@@ -1,0 +1,8 @@
+{
+  "item.immersive_aircraft.gyrodyne.description": "Kerosene-powered combustion engine copter. Fuel it up and take off!",
+  "immersive_aircraft.fuel.none": "No kerosene! Put a bucket or tank of kerosene into the fuel slot.",
+  "immersive_aircraft.fuel.out": "You ran out of kerosene!",
+  "immersive_aircraft.fuel.low": "You are low on kerosene!",
+  "immersive_aircraft.slot.boiler": "Kerosene",
+  "option.immersive_aircraft.acceptVanillaFuel": "Accept vanilla fuel (coal, wood)."
+}

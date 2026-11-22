@@ -1,0 +1,15 @@
+{
+  "item_settings": {
+    "display_name": {
+      "type": "translatable",
+      "translate": "zhivoymir.guide_name"
+    },
+    "tooltip_lines": [
+      {
+        "text": "Странник, начни с этой книги.",
+        "color": "gray"
+      }
+    ]
+  },
+  "default_language": "ru_ru"
+}

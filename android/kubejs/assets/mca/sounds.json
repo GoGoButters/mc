@@ -1,0 +1,558 @@
+{
+ "villager.male.greet": {
+  "subtitle": "subtitle.mca.villager.greeting",
+  "sounds": [
+   {
+    "name": "mca:villager/male/greet/greet1",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/male/greet/greet2",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/male/greet/greet3",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/male/greet/greet4",
+    "attenuation_distance": 32
+   }
+  ],
+  "replace": true
+ },
+ "villager.female.greet": {
+  "subtitle": "subtitle.mca.villager.greeting",
+  "sounds": [
+   {
+    "name": "mca:villager/female/greet/greet1",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/female/greet/greet2",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/female/greet/greet3",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/female/greet/greet4",
+    "attenuation_distance": 32
+   }
+  ],
+  "replace": true
+ },
+ "villager.male.laugh": {
+  "subtitle": "subtitle.mca.villager.laughing",
+  "sounds": [
+   {
+    "name": "mca:villager/male/laugh/laugh1",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/male/laugh/laugh2",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/male/laugh/laugh3",
+    "attenuation_distance": 32
+   }
+  ],
+  "replace": true
+ },
+ "villager.female.laugh": {
+  "subtitle": "subtitle.mca.villager.laughing",
+  "sounds": [
+   {
+    "name": "mca:villager/female/laugh/laugh1",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/female/laugh/laugh2",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/female/laugh/laugh3",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/female/laugh/laugh4",
+    "attenuation_distance": 32
+   }
+  ],
+  "replace": true
+ },
+ "villager.male.surprise": {
+  "subtitle": "subtitle.mca.villager.surprised",
+  "sounds": [
+   {
+    "name": "mca:villager/male/surprise/surprise1",
+    "attenuation_distance": 32
+   }
+  ],
+  "replace": true
+ },
+ "villager.female.surprise": {
+  "subtitle": "subtitle.mca.villager.surprised",
+  "sounds": [
+   {
+    "name": "mca:villager/female/surprise/surprise1",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/female/surprise/surprise2",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/female/surprise/surprise3",
+    "attenuation_distance": 32
+   }
+  ],
+  "replace": true
+ },
+ "villager.male.scream": {
+  "subtitle": "subtitle.mca.villager.scream",
+  "sounds": [
+   {
+    "name": "mca:villager/male/scream/scream1",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/male/scream/scream2",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/male/scream/scream3",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/male/scream/scream4",
+    "attenuation_distance": 32
+   }
+  ],
+  "replace": true
+ },
+ "villager.female.scream": {
+  "subtitle": "subtitle.mca.villager.scream",
+  "sounds": [
+   {
+    "name": "mca:villager/female/scream/scream1",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/female/scream/scream2",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/female/scream/scream3",
+    "attenuation_distance": 32
+   }
+  ],
+  "replace": true
+ },
+ "villager.male.cry": {
+  "subtitle": "subtitle.mca.villager.crying",
+  "sounds": [
+   {
+    "name": "mca:villager/male/cry/cry1",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/male/cry/cry2",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/male/cry/cry3",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/male/cry/cry4",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/male/cry/cry5",
+    "attenuation_distance": 32
+   }
+  ],
+  "replace": true
+ },
+ "villager.female.cry": {
+  "subtitle": "subtitle.mca.villager.crying",
+  "sounds": [
+   {
+    "name": "mca:villager/female/cry/cry1",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/female/cry/cry2",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/female/cry/cry3",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/female/cry/cry4",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/female/cry/cry5",
+    "attenuation_distance": 32
+   }
+  ],
+  "replace": true
+ },
+ "villager.male.yes": {
+  "subtitle": "subtitle.mca.villager.yes",
+  "sounds": [
+   {
+    "name": "mca:villager/male/yes/yes1",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/male/yes/yes2",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/male/yes/yes3",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/male/yes/yes4",
+    "attenuation_distance": 32
+   }
+  ],
+  "replace": true
+ },
+ "villager.female.yes": {
+  "subtitle": "subtitle.mca.villager.yes",
+  "sounds": [
+   {
+    "name": "mca:villager/female/yes/yes1",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/female/yes/yes2",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/female/yes/yes3",
+    "attenuation_distance": 32
+   }
+  ],
+  "replace": true
+ },
+ "villager.male.no": {
+  "subtitle": "subtitle.mca.villager.no",
+  "sounds": [
+   {
+    "name": "mca:villager/male/no/no1",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/male/no/no2",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/male/no/no3",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/male/no/no4",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/male/no/no5",
+    "attenuation_distance": 32
+   }
+  ],
+  "replace": true
+ },
+ "villager.female.no": {
+  "subtitle": "subtitle.mca.villager.no",
+  "sounds": [
+   {
+    "name": "mca:villager/female/no/no1",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/female/no/no2",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/female/no/no3",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/female/no/no4",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/female/no/no5",
+    "attenuation_distance": 32
+   }
+  ],
+  "replace": true
+ },
+ "villager.male.cough": {
+  "subtitle": "subtitle.mca.villager.cough",
+  "sounds": [
+   {
+    "name": "mca:villager/male/cough/cough1",
+    "attenuation_distance": 32
+   }
+  ],
+  "replace": true
+ },
+ "villager.female.cough": {
+  "subtitle": "subtitle.mca.villager.cough",
+  "sounds": [
+   {
+    "name": "mca:villager/female/cough/cough1",
+    "attenuation_distance": 32
+   }
+  ],
+  "replace": true
+ },
+ "villager.male.snore": {
+  "subtitle": "subtitle.mca.villager.snoring",
+  "sounds": [
+   {
+    "name": "mca:villager/male/snore/snore1",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/male/snore/snore2",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/male/snore/snore3",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/male/snore/snore4",
+    "attenuation_distance": 32
+   }
+  ],
+  "replace": true
+ },
+ "villager.female.snore": {
+  "subtitle": "subtitle.mca.villager.snoring",
+  "sounds": [
+   {
+    "name": "mca:villager/female/snore/snore1",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/female/snore/snore2",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/female/snore/snore3",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/female/snore/snore4",
+    "attenuation_distance": 32
+   }
+  ],
+  "replace": true
+ },
+ "villager.baby.laugh": {
+  "subtitle": "subtitle.mca.villager.laughing",
+  "sounds": [
+   {
+    "name": "mca:villager/baby/laugh/laugh1",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/baby/laugh/laugh2",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/baby/laugh/laugh3",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/baby/laugh/laugh4",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/baby/laugh/laugh5",
+    "attenuation_distance": 32
+   }
+  ],
+  "replace": true
+ },
+ "villager.male.hurt": {
+  "subtitle": "subtitle.mca.villager.hurt",
+  "sounds": [
+   {
+    "name": "mca:villager/male/hurt/hurt1",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/male/hurt/hurt2",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/male/hurt/hurt3",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/male/hurt/hurt4",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/male/hurt/hurt5",
+    "attenuation_distance": 32
+   }
+  ],
+  "replace": true
+ },
+ "villager.female.hurt": {
+  "subtitle": "subtitle.mca.villager.hurt",
+  "sounds": [
+   {
+    "name": "mca:villager/female/hurt/hurt1",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/female/hurt/hurt2",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/female/hurt/hurt3",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/female/hurt/hurt4",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/female/hurt/hurt5",
+    "attenuation_distance": 32
+   }
+  ],
+  "replace": true
+ },
+ "villager.male.angry": {
+  "subtitle": "subtitle.mca.villager.angry",
+  "sounds": [
+   {
+    "name": "mca:villager/male/angry/angry1",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/male/angry/angry2",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/male/angry/angry3",
+    "attenuation_distance": 32
+   }
+  ],
+  "replace": true
+ },
+ "villager.female.angry": {
+  "subtitle": "subtitle.mca.villager.angry",
+  "sounds": [
+   {
+    "name": "mca:villager/female/angry/angry1",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/female/angry/angry2",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/female/angry/angry3",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/female/angry/angry4",
+    "attenuation_distance": 32
+   }
+  ],
+  "replace": true
+ },
+ "villager.male.celebrate": {
+  "subtitle": "subtitle.mca.villager.celebrate",
+  "sounds": [
+   {
+    "name": "mca:villager/male/laugh/laugh1",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/male/laugh/laugh2",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/male/laugh/laugh3",
+    "attenuation_distance": 32
+   }
+  ],
+  "replace": true
+ },
+ "villager.female.celebrate": {
+  "subtitle": "subtitle.mca.villager.celebrate",
+  "sounds": [
+   {
+    "name": "mca:villager/female/laugh/laugh1",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/female/laugh/laugh2",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/female/laugh/laugh3",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/female/laugh/laugh4",
+    "attenuation_distance": 32
+   }
+  ],
+  "replace": true
+ },
+ "villager.male.sirben": {
+  "sounds": [
+   {
+    "name": "mca:villager/sirben/male/sirben1",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/sirben/male/sirben2",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/sirben/male/sirben3",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/sirben/male/sirben4",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/sirben/male/sirben5",
+    "attenuation_distance": 32
+   }
+  ],
+  "replace": true
+ },
+ "villager.female.sirben": {
+  "sounds": [
+   {
+    "name": "mca:villager/sirben/female/sirben1",
+    "attenuation_distance": 32
+   },
+   {
+    "name": "mca:villager/sirben/female/sirben2",
+    "attenuation_distance": 32
+   }
+  ],
+  "replace": true
+ }
+}

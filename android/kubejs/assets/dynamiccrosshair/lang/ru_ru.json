@@ -1,0 +1,20 @@
+{
+  "dynamiccrosshair.add": "Добавить…",
+  "dynamiccrosshair.cancel": "Отмена",
+  "dynamiccrosshair.delete": "Удалить",
+  "dynamiccrosshair.edit": "Изменить…",
+  "dynamiccrosshair.group.crosshairStyle": "Стиль прицела",
+  "dynamiccrosshair.option.additionalInteractableBlocks": "Дополнительные интерактивные блоки",
+  "dynamiccrosshair.option.additionalInteractableBlocks.description": "Список названий блоков или тегов, например «minecraft:oak_log» или «#minecraft:stairs». Эти блоки будут добавлены в категорию интерактивных блоков.",
+  "dynamiccrosshair.option.crosshairConfig.displayCorrectTool": "Подсвечивать правильный / неправильный инструмент",
+  "dynamiccrosshair.option.crosshairConfig.displayCorrectTool.description": "Показывать индикатор прицела, подходит ли предмет в руке для разрушения целевого блока.",
+  "dynamiccrosshair.option.crosshairConfig.onInteractableBlock": "Подсвечивать интерактивный блок",
+  "dynamiccrosshair.option.crosshairConfig.onInteractableBlock.description": "Показывать прицел «интерактивный блок» при наведении на блок, с которым можно взаимодействовать",
+  "dynamiccrosshair.option.crosshairStyle.coalesce": "Объединять",
+  "dynamiccrosshair.option.crosshairStyle.coalesce.description": "Разрешить комбинировать этот стиль с другими стилями прицела, если это возможно.",
+  "dynamiccrosshair.option.fixCenteredCrosshair": "Исправить центрирование прицела",
+  "dynamiccrosshair.option.fixCenteredCrosshair.description": "В ванильном Minecraft прицел отцентрован не идеально (MC-157252). Эта настройка гарантирует, что он всегда центрирован. Работает не на всех масштабах интерфейса. Можете отключить её для совместимости с другими модами.",
+  "dynamiccrosshair.option.hideWithMap": "Скрывать, когда в руках карта",
+  "dynamiccrosshair.option.hideWithMap.description": "Скрывать прицел, когда в обеих руках держится карта, чтобы он её не перекрывал",
+  "dynamiccrosshair.save": "Сохранить"
+}

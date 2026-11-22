@@ -1,0 +1,17 @@
+{
+  "name": "Канистра с воздухом",
+  "icon": "pneumaticcraft:air_canister",
+  "category": "pneumaticcraft:components",
+  "advancement": "pneumaticcraft:pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)Канистра с воздухом/$ — компонент крафта для любого $(l:base_concepts/pressure)накачиваемого/$ предмета или инструмента. Её также можно заряжать и разряжать в $(l:machines/charging_station)зарядной станции/$. $(item)Канистра с воздухом/$ имеет объём 3000 мл и может быть заряжена до 10 бар (она не взорвётся).$(p)Любые пневматические предметы, скрафченные с помощью $(item)канистры с воздухом/$, сохранят воздух из канистры."
+    },
+    {
+      "type": "crafting",
+      "text": "Создание канистры с воздухом",
+      "recipe": "pneumaticcraft:air_canister"
+    }
+  ]
+}

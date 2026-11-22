@@ -1,0 +1,6 @@
+{
+  "text.autoconfig.combat_roll.option.client.keybindingLabelPosition": "Положение надписи клавиши",
+  "text.autoconfig.combat_roll.option.client.showHUDInCreative": "Показывать стрелку в творческом режиме",
+  "text.autoconfig.combat_roll.option.client.showKeybinding": "Показывать клавишу на HUD",
+  "text.autoconfig.combat_roll.option.client.showWhenFull": "Показывать стрелку при полной шкале"
+}

@@ -12,6 +12,26 @@ python3 tools/android-check.py    # валидность modrinth.index.json и 
 
 jar берутся из кэша depcheck (`/tmp/depcache`); недостающие CurseForge-jar — `../tools/cf-cache-sync.sh`.
 
+## Пак для лаунчера
+
+Android-лаунчер при каждом запуске синхронизируется с packwiz-паком
+**https://gogobutters.github.io/mc/android/pack.toml** (как ПК-клиент с `/mc/pack.toml`).
+Это папка `android/` в корне репо: копии `*.pw.toml` клиентского набора без `EXCLUDE`, config/kubejs/servers.dat
+без `EXCLUDE_FILES`, мобильные `options.txt` и `config/voicechat/voicechat-client.properties`
+(`preserve = true` — синхронизация не затирает настройки игрока). Основной пак её не видит (`.packwizignore`).
+
+**При каждом изменении сборки** (моды, config, kubejs, options.txt) после `packwiz refresh`:
+
+```bash
+python3 tools/android-export.py --pack-only   # пересоздаёт android/ (без mrpack и загрузок jar)
+python3 tools/android-check.py                # моды android/ = клиентский набор, хэши индекса сходятся
+git add android && git commit -m "android: синхронизация пака" -- android
+```
+
+Публикация — тот же `git push` в main (Pages отдаёт корень ветки), например через `../tools/deploy-test.sh`.
+Проверка: `java -jar packwiz-installer-bootstrap.jar -g -s client https://gogobutters.github.io/mc/android/pack.toml`
+в пустой папке.
+
 ## Что внутри
 
 - Моды side=client|both из packwiz-сборки. С Modrinth — ссылками в `modrinth.index.json`;

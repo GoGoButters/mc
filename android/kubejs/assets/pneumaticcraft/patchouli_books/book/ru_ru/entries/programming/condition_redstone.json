@@ -1,0 +1,19 @@
+{
+  "name": "Виджет «Условие: Редстоун»",
+  "icon": "pneumaticcraft:textures/progwidgets/condition_redstone_piece.png",
+  "category": "pneumaticcraft:widget_cond",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "Это виджет $(l:programming/conditions)«Условие»/$.$(p)Виджет $(thing)«Условие: Редстоун»/$ позволяет (дистанционно) проверять, соответствует ли уровень редстоуна блока(-ов) в подключённом виджете $(l:programming/area)«Область»/$ заданному порогу редстоуна."
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/progwidgets/condition_redstone_piece.png"
+      ],
+      "text": "$(italic)Виджет «Условие: Редстоун»/$"
+    }
+  ]
+}

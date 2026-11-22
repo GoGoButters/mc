@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "ad_astra:oil", "required": false },
+    { "id": "buildcraftenergy:oil", "required": false },
+    { "id": "buildcraftenergy:spout_oil", "required": false },
+    { "id": "buildcraftenergy:oil_heat_1", "required": false },
+    { "id": "buildcraftenergy:oil_heat_2", "required": false }
+  ]
+}

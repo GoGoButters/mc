@@ -1,0 +1,19 @@
+{
+  "name": "Виджет «Перейти к месту»",
+  "icon": "pneumaticcraft:textures/progwidgets/goto_piece.png",
+  "category": "pneumaticcraft:widget_interact",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(thing)«Перейти к месту»/$ довольно прост: $(l:tools/drone)дрон/$ отправится в ближайшее достижимое место в указанной $(l:programming/area)области/$.$(p)Этот виджет завершается $(ttcolor)$(t:Виджет можно настроить на мгновенное завершение; кликните ПКМ для GUI настройки)когда дрон достигнет области/$, или когда эта область недостижима."
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/progwidgets/goto_piece.png"
+      ],
+      "text": "$(italic)Виджет «Перейти к месту»/$"
+    }
+  ]
+}

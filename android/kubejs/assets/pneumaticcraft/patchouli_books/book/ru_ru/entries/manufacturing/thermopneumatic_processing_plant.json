@@ -1,0 +1,29 @@
+{
+  "name": "Термопневматическая установка",
+  "icon": "pneumaticcraft:thermopneumatic_processing_plant",
+  "category": "pneumaticcraft:manufacturing",
+  "advancement": "pneumaticcraft:refinery",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(thing)Термопневматическая установка/$ использует $(l:base_concepts/pressure)давление/$ и/или $(l:base_concepts/heat)тепло/$ для обработки материалов. У неё есть несколько применений:$(li)100mB $(thing)СПГ/$ и 1 единица $(item)угля/$ дают 1000mB $(l:components/plastic)пластика/$. Для этого нужно тепло, но не давление.$(li)1000mB $(thing)дизеля/$ и 1 единица $(item)редстоуновой пыли/$ дают 1000mB $(l:components/lubricant)смазки/$. Опять же, для этого нужно тепло, но не давление."
+    },
+    {
+      "type": "text",
+      "text": "$(li)$(item)Термопневматическую установку/$ можно использовать для крекинга тяжёлых видов топлива, производимых $(l:manufacturing/refinery)НПЗ/$, в более лёгкие с выходом 80%:$(li)Дизель -> Керосин$(li)Керосин -> Бензин$(li)Бензин -> СПГ$(p)Для этого требуются и тепло, и давление."
+    },
+    {
+      "type": "link",
+      "flag": "mod:crafttweaker",
+      "title": "CraftTweaker",
+      "text": "$(thing)Термопневматическая установка/$ имеет поддержку $(l:https://minecraft.curseforge.com/projects/crafttweaker)CraftTweaker/$,: рецепты можно добавлять и удалять. Перейдите по ссылке ниже для получения дополнительной информации.",
+      "url": "https://docs.blamejared.com/1.16/en/mods/PneumaticCraft-Repressurized/ThermoPlant",
+      "link_text": "Документация CraftTweaker"
+    },
+    {
+      "type": "crafting",
+      "text": "Создание термопневматической установки",
+      "recipe": "pneumaticcraft:thermopneumatic_processing_plant"
+    }
+  ]
+}

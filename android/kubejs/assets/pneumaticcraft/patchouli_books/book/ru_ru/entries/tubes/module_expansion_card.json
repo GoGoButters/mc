@@ -1,0 +1,17 @@
+{
+  "name": "Карта расширения модуля",
+  "icon": "pneumaticcraft:module_expansion_card",
+  "category": "pneumaticcraft:tubes",
+  "advancement": "pneumaticcraft:printed_circuit_board",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)Карта расширения модуля/$ — это подключаемая печатная плата, которую можно прикрепить к $(l:tubes/tube_modules)трубным модулям/$, чтобы расширить их функциональность различными способами. $(thing)Кликните ПКМ/$ картой по трубному модулю, чтобы применить её.$(p)Подробнее о том, как расширяется модуль, смотрите на страницах отдельных трубных модулей."
+    },
+    {
+      "type": "crafting",
+      "text": "Создание карты расширения модуля",
+      "recipe": "pneumaticcraft:module_expansion_card"
+    }
+  ]
+}

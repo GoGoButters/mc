@@ -1,0 +1,18 @@
+{
+  "name": "Сборочные программы",
+  "icon": "pneumaticcraft:assembly_program_laser",
+  "category": "pneumaticcraft:manufacturing",
+  "advancement": "pneumaticcraft:printed_circuit_board",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(thing)Сборочные программы/$ нужно вставлять в $(l:manufacturing/assembly_system)контроллер сборки/$, чтобы указать ему, какую операцию следует выполнить. Их нельзя скрафтить — их нужно выменять: либо у $(thing)жителей-механиков/$, либо через $(l:tools/amadron_tablet)планшет Амадрона/$."
+    },
+    {
+      "type": "spotlight",
+      "title": "Сверление и лазер",
+      "item": "pneumaticcraft:assembly_program_drill_laser",
+      "text": "$(item)Сборочная программа: сверление и лазер/$ немного особенная. Она не обрабатывает рецепты сверления и лазера по отдельности; вместо этого она даёт единую программу для двухэтапных рецептов, включающих этапы сверления $(italic)и/$ лазерной резки, например $(l:tubes/pressure_tubes#advanced)продвинутые трубы давления/$."
+    }
+  ]
+}

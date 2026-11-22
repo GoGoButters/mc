@@ -1,0 +1,16 @@
+{
+  "name": "Паровая печь",
+  "icon": "railcraft:steam_oven",
+  "category": "railcraft:multiblock",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Паровая печь — это конструкция размером 2x2x2, которая, будучи снабжённой паром, готовит для вас предметы. Она может готовить до 9 предметов одновременно за короткое время в 256 тиков (12,8 секунд)!"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Паровая печь",
+      "multiblock_id": "railcraft:steam_oven"
+    }
+  ]
+}

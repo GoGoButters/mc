@@ -1,0 +1,30 @@
+{
+  "name": "Детектор игроков",
+  "icon": "advancedperipherals:player_detector",
+  "category": "advancedperipherals:peripherals",
+  "pages": [
+    {
+      "type": "text",
+      "text": "Детектор игроков способен распознавать игроков в определённом радиусе. Кроме того, он распознаёт игрока, который кликает по нему.$(p)Полную документацию смотрите на $(9)$(l:https://docs.advanced-peripherals.de/peripherals/player_detector/)официальной вики-странице$(/l)$()!"
+    },
+    {
+      "type": "crafting",
+      "recipe": "advancedperipherals:player_detector"
+    },
+    {
+      "type": "multiblock",
+      "multiblock": {
+        "mapping": {
+          "0": "computercraft:computer_advanced",
+          "P": "advancedperipherals:player_detector"
+        },
+        "pattern": [
+          [
+            "0P"
+          ]
+        ]
+      },
+      "text": "Подключите детектор игроков к компьютеру, чтобы использовать его!"
+    }
+  ]
+}

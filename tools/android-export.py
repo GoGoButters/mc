@@ -5,15 +5,18 @@
 config/, kubejs/, servers.dat — в overrides, как у десктопа; options.txt и голосовой чат — мобильные.
 После сборки прогоняет depcheck.py на мобильном наборе модов.
 
-Заодно пишет раскладку экранных кнопок Zalith: dist/android/ZhivoyMir-controls.json.
+Заодно пишет раскладку экранных кнопок Zalith: dist/android/ZhivoyMir-controls.json,
+и packwiz-пак android/ (Pages: https://gogobutters.github.io/mc/android/pack.toml) — лаунчер синхронизируется с ним
+при каждом запуске. После любого изменения сборки: запустить и закоммитить android/.
 
-usage: android-export.py [--cache DIR] [--controls]   (кэш jar общий с depcheck, по умолчанию /tmp/depcache)
+usage: android-export.py [--cache DIR] [--controls | --pack-only]   (кэш jar общий с depcheck, по умолчанию /tmp/depcache)
 """
 import argparse, datetime, hashlib, json, os, shutil, subprocess, sys, tempfile, tomllib, urllib.parse, urllib.request, zipfile
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "dist", "android", "ZhivoyMir-Android.mrpack")
 DEPCHECK = os.path.join(os.path.dirname(ROOT), "tools", "depcheck.py")
+ANDROID_PACK = os.path.join(ROOT, "android")  # packwiz-пак для Android на Pages: /mc/android/pack.toml
 
 # Исключения: slug (имя mods/<slug>.pw.toml) -> причина. Пополнять по итогам тестов на планшете.
 # Кандидат: "sound-physics-remastered" — снять, если крашит/тормозит на Android.
@@ -188,13 +191,66 @@ def client_mods():
             yield slug, f["file"], t
 
 
+def voicechat_client():
+    return "".join(f"{k}={v}\n" for k, v in VOICECHAT_CLIENT.items()).encode()
+
+
+def toml_str(s):
+    return json.dumps(s, ensure_ascii=False)  # базовая строка TOML совпадает с JSON для наших путей
+
+
+def write_packwiz():
+    """packwiz-пак для Android-лаунчера: android/ в корне репо → https://gogobutters.github.io/mc/android/pack.toml.
+
+    Копии pw.toml клиентского набора без EXCLUDE и файлов без EXCLUDE_FILES, мобильные options.txt и голосовой чат
+    (preserve = true: синхронизация при запуске не затирает настройки игрока). index.toml и pack.toml пишутся здесь,
+    хэши sha256 — как у packwiz refresh. В основном паке android/ скрыт через .packwizignore.
+    """
+    pack = tomllib.load(open(os.path.join(ROOT, "pack.toml"), "rb"))
+    index = tomllib.load(open(os.path.join(ROOT, "index.toml"), "rb"))
+    keep = {rel for _, rel, _ in client_mods()}
+    files = {}  # rel -> (bytes, metafile, preserve)
+    for f in index["files"]:
+        rel = f["file"]
+        if (f.get("metafile") and rel not in keep) or (not f.get("metafile") and excluded_file(rel)):
+            continue
+        files[rel] = (open(os.path.join(ROOT, rel), "rb").read(), bool(f.get("metafile")), bool(f.get("preserve")))
+    files["options.txt"] = (mobile_options(), False, True)
+    files["config/voicechat/voicechat-client.properties"] = (voicechat_client(), False, True)
+
+    shutil.rmtree(ANDROID_PACK, ignore_errors=True)
+    lines = ['hash-format = "sha256"']
+    for rel in sorted(files):
+        data, meta, preserve = files[rel]
+        dst = os.path.join(ANDROID_PACK, rel)
+        os.makedirs(os.path.dirname(dst), exist_ok=True)
+        with open(dst, "wb") as o:
+            o.write(data)
+        lines += ["", "[[files]]", f"file = {toml_str(rel)}", f'hash = "{digest(data, "sha256")}"']
+        lines += ["metafile = true"] if meta else []
+        lines += ["preserve = true"] if preserve else []
+    idx = ("\n".join(lines) + "\n").encode()
+    open(os.path.join(ANDROID_PACK, "index.toml"), "wb").write(idx)
+    v = pack["versions"]
+    open(os.path.join(ANDROID_PACK, "pack.toml"), "w", encoding="utf-8").write(
+        f'name = "Живой мир (Android)"\nauthor = {toml_str(pack.get("author", ""))}\n'
+        f'version = {toml_str(pack["version"])}\npack-format = {toml_str(pack["pack-format"])}\n\n'
+        f'[index]\nfile = "index.toml"\nhash-format = "sha256"\nhash = "{digest(idx, "sha256")}"\n\n'
+        f'[versions]\nminecraft = {toml_str(v["minecraft"])}\nneoforge = {toml_str(v["neoforge"])}\n')
+    print(f"OK {ANDROID_PACK}/pack.toml: модов {len(keep)}, файлов в индексе {len(files)}")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--cache", default="/tmp/depcache")
     ap.add_argument("--controls", action="store_true", help="только раскладку кнопок Zalith, без mrpack")
+    ap.add_argument("--pack-only", action="store_true", help="только раскладку и packwiz-пак android/, без mrpack")
     args = ap.parse_args()
     write_controls()
     if args.controls:
+        return
+    write_packwiz()
+    if args.pack_only:
         return
     os.makedirs(args.cache, exist_ok=True)
     pack = tomllib.load(open(os.path.join(ROOT, "pack.toml"), "rb"))
@@ -222,8 +278,7 @@ def main():
             continue
         overrides[rel] = open(os.path.join(ROOT, rel), "rb").read()
     overrides["options.txt"] = mobile_options()
-    overrides["config/voicechat/voicechat-client.properties"] = (
-        "".join(f"{k}={v}\n" for k, v in VOICECHAT_CLIENT.items())).encode()
+    overrides["config/voicechat/voicechat-client.properties"] = voicechat_client()
 
     manifest = {
         "formatVersion": 1,

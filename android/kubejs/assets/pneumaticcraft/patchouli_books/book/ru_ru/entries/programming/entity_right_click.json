@@ -1,0 +1,19 @@
+{
+  "name": "Виджет «ПКМ по сущности»",
+  "icon": "pneumaticcraft:textures/progwidgets/entity_right_click_piece.png",
+  "category": "pneumaticcraft:widget_interact",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(l:tools/drone)Дрон/$ будет $(thing)кликать ПКМ/$ предметом из первого слота своего инвентаря по каждой сущности в указанной $(l:programming/area)области/$, по одному разу. Это можно использовать для стрижки овец, доения коров, разведения животных и много чего ещё!$(p)Имейте в виду: любые подключённые к этому виджету виджеты $(l:programming/area)«Область»/$ должны иметь тип области $(thing)«Ящик»/$ — это единственная поддерживаемая форма. Впрочем, можно создавать и другие формы, используя белые/чёрные списки областей."
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/progwidgets/entity_right_click_piece.png"
+      ],
+      "text": "$(italic)Тык/$"
+    }
+  ]
+}

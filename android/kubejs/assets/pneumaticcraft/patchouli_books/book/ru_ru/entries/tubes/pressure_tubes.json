@@ -1,0 +1,44 @@
+{
+  "name": "Напорные трубы",
+  "icon": "pneumaticcraft:pressure_tube",
+  "category": "pneumaticcraft:tubes",
+  "advancement": "pneumaticcraft:root",
+  "priority": "true",
+  "pages": [
+    {
+      "type": "text",
+      "text": "Напорные трубы — основное устройство в $(pncr) для транспортировки сжатого воздуха между компрессорами и машинами.$(p)Незакрытые трубы будут упускать воздух! Однако стороны трубы можно переключать между открытым и закрытым состоянием, кликая по ним $(l:tools/pneumatic_wrench)гаечным пневмоключом/$. Ключи из других модов тоже могут подойти."
+    },
+    {
+      "type": "image",
+      "title": "Трубы!",
+      "text": "$(italic)Две напорные трубы с $(l:tubes/pressure_gauge_module)датчиком давления/$, $(italic)соединяющие $(l:compressors/air_compressor)воздушный компрессор/$ $(italic)и $(l:machines/air_cannon)воздушную пушку/$",
+      "images": [
+        "pneumaticcraft:textures/patchouli/pressure_tubes.png"
+      ],
+      "border": "true"
+    },
+    {
+      "type": "text",
+      "text": "На напорные трубы можно устанавливать $(l:tubes/tube_modules)модули труб/$ — присоединяемые компоненты, добавляющие трубе различные функции. Подробнее о каждом модуле — на отдельных страницах.$(p)Напорные трубы можно замаскировать с помощью $(l:tools/camo_applicator)камуфликатора/$."
+    },
+    {
+      "type": "text",
+      "text": "Существует три $(l:base_concepts/pressure_tiers)уровня/$ труб:$(br)$(li)Трубы 1 уровня выдерживают давление до 5 бар и имеют ёмкость 1000 мл воздуха.$(li)Трубы 1.5 уровня (укреплённые) выдерживают давление до 10 бар и также имеют ёмкость 1000 мл.$(li)Трубы 2 уровня (продвинутые) выдерживают давление до 20 бар и имеют ёмкость 4000 мл воздуха."
+    },
+    {
+      "type": "crafting",
+      "text": "Создание напорной трубы",
+      "recipe": "pneumaticcraft:pressure_tube"
+    },
+    {
+      "type": "pneumaticcraft:thermo_plant",
+      "recipe": "pneumaticcraft:thermo_plant/reinforced_pressure_tube"
+    },
+    {
+      "anchor": "advanced",
+      "type": "pneumaticcraft:assembly_system",
+      "recipe": "pneumaticcraft:assembly/advanced_pressure_tube"
+    }
+  ]
+}

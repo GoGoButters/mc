@@ -1,0 +1,13 @@
+name = "Живой мир (Android)"
+author = "Vadim"
+version = "0.1.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "c4947e22bf73d04d67be2d809d3fed20425fbe9856b7885ea8db1560c3fb253a"
+
+[versions]
+minecraft = "1.21.1"
+neoforge = "21.1.265"

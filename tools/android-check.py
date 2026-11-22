@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Проверка мобильного mrpack: валидный modrinth.index.json и список модов = клиентский набор минус исключения.
+"""Проверка мобильного mrpack и packwiz-пака android/: моды = клиентский набор минус исключения, хэши сходятся.
 
 usage: android-check.py [path.mrpack]
 """
@@ -11,40 +11,42 @@ ex = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(ex)
 
 path = sys.argv[1] if len(sys.argv) > 1 else ex.OUT
-z = zipfile.ZipFile(path)
-m = json.loads(z.read("modrinth.index.json"))
 errors = []
-if m.get("formatVersion") != 1 or m.get("game") != "minecraft":
-    errors.append("formatVersion/game")
-for k in ("versionId", "name", "files", "dependencies"):
-    if k not in m:
-        errors.append(f"нет поля {k}")
-if not {"minecraft", "neoforge"} <= set(m.get("dependencies", {})):
-    errors.append("dependencies без minecraft/neoforge")
-for f in m["files"]:
-    h = f.get("hashes", {})
-    if not (len(h.get("sha1", "")) == 40 and len(h.get("sha512", "")) == 128 and f.get("fileSize", 0) > 0
-            and f.get("downloads") and f["path"].startswith("mods/") and ".." not in f["path"]):
-        errors.append(f"плохая запись {f.get('path')}")
+mrpack = os.path.exists(path)  # mrpack в git не хранится; без него — только раскладка и android/
+if mrpack:
+    z = zipfile.ZipFile(path)
+    m = json.loads(z.read("modrinth.index.json"))
+    if m.get("formatVersion") != 1 or m.get("game") != "minecraft":
+        errors.append("formatVersion/game")
+    for k in ("versionId", "name", "files", "dependencies"):
+        if k not in m:
+            errors.append(f"нет поля {k}")
+    if not {"minecraft", "neoforge"} <= set(m.get("dependencies", {})):
+        errors.append("dependencies без minecraft/neoforge")
+    for f in m["files"]:
+        h = f.get("hashes", {})
+        if not (len(h.get("sha1", "")) == 40 and len(h.get("sha512", "")) == 128 and f.get("fileSize", 0) > 0
+                and f.get("downloads") and f["path"].startswith("mods/") and ".." not in f["path"]):
+            errors.append(f"плохая запись {f.get('path')}")
 
-in_pack = {f["path"][5:] for f in m["files"]}
-ovr = {n[len("overrides/mods/"):] for n in z.namelist() if n.startswith("overrides/mods/") and n.endswith(".jar")}
-dup = in_pack & ovr
-want = set()  # считаем заново по mods/*.pw.toml, не через client_mods() экспорта
-for f in glob.glob(os.path.join(ex.ROOT, "mods", "*.pw.toml")):
-    t = tomllib.load(open(f, "rb"))
-    if t.get("side", "both") != "server" and os.path.basename(f).removesuffix(".pw.toml") not in ex.EXCLUDE:
-        want.add(t["filename"])
-have = in_pack | ovr
-for fn in sorted(want - have):
-    errors.append(f"нет в архиве: {fn}")
-for fn in sorted(have - want):
-    errors.append(f"лишний в архиве: {fn}")
-for fn in sorted(dup):
-    errors.append(f"и ссылкой, и в overrides: {fn}")
-opts = z.read("overrides/options.txt").decode()
-if not opts.startswith("version:3955\n"):
-    errors.append("options.txt без version:3955 в начале")
+    in_pack = {f["path"][5:] for f in m["files"]}
+    ovr = {n[len("overrides/mods/"):] for n in z.namelist() if n.startswith("overrides/mods/") and n.endswith(".jar")}
+    dup = in_pack & ovr
+    want = set()  # считаем заново по mods/*.pw.toml, не через client_mods() экспорта
+    for f in glob.glob(os.path.join(ex.ROOT, "mods", "*.pw.toml")):
+        t = tomllib.load(open(f, "rb"))
+        if t.get("side", "both") != "server" and os.path.basename(f).removesuffix(".pw.toml") not in ex.EXCLUDE:
+            want.add(t["filename"])
+    have = in_pack | ovr
+    for fn in sorted(want - have):
+        errors.append(f"нет в архиве: {fn}")
+    for fn in sorted(have - want):
+        errors.append(f"лишний в архиве: {fn}")
+    for fn in sorted(dup):
+        errors.append(f"и ссылкой, и в overrides: {fn}")
+    opts = z.read("overrides/options.txt").decode()
+    if not opts.startswith("version:3955\n"):
+        errors.append("options.txt без version:3955 в начале")
 
 # Раскладка Zalith: поля моделей LayerController (ControlLayout/ControlLayer/NormalData/ButtonSize/ClickEvent)
 # и клавиши — как в options.txt сборки (bound_keys экспорта).
@@ -83,8 +85,42 @@ for text, name, default, *_ in ex.ZM_BUTTONS:
     if zm.get(text) != ex.bound_keys(name, default):
         errors.append(f"раскладка: {text} не совпадает с options.txt")
 
+# packwiz-пак android/ (Pages /mc/android/pack.toml): моды = client_mods(), хэши индекса и pack.toml сходятся,
+# мобильные options.txt и голосовой чат с preserve = true.
+ap = ex.ANDROID_PACK
+if not os.path.exists(os.path.join(ap, "pack.toml")):
+    sys.exit(f"FAIL нет {ap}/pack.toml — запусти android-export.py --pack-only")
+apack = tomllib.load(open(os.path.join(ap, "pack.toml"), "rb"))
+idx_raw = open(os.path.join(ap, apack["index"]["file"]), "rb").read()
+if ex.digest(idx_raw, apack["index"]["hash-format"]) != apack["index"]["hash"]:
+    errors.append("android/pack.toml: хэш index.toml не сходится")
+if apack["versions"] != tomllib.load(open(os.path.join(ex.ROOT, "pack.toml"), "rb"))["versions"]:
+    errors.append("android/pack.toml: versions не как у основного пака")
+aidx = tomllib.loads(idx_raw.decode())
+for f in aidx["files"]:
+    p = os.path.join(ap, f["file"])
+    if not os.path.isfile(p) or os.path.islink(p):
+        errors.append(f"android: нет файла (или симлинк) {f['file']}")
+    elif ex.digest(open(p, "rb").read(), f.get("hash-format", aidx["hash-format"])) != f["hash"]:
+        errors.append(f"android: хэш не сходится {f['file']}")
+    elif ex.excluded_file(f["file"]):
+        errors.append(f"android: исключённый файл {f['file']}")
+a_mods = {f["file"] for f in aidx["files"] if f.get("metafile")}
+want_mods = {rel for _, rel, _ in ex.client_mods()}
+for rel in sorted(a_mods ^ want_mods):
+    errors.append(f"android: {'лишний' if rel in a_mods else 'нет'} мод {rel}")
+pres = {f["file"] for f in aidx["files"] if f.get("preserve")}
+if not {"options.txt", "config/voicechat/voicechat-client.properties"} <= pres:
+    errors.append("android: options.txt/voicechat-client.properties без preserve")
+if open(os.path.join(ap, "options.txt"), "rb").read() != ex.mobile_options():
+    errors.append("android: options.txt не мобильный")
+print(f"android/: модов {len(a_mods)}, файлов {len(aidx['files'])}")
+
 for e in errors:
     print("FAIL", e)
-print(f"{path}: модов {len(have)} (ссылками {len(in_pack)}, overrides {len(ovr)}), ожидалось {len(want)}, "
-      f"расхождений {len(errors)}")
+if mrpack:
+    print(f"{path}: модов {len(have)} (ссылками {len(in_pack)}, overrides {len(ovr)}), ожидалось {len(want)}")
+else:
+    print(f"{path}: нет — проверка mrpack пропущена")
+print(f"расхождений {len(errors)}")
 sys.exit(1 if errors else 0)

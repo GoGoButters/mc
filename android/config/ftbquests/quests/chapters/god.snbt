@@ -1,0 +1,149 @@
+{
+	id: "289CB31B126BD56F"
+	group: ""
+	order_index: 6
+	filename: "god"
+	icon: {
+		id: "minecraft:lodestone"
+		count: 1
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quest_links: [ ]
+	images: [ ]
+	quests: [
+		{
+			id: "7F8EE563F826A03B"
+			x: 0d
+			y: 0d
+			dependencies: [
+				"694439E53E153453"
+			]
+			tasks: [
+				{
+					id: "317963053EE51F19"
+					type: "item"
+					item: {
+						id: "minecraft:lodestone"
+						count: 1
+					}
+					count: 1
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "66E80759C73205C6"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "4A4D3338C4B4E14B"
+			x: 2d
+			y: 0d
+			icon: {
+				id: "minecraft:candle"
+				count: 1
+			}
+			dependencies: [
+				"7F8EE563F826A03B"
+			]
+			tasks: [
+				{
+					id: "4F273866E7983181"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "3E5D16688FE7D505"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "007FC336F850BE65"
+			x: 4d
+			y: 0d
+			icon: {
+				id: "minecraft:bread"
+				count: 1
+			}
+			dependencies: [
+				"4A4D3338C4B4E14B"
+			]
+			tasks: [
+				{
+					id: "4724DE240695736F"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "619EEA91CDCDA43E"
+					type: "item"
+					item: {
+						id: "minecraft:emerald"
+						count: 1
+					}
+					count: 1
+				}
+			]
+		}
+		{
+			id: "7EA7101F3EA72AC6"
+			x: 6d
+			y: 0d
+			icon: {
+				id: "minecraft:bell"
+				count: 1
+			}
+			dependencies: [
+				"007FC336F850BE65"
+			]
+			optional: true
+			tasks: [
+				{
+					id: "3FC49FFA57D2D97D"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "7E3CA0446A7DBF86"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+		{
+			id: "609B4A61548D9D74"
+			x: 8d
+			y: 0d
+			icon: {
+				id: "minecraft:golden_apple"
+				count: 1
+			}
+			dependencies: [
+				"7EA7101F3EA72AC6"
+			]
+			optional: true
+			tasks: [
+				{
+					id: "4882414750D8D024"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "544B5A1CB2D2E0F4"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+		}
+	]
+}

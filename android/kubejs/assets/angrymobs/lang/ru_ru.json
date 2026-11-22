@@ -1,0 +1,10 @@
+{
+  "angrymobs.configuration.Common": "Общие настройки",
+  "angrymobs.configuration.aggressiveAnimals": "Агрессивные животные",
+  "angrymobs.configuration.aggressiveAnimals.tooltip": "Когда включено, заставляет всех ванильных животных атаковать вас при виде.",
+  "angrymobs.configuration.angryAnimals": "Злые животные",
+  "angrymobs.configuration.angryAnimals.tooltip": "Когда включено, заставляет всех ванильных животных атаковать вас, если вы их раните.",
+  "angrymobs.configuration.title": "Конфигурация Angry Mobs",
+  "angrymobs.configuration.useAttributes": "Использовать атрибуты",
+  "angrymobs.configuration.useAttributes.tooltip": "Когда включено, заставляет цели ближнего боя добавлять урон от атак и отброс мобов к указанным значениям."
+}

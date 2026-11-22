@@ -1,0 +1,22 @@
+{
+  "block.railcraft.void_chest": "Сундук пустоты",
+  "entity.railcraft.bed_minecart": "Вагонетка с кроватью",
+  "entity.railcraft.cargo_minecart": "Грузовая вагонетка",
+  "entity.railcraft.void_chest_minecart": "Вагонетка с сундуком пустоты",
+  "item.railcraft.bed_minecart": "Вагонетка с кроватью",
+  "item.railcraft.cargo_minecart": "Грузовая вагонетка",
+  "item.railcraft.netherite_tunnel_bore_head": "Незеритовая головка проходческого щита",
+  "item.railcraft.void_chest_minecart": "Вагонетка с сундуком пустоты",
+  "item.railcraft.void_dust": "Пыль пустоты",
+  "key.railcraft.bed_minecart.sleep": "Спать в вагонетке с кроватью",
+  "looking_at.railcraft.aspect_received": "Получен аспект: ",
+  "looking_at.railcraft.aspect_relayed": "Передан аспект: ",
+  "looking_at.railcraft.aspect_sent": "Отправлен аспект: ",
+  "railcraft.configuration.boilersExplode": "Котлы взрываются",
+  "railcraft.configuration.boreMinesAllBlocks": "Бур добывает все блоки",
+  "railcraft.configuration.lockingTrackTrainDelay": "Задержка поезда на запирающем пути",
+  "railcraft.configuration.maxLauncherTrackForce": "Максимальная сила стартового пути",
+  "railcraft.configuration.strapIronTrackMaxSpeed": "Максимальная скорость деревянного пути",
+  "tips.railcraft.bed_minecart.keys": "Нажмите %s, чтобы спешиться, %s — чтобы лечь спать",
+  "tips.railcraft.track_kit.already_applied": "Комплект для рельсов уже применён"
+}

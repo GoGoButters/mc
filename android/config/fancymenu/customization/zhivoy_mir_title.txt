@@ -1,0 +1,43 @@
+type = fancymenu_layout
+
+layout-meta {
+  identifier = title_screen
+  render_custom_elements_behind_vanilla = false
+  last_edited_time = 1793900000000
+  is_enabled = true
+  randommode = false
+  randomgroup = 1
+  randomonlyfirsttime = false
+  layout_index = 0
+  [loading_requirement_container_meta:6c1f0a52-3b1e-4f7e-9a51-0d2b7c1e8a01-1793900000000] = [groups:][instances:]
+}
+
+element {
+  button_element_executable_block_identifier = 2b8e6d1a-5c7f-4a0e-8d3b-1f9a6c2e4b70-1793900000000
+  [executable_action_instance:9e4a7c2d-1b6f-4e8a-a3d5-7c0b2f9e6d14-1793900000000][action_type:joinserver] = globe.r2d2.dedyn.io:25565
+  [executable_block:2b8e6d1a-5c7f-4a0e-8d3b-1f9a6c2e4b70-1793900000000][type:generic] = [executables:9e4a7c2d-1b6f-4e8a-a3d5-7c0b2f9e6d14-1793900000000;]
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  nine_slice_custom_background = false
+  nine_slice_border_x = 5
+  nine_slice_border_y = 5
+  label = ▶ Играть: Живой мир
+  navigatable = true
+  element_type = custom_button
+  instance_identifier = 5d3c9b7e-8a2f-4c61-b0e4-3a9d7f1c2e58-1793900000000
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = element
+  anchor_point_element = mc_titlescreen_singleplayer_button
+  x = 0
+  y = -24
+  width = 200
+  height = 20
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = 7a2e5f1c-4d8b-4b39-9e06-2c5a8d3f1b97-1793900000000
+  [loading_requirement_container_meta:7a2e5f1c-4d8b-4b39-9e06-2c5a8d3f1b97-1793900000000] = [groups:][instances:]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Чертёж PCB",
+  "icon": "pneumaticcraft:pcb_blueprint",
+  "category": "pneumaticcraft:components",
+  "advancement": "pneumaticcraft:root",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)Чертёж PCB/$ — особый компонент, необходимый для крафта $(l:manufacturing/uv_light_box)УФ-бокса/$.$(p)Его нельзя скрафтить обычным способом — его нужно выменять, обычно через $(l:tools/amadron_tablet)планшет Амадрона/$, но возможно также у $(l:base_concepts/villagers)крестьян-механиков/$."
+    },
+    {
+      "type": "pneumaticcraft:amadron_trade",
+      "recipe": "pneumaticcraft:amadron/pcb_blueprint",
+      "text": "Обмен на $(item)чертёж PCB/$."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Виджет «Самоуничтожение»",
+  "icon": "pneumaticcraft:textures/progwidgets/suicide_piece.png",
+  "category": "pneumaticcraft:widget_flow",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(l:tools/drone)Дрон/$ немедленно превратится в свою предметную форму и выпадет на землю как предмет. Выполнение программы, разумеется, мгновенно прекращается."
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/progwidgets/suicide_piece.png"
+      ],
+      "text": "$(italic)Вот и всё, ребята/$"
+    }
+  ]
+}

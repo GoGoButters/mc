@@ -1,0 +1,21 @@
+{
+  "name": "Укреплённая канистра с воздухом",
+  "icon": "pneumaticcraft:reinforced_air_canister",
+  "category": "pneumaticcraft:components",
+  "advancement": "pneumaticcraft:advanced_pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "Как и её младшая сестра, $(l:components/air_canister)канистра с воздухом/$, $(thing)укреплённая канистра с воздухом/$ хранит воздух и может заряжаться и разряжаться в $(l:machines/charging_station)зарядной станции/$. Однако её объём увеличен до 6000 мл, и её можно заряжать до 20 бар (она не взорвётся)."
+    },
+    {
+      "type": "text",
+      "text": "Интересное применение $(thing)укреплённой канистры с воздухом/$ — в качестве накопителя воздуха большого объёма, в сочетании с таким инвентарём, как сундук, и $(l:tubes/pressure_tubes)трубой давления/$ с $(l:tubes/charging_module)зарядным модулем/$. Это становится ещё интереснее с $(l:machines/aerial_interface)воздушным интерфейсом/$ и (обычным) $(thing)эндер-сундуком/$..."
+    },
+    {
+      "type": "crafting",
+      "text": "Создание укреплённой канистры с воздухом",
+      "recipe": "pneumaticcraft:reinforced_air_canister"
+    }
+  ]
+}

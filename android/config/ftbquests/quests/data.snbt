@@ -1,0 +1,9 @@
+{
+	version: 13
+	id: "7912F5808CB29691"
+	default_consume_items: false
+	default_reward_team: false
+	default_quest_shape: "circle"
+	drop_loot_crates: false
+	detection_delay: 20
+}

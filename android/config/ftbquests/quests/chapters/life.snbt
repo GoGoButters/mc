@@ -1,0 +1,210 @@
+{
+	id: "0682F0BB5B1405C1"
+	group: ""
+	order_index: 5
+	filename: "life"
+	icon: {
+		id: "backpacked:backpack"
+		count: 1
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quest_links: [ ]
+	images: [ ]
+	quests: [
+		{
+			id: "53E10A7B7BEDB7C0"
+			x: 0d
+			y: 0d
+			dependencies: [
+				"694439E53E153453"
+			]
+			tasks: [
+				{
+					id: "2E5799F9A50E41DC"
+					type: "item"
+					item: {
+						id: "backpacked:backpack"
+						count: 1
+					}
+					count: 1
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "23A267F212FF1661"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "7EE48963AFA48FEE"
+			x: 0d
+			y: 1.5d
+			dependencies: [
+				"694439E53E153453"
+			]
+			tasks: [
+				{
+					id: "0AF994D8D99E37DF"
+					type: "item"
+					item: {
+						id: "ironchest:iron_chest"
+						count: 1
+					}
+					count: 1
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "075935CD7EE75F71"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "22915A97B1D6FF4B"
+			x: 2d
+			y: 1.5d
+			dependencies: [
+				"7EE48963AFA48FEE"
+			]
+			tasks: [
+				{
+					id: "4F6458E06CB315B3"
+					type: "item"
+					item: {
+						id: "ironchest:wood_to_iron_chest_upgrade"
+						count: 1
+					}
+					count: 1
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "380643653BB092DD"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "620B886F8F0A6AC3"
+			x: 0d
+			y: 3d
+			dependencies: [
+				"694439E53E153453"
+			]
+			tasks: [
+				{
+					id: "0B5B728900EE604E"
+					type: "item"
+					item: {
+						id: "comforts:hammock_red"
+						count: 1
+					}
+					count: 1
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "2AD747837C348F58"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "1BAAA7F2486785C8"
+			x: 0d
+			y: 4.5d
+			dependencies: [
+				"694439E53E153453"
+			]
+			tasks: [
+				{
+					id: "02A6496FFF73082A"
+					type: "item"
+					item: {
+						id: "tarotcards:tarot_deck"
+						count: 1
+					}
+					count: 1
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "43C506618B8BAEAC"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "35C0A1F645AB49AC"
+			x: 2d
+			y: 4.5d
+			icon: {
+				id: "tarotcards:the_fool"
+				count: 1
+			}
+			dependencies: [
+				"1BAAA7F2486785C8"
+			]
+			tasks: [
+				{
+					id: "5E2A1F99BECBFB1E"
+					type: "advancement"
+					advancement: "tarotcards:progression/root"
+					criterion: ""
+				}
+			]
+			rewards: [
+				{
+					id: "4B2AA104CB41612F"
+					type: "item"
+					item: {
+						id: "minecraft:emerald"
+						count: 1
+					}
+					count: 1
+				}
+			]
+		}
+		{
+			id: "4FF0244DC64C1893"
+			x: 4d
+			y: 4.5d
+			icon: {
+				id: "tarotcards:the_world"
+				count: 1
+			}
+			dependencies: [
+				"35C0A1F645AB49AC"
+			]
+			optional: true
+			tasks: [
+				{
+					id: "6080D95EB23C1B46"
+					type: "advancement"
+					advancement: "tarotcards:deck_collector"
+					criterion: ""
+				}
+			]
+			rewards: [
+				{
+					id: "1CB173F41D36DA6E"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+			]
+		}
+	]
+}

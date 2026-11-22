@@ -1,0 +1,23 @@
+{
+  "name": "Условие: измерение",
+  "icon": "pneumaticcraft:textures/progwidgets/condition_dimension_piece.png",
+  "category": "pneumaticcraft:widget_cond",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "Это виджет $(l:programming/conditions)«Условие»/$.$(p)Виджет $(thing)«Условие: измерение»/$ позволяет проверить текущее измерение дрона. Наличие этого виджета в программе дрона $(o)обязательно/$, чтобы программируемые дроны могли менять измерения, например проходя через портал Незера."
+    },
+    {
+      "type": "text",
+      "text": "Можно отфильтровать проверяемое измерение с помощью виджета $(l:programming/text)«Текст»/$, содержащего ID измерения для проверки, например $(thing)minecraft:overworld/$ или $(thing)minecraft:the_nether/$. Виджеты текста справа действуют как белый список, виджеты текста слева — как чёрный список."
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/progwidgets/condition_dimension_piece.png"
+      ],
+      "text": "$(italic)Это целый новый мир/$"
+    }
+  ]
+}

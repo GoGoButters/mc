@@ -1,0 +1,15 @@
+{
+  "name": "Компьютерный инструмент",
+  "icon": "advancedperipherals:computer_tool",
+  "category": "advancedperipherals:items",
+  "pages": [
+    {
+      "type": "text",
+      "text": "Компьютерный инструмент — это инструмент для открытия интерфейсов наших блоков. Сейчас компьютерный инструмент бесполезен, это просто замечательный предмет.$(p)Полную документацию смотрите на $(9)$(l:https://docs.advanced-peripherals.de/items/computer_tool/)официальной вики-странице$(/l)$()!"
+    },
+    {
+      "type": "crafting",
+      "recipe": "advancedperipherals:computer_tool"
+    }
+  ]
+}
