@@ -2,12 +2,14 @@
 
 `ZhivoyMir-Android.mrpack` — мобильная версия клиента для импорта в Zalith Launcher 2
 («Импорт модпака» → файл .mrpack). Архив в git не хранится — собирается командой ниже.
+Устарел: основной путь — APK с синхронизацией packwiz-пака `android/` (ниже); `android-check.py`
+проверяет mrpack только с флагом `--mrpack`.
 
 ## Пересборка
 
 ```bash
 python3 tools/android-export.py   # → dist/android/ZhivoyMir-Android.mrpack, сам прогоняет depcheck
-python3 tools/android-check.py    # валидность modrinth.index.json и сверка списка модов
+python3 tools/android-check.py --mrpack   # валидность modrinth.index.json и сверка списка модов
 ```
 
 jar берутся из кэша depcheck (`/tmp/depcache`); недостающие CurseForge-jar — `../tools/cf-cache-sync.sh`.

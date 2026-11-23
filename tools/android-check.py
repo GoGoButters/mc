@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Проверка мобильного mrpack и packwiz-пака android/: моды = клиентский набор минус исключения, хэши сходятся.
 
-usage: android-check.py [path.mrpack]
+usage: android-check.py [--mrpack [path.mrpack]]
+По умолчанию — только раскладка и android/; mrpack (устарел, заменён APK) — лишь с --mrpack.
 """
 import glob, importlib.util, json, os, sys, tomllib, zipfile
 
@@ -10,9 +11,14 @@ spec = importlib.util.spec_from_file_location("android_export", os.path.join(HER
 ex = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(ex)
 
-path = sys.argv[1] if len(sys.argv) > 1 else ex.OUT
+args = sys.argv[1:]
+mrpack = "--mrpack" in args
+if mrpack:
+    args.remove("--mrpack")
+path = args[0] if args else ex.OUT
 errors = []
-mrpack = os.path.exists(path)  # mrpack в git не хранится; без него — только раскладка и android/
+if mrpack and not os.path.exists(path):
+    sys.exit(f"FAIL нет {path} — собери android-export.py без --pack-only")
 if mrpack:
     z = zipfile.ZipFile(path)
     m = json.loads(z.read("modrinth.index.json"))
@@ -121,6 +127,6 @@ for e in errors:
 if mrpack:
     print(f"{path}: модов {len(have)} (ссылками {len(in_pack)}, overrides {len(ovr)}), ожидалось {len(want)}")
 else:
-    print(f"{path}: нет — проверка mrpack пропущена")
+    print("mrpack не проверялся (нужен флаг --mrpack)")
 print(f"расхождений {len(errors)}")
 sys.exit(1 if errors else 0)
