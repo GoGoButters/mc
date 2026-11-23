@@ -22,6 +22,8 @@ dependencies {
     // Immersive Aircraft и Mekanism — только для компиляции
     compileOnly files('libs/immersive_aircraft-neoforge-1.7.0+1.21.1.jar')
     compileOnly files('libs/Mekanism-1.21.1-10.7.19.85.jar')
+    // Nedologin — только для компиляции миксинов паролей платформ (на сервере он необязателен)
+    compileOnly files('libs/nedologin-3.0.0-rc3-1.21.1-fabric-neoforge.jar')
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
@@ -37,3 +39,11 @@ sourceSets.main.resources.srcDir generateModMetadata
 neoForge.ideSyncTask generateModMetadata
 
 tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
+
+// Логика паролей платформ: проверка без JUnit (src/test/.../PlatformAuthCheck), входит в check/build
+var platformAuthCheck = tasks.register("platformAuthCheck", JavaExec) {
+    classpath = sourceSets.test.output + sourceSets.main.output + sourceSets.main.compileClasspath
+    mainClass = 'ru.zhivoymir.tweaks.auth.PlatformAuthCheck'
+}
+tasks.named('test') { failOnNoDiscoveredTests = false }
+tasks.named('check') { dependsOn platformAuthCheck }
